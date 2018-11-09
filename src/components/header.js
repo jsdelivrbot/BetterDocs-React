@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import mystyles from '../styles/header.module.scss'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <div
     className={mystyles.headercontainer}
   >
@@ -40,6 +40,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </div>
       <nav className={mystyles.nav}>
+
           <Link to="/" 
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
@@ -53,6 +54,7 @@ const Header = ({ siteTitle }) => (
             </svg>
             <Link to="/" activeClassName={mystyles.active} className={mystyles.link}>Home</Link>
           </Link>
+
           <Link to="/themes/" 
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
@@ -65,6 +67,7 @@ const Header = ({ siteTitle }) => (
             </svg>
             <Link to="/themes/" activeClassName={mystyles.active} className={mystyles.link}>Themes</Link>
           </Link>
+
           <Link to="/plugins/" 
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
@@ -81,8 +84,11 @@ const Header = ({ siteTitle }) => (
             </svg>
             <Link to="/plugins/" activeClassName={mystyles.active} className={mystyles.link}>Plugins</Link>
           </Link>
+
           <a href="https://discord.gg/D4cAkXX" className={mystyles.link}>Server</a>
+
           <Link to="/getting-started/" activeClassName={mystyles.active} className={mystyles.link}>Getting Started</Link>
+          
           <Link to="/more/" 
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
@@ -99,6 +105,7 @@ const Header = ({ siteTitle }) => (
             </svg>
             <Link to="/more/" activeClassName={mystyles.active} className={mystyles.link}>More</Link>
           </Link>
+
       </nav>
     </div>
   </div>

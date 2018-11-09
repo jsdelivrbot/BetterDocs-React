@@ -143,3 +143,10 @@
         }
     }
 }
+
+
+.linkIcon {
+    @media (min-width: 850px) {
+        display: none;
+    }
+}
