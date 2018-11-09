@@ -1,0 +1,12 @@
+.decorated { // for a links only
+    border-bottom: 1px solid rgba(#339b78, 0.3);
+    box-shadow: inset 0 -2px 0px 0px rgba(#339b78, 0.4);
+    color: rgba(0, 0, 0, 0.88);
+    font-weight: bold;
+    transition: .1s linear background-color, .1s linear box-shadow, .1s linear border-bottom;
+ &.decorated:hover {
+    background-color: rgba(#339b78, 0.3);
+    border-bottom: 1px solid transparent;
+    box-shadow: inset 0 -2px 0px 0px transparent;
+  }
+}

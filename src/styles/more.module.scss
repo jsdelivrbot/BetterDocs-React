@@ -1,0 +1,22 @@
+.more {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    .link {
+        display: flex;
+        padding:15px;
+        transition: .2s ease-in-out background-color;
+        &:hover {
+            background-color: #ccc;
+        }
+        .linkName {
+            width: 100%;
+            line-height: 3.3em;
+            text-indent: 1em;
+            color: rgba(0, 0, 0, 0.9);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    }
+}

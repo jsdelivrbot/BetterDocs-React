@@ -1,0 +1,157 @@
+.hero {
+    justify-content: space-between;
+    display: block;
+    padding: 100px 30px 100px 16px;
+    flex-direction: row;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    background: linear-gradient(135deg, #339b78 0%, #1868df 100%);
+    @media (min-width: 850px) {
+        display: flex;
+        padding: 100px 0;
+    }
+    .textContainer {
+        max-width: calc(100% - 125px);
+        flex-basis: 21%;
+        padding: unset;
+        margin: 0 auto;
+        position: relative;
+        .header2 {
+            font-size: 2.5em;
+            text-align: left;
+            line-height: 1.3;
+            font-weight: bold;
+            word-break: break-word;
+            margin: 0;
+        }
+        .paragraph {
+            padding: 10px 0px;
+            .p {
+                    text-align: left;
+                    line-height: 2em;
+                    color: #fff;
+                    margin: 0;
+                    font-size: 1.2rem;
+            }
+        }
+        .button {
+            margin-bottom: 25px;
+            @media (min-width: 850px) {
+                margin-bottom: 0;
+                margin-top: 15px;
+            }
+            .btn {
+                color: #fff;
+                text-decoration: none;
+                padding: 15px 30px;
+                background-color: #339b78;
+                border-radius: 2px;
+                -webkit-appearance: none;
+                box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.6);
+                transition: .2s linear box-shadow,.2s linear background-color;
+            }
+        }
+    }
+    .heroImage {
+        flex-basis: 50%;
+        box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.6);
+        transform: translate(0px, 0px);
+        animation-duration: 3s;
+        animation-name: float;
+        animation-iteration-count: infinite;
+        .heroImg {
+            height: 100%;
+            width: 100%;
+            border-radius: 2px;
+        }
+    }
+    @media (min-width: 850px) {
+        display: flex;
+        padding: 100px 0;
+    }
+}
+.heroThemes, .heroPlugins, .heroO {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    padding: 20px 0px 35px 0px;
+    background: linear-gradient(135deg, #339b78 0%, #1868df 100%);
+    &::before {
+        content: "";
+        background-image: url("../images/header-bg.svg");
+        background-size: 38%;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        border-radius: unset;
+        transform: unset;
+        box-shadow: unset;
+        top: unset;
+        bottom: unset;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+    }
+    .container {
+        max-width: calc(100% - 125px);
+        margin: 0 auto;
+        position: relative;
+        padding: 0 20px;
+        .h2 {
+            font-size: 3.2rem;
+            line-height: 1.3;
+            font-weight: bold;
+            word-break: break-word;
+            margin: 0;
+            @media (min-width: 500px) {
+                font-size: 3.5rem;
+            }
+        }
+        .p {
+            color: #fff;
+            margin: 0;
+            margin-top: 10px;
+        }
+        .input {
+            width: calc(100% - 150px);
+            border-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border: unset;
+            height: 45px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: -20px;
+            text-indent: 10px;
+            opacity: 0.45;
+            transition: .2s linear opacity;
+            color: #fff;
+            @media (min-width: 850px) {
+                width: calc(100% - 900px);
+            }
+        }
+    }
+}
+.heroPlugins {
+    order: 1;
+    .container {
+        .input {
+            @media (min-width: 850px) {
+                width: calc(100% - 500px);
+            }
+        }
+    }
+}
+@keyframes float {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(0px,-5px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
