@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'BetterDocs',
+    title: 'BetterDocs | #1 Discord Themes & Plugins',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -35,7 +35,7 @@ module.exports = {
         name: 'BetterDocs Discord #1 Plugins & Themes',
         short_name: 'BetterDocs',
         start_url: '/',
-        background_color: '#fff',
+        background_color: '#262626',
         theme_color: '#262626',
         display: 'minimal-ui',
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
