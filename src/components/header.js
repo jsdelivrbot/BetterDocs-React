@@ -52,7 +52,7 @@ const Header = () => (
                   fill='#FFF' />
                   <circle cx='271.999' cy='406.934' r='14.999' fill='#FFF' />
             </svg>
-            <Link to="/" activeClassName={mystyles.active} className={mystyles.link}>Home</Link>
+            <span className={mystyles.link}>Home</span>
           </Link>
 
           <Link to="/themes/" 
@@ -65,7 +65,7 @@ const Header = () => (
                 <path d='m121 467c0-24.8125-20.1875-45-45-45s-45 20.1875-45 45 20.1875 45 45 45 45-20.1875 45-45zm-60 0c0-8.269531 6.730469-15 15-15s15 6.730469 15 15-6.730469 15-15 15-15-6.730469-15-15zm0 0'
                 fill='#FFF' />
             </svg>
-            <Link to="/themes/" activeClassName={mystyles.active} className={mystyles.link}>Themes</Link>
+            <span className={mystyles.link}>Themes</span>
           </Link>
 
           <Link to="/plugins/" 
@@ -82,13 +82,22 @@ const Header = () => (
                 <path d='m44.972656 242.671875c24.796875 0 44.96875-20.171875 44.96875-44.96875s-20.171875-44.972656-44.96875-44.972656-44.972656 20.175781-44.972656 44.972656 20.175781 44.96875 44.972656 44.96875zm0-59.960937c8.265625 0 14.988282 6.726562 14.988282 14.992187s-6.722657 14.988281-14.988282 14.988281-14.992187-6.722656-14.992187-14.988281 6.726562-14.992187 14.992187-14.992187zm0 0'
                 fill='#FFF' />
             </svg>
-            <Link to="/plugins/" activeClassName={mystyles.active} className={mystyles.link}>Plugins</Link>
+            <span className={mystyles.link}>Plugins</span>
           </Link>
 
-          <a href="https://discord.gg/D4cAkXX" className={mystyles.link}>Server</a>
-
-          <Link to="/getting-started/" activeClassName={mystyles.active} className={mystyles.link}>Getting Started</Link>
+          <a href="https://discord.gg/D4cAkXX"
+          className={mystyles.linkWrapper}
+          >
+            <span className={mystyles.link}>Server</span>
+          </a> 
           
+          <Link to="/getting-started/"
+          className={mystyles.linkWrapper}
+          activeClassName={mystyles.active}
+          >
+            <span className={mystyles.link}>Getting Started</span>
+          </Link>
+
           <Link to="/more/" 
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
@@ -103,7 +112,7 @@ const Header = () => (
                     />
                 </g>
             </svg>
-            <Link to="/more/" activeClassName={mystyles.active} className={mystyles.link}>More</Link>
+            <span className={mystyles.link}>More</span>
           </Link>
 
       </nav>
