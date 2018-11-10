@@ -6,6 +6,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sitemap`,
+    'gatsby-plugin-netlify-cache',
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#339b78`, // Setting a color is optional.
+        showSpinner: false, // Disable the loading spinner.
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
