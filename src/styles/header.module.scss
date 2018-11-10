@@ -145,8 +145,45 @@
 }
 
 
-.linkIcon {
+.linkWrapper {
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    flex-direction: column;
+    &.active {
+        .linkIcon {
+            opacity: 1;
+        }
+    }
+    &:hover, &:active, &:focus {
+        .linkIcon {
+            opacity: 1;
+        }
+        .link {
+            color: #fff;
+        }
+    }
+    .linkIcon {
+        width: 22px;
+        margin: unset;
+        top: 8px;
+        position: relative;
+        fill: #fff;
+        opacity: 0.6;
+        transition: .2s linear ease-in-out;
+        & ~ .link {
+            line-height: 3em;
+            top: 6px;
+            @media (min-width: 850px) {
+            }
+        }
+        @media (min-width: 850px) {
+            display: none;
+        }
+    }
     @media (min-width: 850px) {
-        display: none;
+        &:nth-child(6) {
+            display: none;
+        }
     }
 }
