@@ -144,18 +144,15 @@
     }
 }
 
-
-.linkWrapper {
-    .linkIcon {
-        width: 22px;
-        margin: unset;
-        top: 8px;
-        position: relative;
-        fill: #fff;
-        opacity: 0.6;
-        transition: .2s linear ease-in-out;
-        @media (min-width: 850px) {
-            display: none;
-        }
+.linkIcon {
+    width: 22px;
+    margin: unset;
+    top: 8px;
+    position: relative;
+    fill: #fff;
+    opacity: 0.6;
+    transition: .2s linear ease-in-out;
+    @media (min-width: 850px) {
+        display: none;
     }
 }
