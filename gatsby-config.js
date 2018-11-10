@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'BetterDocs | #1 Discord Themes & Plugins',
-    siteUrl: `https://betterdocs-react.netlify.com/`,
+    siteUrl: `https://betterdocs-react.netlify.com`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
