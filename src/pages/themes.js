@@ -25,7 +25,7 @@ const Themes = (props) => {
           <div className={theme.wrapper}
           >
           <p>
-            Themes page
+            Themes page WIP
           </p>
         </div>
       </div>
