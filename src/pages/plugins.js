@@ -9,6 +9,10 @@ const Plugins = (props) => {
   const pluginList = props.data.allMarkdownRemark;
   
   return (
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Plugins</title>
+  </Helmet>
   <Layout>
     <div className={plugin.pluginsContainer}
     >

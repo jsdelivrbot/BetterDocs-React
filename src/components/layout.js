@@ -23,8 +23,8 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'A Discord enhancement project. Free quality Themes and Plugins for Discord and easy installation instructions for BetterDiscord and more!' },
+            { name: 'keywords', content: 'Discord, BetterDiscord, EnhancedDiscord, TwitchCord, Discord Hacks, Hacks, Mods, Discord Themes, Themes, Discord Plugins, Plugins, Discord Bots, Bots, Discord Servers, Discord Style, Styles' },
           ]}
         >
           <html lang="en" />

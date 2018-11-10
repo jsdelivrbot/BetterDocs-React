@@ -8,6 +8,10 @@ const Themes = (props) => {
   const themeList = props.data.allMarkdownRemark;
   
   return (
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Themes</title>
+    </Helmet>
   <Layout>
     <div className={theme.pluginsContainer}
     >
