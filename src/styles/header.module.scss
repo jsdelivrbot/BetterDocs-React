@@ -63,12 +63,15 @@
                     display: none;
                 }
                 &.active {
-                    border-bottom: 2px solid #fff;
+                    border-bottom: 0px solid transparent;
                     .linkIcon {
                         opacity: 1;
                     }
                     .link {
                         color: #fff;
+                    }
+                    @media (min-width: 850px) {
+                        border-bottom: 2px solid #fff;
                     }
                 }
                 &:hover, &:active, &:focus {
@@ -90,8 +93,6 @@
                     & ~ .link {
                         line-height: 3em;
                         top: 6px;
-                        @media (min-width: 850px) {
-                        }
                     }
                     @media (min-width: 850px) {
                         display: none;
