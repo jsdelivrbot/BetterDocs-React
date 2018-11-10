@@ -3,16 +3,17 @@ import Layout from '../components/layout'
 import theme from '../styles/theme.module.scss'
 import { Link } from 'gatsby'
 import { graphql } from "gatsby"
+import {Helmet} from "react-helmet";
 
 const Themes = (props) => {
   const themeList = props.data.allMarkdownRemark;
   
   return (
+  <Layout>
     <Helmet>
         <meta charSet="utf-8" />
-        <title>Themes</title>
+        <title>BetterDocs | Discord #1 Themes</title>
     </Helmet>
-  <Layout>
     <div className={theme.pluginsContainer}
     >
 

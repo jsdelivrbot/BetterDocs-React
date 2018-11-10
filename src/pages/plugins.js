@@ -4,16 +4,17 @@ import hero from '../styles/hero.module.scss'
 import plugin from '../styles/plugin.module.scss'
 import { Link } from 'gatsby'
 import { graphql } from "gatsby"
+import {Helmet} from "react-helmet";
 
 const Plugins = (props) => {
   const pluginList = props.data.allMarkdownRemark;
   
   return (
+  <Layout>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Plugins</title>
-  </Helmet>
-  <Layout>
+      <title>BetterDocs | Discord #1 Plugins</title>
+    </Helmet>
     <div className={plugin.pluginsContainer}
     >
 
