@@ -12,7 +12,7 @@ const Themes = (props) => {
   <Layout>
     <Helmet>
         <meta charSet="utf-8" />
-        <title>BetterDocs | Discord #1 Themes</title>
+        <title>BetterDocs | #1 Discord Themes</title>
     </Helmet>
     <div className={theme.pluginsContainer}
     >

@@ -13,7 +13,7 @@ const Plugins = (props) => {
   <Layout>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>BetterDocs | Discord #1 Plugins</title>
+      <title>BetterDocs | #1 Discord Plugins</title>
     </Helmet>
     <div className={plugin.pluginsContainer}
     >

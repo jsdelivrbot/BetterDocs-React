@@ -49,6 +49,14 @@ module.exports = {
         includePaths: ['src/styles'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Roboto']
+        }
+      }
+    },
     'gatsby-transformer-remark',
     {
       resolve: `gatsby-plugin-netlify`,
