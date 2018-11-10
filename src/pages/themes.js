@@ -20,7 +20,7 @@ const Themes = (props) => {
           <div className={theme.wrapper}
           >
           <p>
-            text
+            Themes page
           </p>
         </div>
       </div>
@@ -34,7 +34,7 @@ const Themes = (props) => {
         >
           <input 
           className={theme.input}
-          placeholder='Search plugins library'
+          placeholder='Search themes library'
           >
           </input>
           <div className={theme.searchOutput}>

@@ -156,6 +156,7 @@
         line-height: 3em;
         top: 6px;
         @media (min-width: 850px) {
+            border-bottom: 0px solid transparent;
         }
     }
     @media (min-width: 850px) {
