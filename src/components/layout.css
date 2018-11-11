@@ -633,3 +633,21 @@ pre tt:after {
     font-size: 100%;
   }
 }
+body::-webkit-scrollbar-button { 
+  display: none; 
+  height: 13px; 
+  border-radius: 0px; 
+} 
+body::-webkit-scrollbar-thumb { 
+  background-color: rgba(51, 155, 120, 0.7);
+  transition: background-color .2s ease-in-out;
+} 
+body::-webkit-scrollbar-thumb:hover { 
+  background-color: #339b78; 
+} 
+body::-webkit-scrollbar-track { 
+  background-color:rgba(35, 139, 105, 0.1);
+}
+body::-webkit-scrollbar { 
+  width: 8px; 
+}

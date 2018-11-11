@@ -8,6 +8,10 @@ import {Helmet} from "react-helmet";
 
 const Plugins = (props) => {
   const pluginList = props.data.allMarkdownRemark;
+  const { totalCount } = props.data.allMarkdownRemark;
+  const listCount = `${totalCount} Plugin${
+    totalCount === 1 ? "" : "s"
+  }`
   
   return (
   <Layout>
@@ -59,7 +63,7 @@ const Plugins = (props) => {
           >
           </input>
           <div className={plugin.searchOutput}>
-            89 results
+          {listCount}
           </div>
         </div>
         <div className={plugin.Results}
@@ -104,6 +108,11 @@ export default Plugins;
 export const allQuery = graphql`
   query allQuery {
     allMarkdownRemark(filter: { collection: { eq: "plugins" } }) {
+      group(field: collection) {
+        fieldValue
+        totalCount
+      }
+      totalCount
       edges {
         node {
             excerpt

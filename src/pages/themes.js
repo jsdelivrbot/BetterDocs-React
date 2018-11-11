@@ -7,6 +7,8 @@ import {Helmet} from "react-helmet";
 
 const Themes = (props) => {
   const themeList = props.data.allMarkdownRemark;
+  const { totalCount } = props.data.allMarkdownRemark;
+  const listCount = `${totalCount}`
   
   return (
   <Layout>
@@ -14,11 +16,16 @@ const Themes = (props) => {
         <meta charSet="utf-8" />
         <title>BetterDocs | #1 Discord Themes</title>
     </Helmet>
-    <div className={theme.pluginsContainer}
+    <div className={theme.themesContainer}
     >
 
     <section className={theme.contentWrapper}
     >
+
+    <div className={theme.titleBar}>
+      <div className={theme.count}>Themes <span>({listCount})</span></div>
+      <input className={theme.input} placeholder="Search Themes"></input>
+    </div>
 
       <div className={theme.content}
         >
@@ -43,7 +50,7 @@ const Themes = (props) => {
           >
           </input>
           <div className={theme.searchOutput}>
-            89 results
+             89 results
           </div>
         </div>
         <div className={theme.Results}
@@ -88,6 +95,11 @@ export default Themes;
 export const allThemesQuery = graphql`
   query allThemesQuery {
     allMarkdownRemark(filter: { collection: { eq: "themes" } }) {
+      group(field: collection) {
+        fieldValue
+        totalCount
+      }
+      totalCount
       edges {
         node {
             excerpt

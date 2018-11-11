@@ -98,6 +98,10 @@ export default Themes;
 export const themesQuery = graphql`
   query themesQuery {
     listThemes:allMarkdownRemark(filter: { collection: { eq: "themes" } }) {
+      group(field: collection) {
+        fieldValue
+        totalCount
+      }
       edges {
         node {
             excerpt

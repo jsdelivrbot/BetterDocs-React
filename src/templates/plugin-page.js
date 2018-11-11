@@ -8,6 +8,10 @@ import { graphql } from "gatsby"
 const Plugins = (props) => {
   const pluginList = props.data.listPlugins;
   const pluginCurrent = props.data.currentPlugins;
+  const { totalCount } = props.data.listPlugins;
+  const listCount = `${totalCount} Plugin${
+    totalCount === 1 ? "" : "s"
+  }`
   
   return (
   <Layout>
@@ -53,7 +57,7 @@ const Plugins = (props) => {
           >
           </input>
           <div className={plugin.searchOutput}>
-            89 results
+            {listCount}
           </div>
         </div>
         <div className={plugin.Results}
@@ -96,8 +100,23 @@ const Plugins = (props) => {
 export default Plugins;
 
 export const pluginsQuery = graphql`
-  query pluginsQuery {
-    listPlugins:allMarkdownRemark(filter: { collection: { eq: "plugins" } }) {
+  query pluginsQuery($title: String) {
+    listPlugins:allMarkdownRemark(
+      filter: { 
+        collection: { 
+          eq: "plugins" 
+        }
+        frontmatter: { 
+          tags: { 
+            in: [$title] 
+          } 
+        } 
+      }) {
+      group(field: collection) {
+        fieldValue
+        totalCount
+      }
+      totalCount
       edges {
         node {
             excerpt
