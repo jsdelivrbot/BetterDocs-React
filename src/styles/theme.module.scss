@@ -175,17 +175,47 @@
         flex-direction: column;
         .wrapper {
             display: flex;
-            width: calc(100% - 300px);
+            width: calc(100% - 70px);
             margin: 0 auto;
             padding-top: 2.1rem;
             padding-bottom: 2.1rem;
             word-break: break-all;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
             .md {
                 visibility: visible;
             }
             .cardWrapper {
                 display: flex;
+                flex-direction: column;
+                flex-basis: 32%;
+                //flex: 1 0 32%;
+                .imgContainer {
+                    display: initial;
+                    .img {
+                        background-color: #000;
+                        width: 100%;
+                        height: 160px;
+                        margin: unset;
+                    }
+                }
+                .title {
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 0.88);
+                    font-size: 1.1em;
+                    margin-bottom: 6px;
+                }
+                .description {
+                    color: rgba(0, 0, 0, 0.4);
+                    font-size: 0.9em;
+                }
+                .author {
+                    color: rgba(0, 0, 0, 0.8);
+                    font-size: 0.78em;
+                    margin-top: 4px;
+                    margin-bottom: 4px;
+                }
             }
         }
     }
