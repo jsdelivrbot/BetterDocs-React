@@ -6,11 +6,10 @@
     }
     .contentWrapper {
         order: 1;
-        display: none;
+        display: flex;
+        flex-direction: column;
         @media (min-width: 850px) {
-            display: flex;
             flex: 3;
-            flex-direction: column;
         }
         .titleBar {
             background: #fff;
@@ -63,8 +62,11 @@
         background: #fff;
         border-right: 1px solid rgb(245, 243, 247);
         order: 0;
-        display: block;
         flex: 1;
+        display: none;
+        @media (min-width: 850px) {
+            display: block;
+        }
         .searchContainer {
             display: flex;
             flex-direction: column;
@@ -174,7 +176,7 @@
         order: 1;
         flex-direction: column;
         .wrapper {
-            display: flex;
+            display: block;
             width: calc(100% - 70px);
             margin: 0 auto;
             padding-top: 2.1rem;
@@ -183,6 +185,9 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
+            @media (min-width: 850px) {
+                display: flex;
+            }
             .md {
                 visibility: visible;
             }
