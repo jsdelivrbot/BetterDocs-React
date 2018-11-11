@@ -52,6 +52,10 @@ return graphql(`{
               layout
               ghcommentid
               date
+              images {
+                image
+                name
+              }
             }
           }
         }

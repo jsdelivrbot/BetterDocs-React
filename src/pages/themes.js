@@ -31,6 +31,12 @@ const Themes = (props) => {
         >
           <div className={theme.wrapper}
           >
+          {themeList.edges.map(({ node }, i) => (
+            <div className={theme.cardWrapper}
+            >
+            {node.frontmatter.title}
+            </div>
+          ))}
           <p>
             Themes page WIP.
           </p>
@@ -44,14 +50,15 @@ const Themes = (props) => {
       >
         <div className={theme.searchContainer}
         >
-          <input 
-          className={theme.input}
-          placeholder='Search themes library'
-          >
-          </input>
-          <div className={theme.searchOutput}>
-             89 results
+        <div className={theme.submitDescription}>
+             Want your theme featured?
           </div>
+          <a 
+          href="https://betterdocs.us"
+          className={theme.submitBtn}
+          >
+          Submit a Theme
+          </a>
         </div>
         <div className={theme.Results}
         >

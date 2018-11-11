@@ -117,7 +117,11 @@ export const themesQuery = graphql`
                 layout
                 ghcommentid
                 date
+                images {
+                  image
+                  name
                 }
+              }
             }
         }
     },
@@ -135,7 +139,11 @@ export const themesQuery = graphql`
         layout
         ghcommentid
         date
+        images {
+          image
+          name
         }
+      }
     }
 }
 `

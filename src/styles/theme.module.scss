@@ -69,27 +69,27 @@
             display: flex;
             flex-direction: column;
             border-bottom: 1px solid rgb(245, 243, 247);
-            .input {
-                background: #fff;
-                border: 1px solid #e0d6eb;
-                border-radius: 4px;
-                color: #339b78;
+            .submitBtn {
+                background: #339b78;
+                border: 1px solid #27775c;
+                border-radius: 2px;
+                color: #fff;
                 display: inline-block;
                 font-size: 18px;
-                height: 2.45rem;
+                line-height: 2.3em;
+                height: 2.75rem;
                 padding: 0;
-                padding-right: 2.45rem;
-                padding-left: 2.45rem;
-                margin: 0.9em 1.05rem;
                 vertical-align: middle;
                 white-space: normal;
-                width: calc(100% - 2.1rem);
+                width: calc(100% - 7.1rem);
+                text-align: center;
+                margin: 0.9em auto;
             }
-            .searchOutput {
+            .submitDescription {
                 color: rgba(0, 0, 0, 0.54);
                 font-size: 0.8409rem;
                 margin: 0 1.05rem;
-                margin-bottom: 0.9em;
+                margin-top: 0.9em;
             }
         }
         .Results { 
@@ -183,6 +183,9 @@
             flex-direction: column;
             .md {
                 visibility: visible;
+            }
+            .cardWrapper {
+                display: flex;
             }
         }
     }
