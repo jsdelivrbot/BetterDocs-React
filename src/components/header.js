@@ -85,14 +85,16 @@ const Header = () => (
             <span className={mystyles.link}>Plugins</span>
           </Link>
 
-          <Link to="/download"
+          <Link to="/download/"
           className={mystyles.linkWrapper}
+          activeClassName={mystyles.active}
           >
             <span className={mystyles.link}>Download</span>
           </Link>
 
           <a href="https://discord.gg/D4cAkXX"
           className={mystyles.linkWrapper}
+          target="blank"
           >
             <span className={mystyles.link}>Server</span>
           </a> 
