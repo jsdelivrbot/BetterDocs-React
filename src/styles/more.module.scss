@@ -23,7 +23,7 @@
         }
         .link {
             display: flex;
-            padding: 15px 15px 15px 20px;
+            padding: 12px 12px 12px 20px;
             transition: .2s ease-in-out background-color;
             &:hover {
                 background-color: #ccc;
@@ -34,7 +34,7 @@
                 text-indent: 1em;
                 color: rgba(0, 0, 0, 0.9);
                 font-weight: bold;
-                font-size: 1.1em;
+                font-size: 1em;
             }
         }
     }
