@@ -40,8 +40,10 @@ const Themes = (props) => {
               </div>
               <div className={theme.author}
               >{node.frontmatter.author} /</div>
-              <div className={theme.title}
-              >{node.frontmatter.title}</div>
+              <Link to={"themes" + node.frontmatter.path}>
+                <div className={theme.title}
+                >{node.frontmatter.title}</div>
+              </Link>
               <div className={theme.description}
               >
                 <p className={theme.p}

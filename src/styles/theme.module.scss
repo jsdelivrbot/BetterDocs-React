@@ -31,6 +31,7 @@
                 border: unset;
                 border-bottom: 2px solid rgba(#339b78, 0.3);
                 transition: .2s ease-in-out border-bottom;
+                border-radius: 0px;
                 &:hover {
                     border-bottom: 2px solid rgba(#339b78, 0.5); 
                 }
@@ -92,6 +93,28 @@
                 font-size: 0.8409rem;
                 margin: 0 1.05rem;
                 margin-top: 0.9em;
+            }
+            .input {
+                background: #fff;
+                border: 1px solid #e0d6eb;
+                border-radius: 4px;
+                color: #339b78;
+                display: inline-block;
+                font-size: 18px;
+                height: 2.45rem;
+                padding: 0;
+                padding-right: 2.45rem;
+                padding-left: 2.45rem;
+                margin: 0.9em 1.05rem;
+                vertical-align: middle;
+                white-space: normal;
+                width: calc(100% - 2.1rem);
+            }
+            .searchOutput {
+                color: rgba(0, 0, 0, 0.54);
+                font-size: 0.8409rem;
+                margin: 0 1.05rem;
+                margin-bottom: 0.9em;
             }
         }
         .Results { 

@@ -1,19 +1,23 @@
 import React from 'react'
 import Layout from '../components/layout'
 import hero from '../styles/hero.module.scss'
-import plugin from '../styles/plugin.module.scss'
+import style from '../styles/theme.module.scss'
 import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 
 const Themes = (props) => {
   const themeList = props.data.listThemes;
   const themeCurrent = props.data.currentThemes;
+  const { totalCount } = themeList;
+  const listCount = `${totalCount} Theme${
+    totalCount === 1 ? "" : "s"
+  }`
   
   return (
   <Layout>
-    <div className={plugin.pluginsContainer}
+    <div className={style.themesContainer}
     >
-      <section className={plugin.openContentWrapper}
+      <section className={style.openContentWrapper}
       >
         <div className={hero.heroPlugins}
         >
@@ -29,13 +33,13 @@ const Themes = (props) => {
             </p> 
           </div>
         </div>
-        <div className={plugin.content}
+        <div className={style.content}
           >
-            <div className={plugin.wrapper}
+            <div className={style.wrapper}
             >
             
             <div
-            className={plugin.md}
+            className={style.md}
             key={themeCurrent.key}>
               {themeCurrent.html}
             </div>
@@ -43,42 +47,42 @@ const Themes = (props) => {
           </div>
         </div>
       </section>
-      <section className={plugin.sidebarSearch}
+      <section className={style.sidebarSearch}
       >
-        <div className={plugin.searchContainer}
+        <div className={style.searchContainer}
         >
           <input 
-          className={plugin.input}
+          className={style.input}
           placeholder='Search themes library'
           >
           </input>
-          <div className={plugin.searchOutput}>
-            89 results
+          <div className={style.searchOutput}>
+            {listCount}
           </div>
         </div>
-        <div className={plugin.Results}
+        <div className={style.Results}
         >
         {themeList.edges.map(({ node }, i) => (
           <Link 
-          className={plugin.resultCard}
-          activeClassName={plugin.active}
+          className={style.resultCard}
+          activeClassName={style.active}
           to={'themes' + node.frontmatter.path}
           key={node.id}
           >
-            <div className={plugin.header}
+            <div className={style.header}
             >
-              <span className={plugin.title}
+              <span className={style.title}
               >
               {node.frontmatter.title}
               </span>
-              <span className={plugin.author}
+              <span className={style.author}
               >
               {node.frontmatter.author}
               </span>
             </div>
-            <div className={plugin.description}
+            <div className={style.description}
             >
-              <p className={plugin.p}
+              <p className={style.p}
               >
                 {node.excerpt}
               </p>
@@ -102,6 +106,7 @@ export const themesQuery = graphql`
         fieldValue
         totalCount
       }
+      totalCount
       edges {
         node {
             excerpt
@@ -115,13 +120,11 @@ export const themesQuery = graphql`
                 download
                 support
                 layout
-                ghcommentid
-                date
                 images {
                   image
                   name
+                  }
                 }
-              }
             }
         }
     },
