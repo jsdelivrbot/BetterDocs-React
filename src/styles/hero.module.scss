@@ -1,7 +1,7 @@
 .hero {
     justify-content: space-between;
     display: block;
-    padding: 100px 30px 100px 16px;
+    padding: 25px 10px 40px 10px;
     flex-direction: row;
     color: #ffffff;
     text-align: center;
@@ -61,10 +61,12 @@
         animation-duration: 3s;
         animation-name: float;
         animation-iteration-count: infinite;
+        display: flex;
         .heroImg {
             height: 100%;
             width: 100%;
             border-radius: 2px;
+            margin: unset;
         }
     }
     @media (min-width: 850px) {
