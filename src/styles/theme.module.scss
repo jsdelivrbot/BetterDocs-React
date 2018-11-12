@@ -29,14 +29,15 @@
             }
             .input {
                 border: unset;
-                border-bottom: 2px solid rgba(#339b78, 0.3);
-                transition: .2s ease-in-out border-bottom;
+                border-bottom: 2px solid #339b78;
+                transition: .2s ease-in-out opacity;
                 border-radius: 0px;
+                opacity: 0.4;
                 &:hover {
-                    border-bottom: 2px solid rgba(#339b78, 0.5); 
+                    opacity: 0.65;
                 }
                 &:active, &:focus {
-                    border-bottom: 2px solid #339b78;
+                    opacity: 1;
                     outline: unset;
                 }
             }
