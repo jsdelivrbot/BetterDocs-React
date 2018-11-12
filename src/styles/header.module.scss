@@ -59,7 +59,7 @@
                 flex: 1 1;
                 align-items: center;
                 flex-direction: column;
-                &:nth-child(5), &:nth-child(4) {
+                &:nth-child(6), &:nth-child(5), &:nth-child(4) {
                     display: none;
                 }
                 &.active {
@@ -99,10 +99,10 @@
                     }
                 }
                 @media (min-width: 850px) {
-                    &:nth-child(6) {
+                    &:nth-child(7) {
                         display: none;
                     }
-                    &:nth-child(5), &:nth-child(4) {
+                    &:nth-child(6), &:nth-child(5), &:nth-child(4) {
                         display: initial;
                     }
                 }
