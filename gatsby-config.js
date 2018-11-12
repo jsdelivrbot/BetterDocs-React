@@ -6,37 +6,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: "./src/images/mobile.png",         
-        // WebApp Manifest Configuration
-        appName: 'BetterDocs Discord #1 Plugins & Themes', // Inferred with your package.json
-        appDescription: 'A Discord enhancement project. Free quality Themes and Plugins for Discord and easy installation instructions for BetterDiscord and more!',
-        developerName: 'Christopher Ramos',
-        developerURL: 'https://github.com/MrRobotjs',
-        dir: 'auto',
-        lang: 'en-US',
-        background: '#262626',
-        theme_color: '#262626',
-        display: 'standalone',
-        orientation: 'any',
-        start_url: '/',
-        version: '1.0',
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: false,
-          firefox: false,
-          opengraph: true,
-          twitter: true,
-          yandex: true,
-          windows: false
-        },
-      },
-    },
     'gatsby-plugin-netlify-cache',
     {
       resolve: `gatsby-plugin-nprogress`,
@@ -80,7 +49,7 @@ module.exports = {
         background_color: '#262626',
         theme_color: '#262626',
         display: 'standalone',
-        icon: 'src/images/icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/mobile.png', // This path is relative to the root of the site.
       },
     },
     {
