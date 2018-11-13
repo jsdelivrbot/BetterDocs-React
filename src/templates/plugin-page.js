@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import hero from '../styles/hero.module.scss'
 import plugin from '../styles/plugin.module.scss'
 import { Link } from 'gatsby'
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 
 const Plugins = (props) => {
   const pluginList = props.data.listPlugins;
