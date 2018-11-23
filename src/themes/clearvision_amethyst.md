@@ -1,7 +1,7 @@
 ---
 layout: product
 title: ClearVision - Amethyst
-description_markdown: 'A mystical, purple theme with customizable colors & background!'
+description: 'A mystical, purple theme with customizable colors & background!'
 author: Zerthox
 github: 'https://github.com/Zerthox/'
 images:

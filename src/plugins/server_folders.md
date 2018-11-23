@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Server Folders
-description_markdown: |-
+description:
   Adds the feature to create folders to organize your servers.
 
     - Right click a server > 'Serverfolders' > 'Create Folder' to create a folder.

@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 39
 ---
+Adds a character counter to chat inputs.

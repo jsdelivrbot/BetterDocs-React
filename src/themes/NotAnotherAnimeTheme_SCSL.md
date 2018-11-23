@@ -1,7 +1,7 @@
 ---
 layout: product
 title: NotAnotherAnimeTheme - SCSL
-description_markdown: The single column variant of the easily customizable Discord theme!
+description: The single column variant of the easily customizable Discord theme!
 author: puckzxz
 github: 'https://github.com/puckzxz'
 images:

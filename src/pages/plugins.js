@@ -126,6 +126,7 @@ export const allQuery = graphql`
                 download
                 support
                 layout
+                description
                 }
             fields {
                 slug

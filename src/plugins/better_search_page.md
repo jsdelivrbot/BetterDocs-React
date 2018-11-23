@@ -10,3 +10,4 @@ tags:
 layout: product #* DON'T CHANGE
 ghcommentid: 71
 ---
+Adds some extra controls to the search results page.

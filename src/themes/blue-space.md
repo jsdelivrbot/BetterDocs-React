@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Blue Space
-description_markdown: Theme with stars as a background and a pretty combo of green and blue.
+description: Theme with stars as a background and a pretty combo of green and blue.
 author: Ruben7173
 github: 'https://github.com/Ruben7173/'
 images:

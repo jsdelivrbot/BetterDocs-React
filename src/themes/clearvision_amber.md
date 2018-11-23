@@ -1,7 +1,7 @@
 ---
 layout: product
 title: ClearVision - Amber
-description_markdown: 'A fiery, orange theme with customizable colors & background!'
+description: 'A fiery, orange theme with customizable colors & background!'
 author: Zerthox
 github: 'https://github.com/Zerthox/'
 images:

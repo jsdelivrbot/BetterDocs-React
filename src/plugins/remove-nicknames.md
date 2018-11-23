@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Remove Nicknames
-description_markdown: Replace all nicknames with the actual account names.
+description: Replace all nicknames with the actual account names.
 author: mwittrien
 github: 'https://github.com/mwittrien/'
 download: >-

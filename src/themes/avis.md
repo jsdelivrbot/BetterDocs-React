@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Avis
-description_markdown: 'A clean, vivid and transparent theme with lots of small tweaks'
+description: 'A clean, vivid and transparent theme with lots of small tweaks'
 author: YuraBrm
 github: 'https://github.com/YuraBrm/'
 images:

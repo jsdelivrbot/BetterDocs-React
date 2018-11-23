@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Reverse Image Search
-description_markdown: |-
+description:
   Adds two options on your channel context menu.
 
     - You can open a popout, where you can change the local name and color for the selected channel.

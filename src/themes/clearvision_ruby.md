@@ -1,7 +1,7 @@
 ---
 layout: product
 title: ClearVision - Ruby
-description_markdown: 'A raging, red theme with customizable colors & background!'
+description: 'A raging, red theme with customizable colors & background!'
 author: Zerthox
 github: 'https://github.com/Zerthox/'
 images:

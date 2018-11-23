@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Better Light
-description_markdown: 'A light theme that is easy to read, with basic user settings.'
+description: 'A light theme that is easy to read, with basic user settings.'
 author: satoru8
 github: 'https://github.com/satoru8/'
 images:

@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Slate
-description_markdown: This is a theme for people who want a clean and dark look of discord.
+description: This is a theme for people who want a clean and dark look of discord.
 author: Ruben7173
 github: 'https://github.com/Ruben7173/'
 images:

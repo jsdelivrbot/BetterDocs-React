@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Neon Waves
-description_markdown: A Pink Blue Wave theme
+description: A Pink Blue Wave theme
 author: xNightWulf
 github: 'https://github.com/xNightWulf/'
 images:

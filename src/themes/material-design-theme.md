@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Material Design Theme
-description_markdown: A theme for Discord based on Google's Material design Guidelines.
+description: A theme for Discord based on Google's Material design Guidelines.
 author: BeardDesign
 github: 'https://github.com/BeardDesign1/'
 images:

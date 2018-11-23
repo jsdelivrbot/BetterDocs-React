@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Clean Dark
-description_markdown: Simple & clean dark theme. Basic enhancements. User settings for variety.
+description: Simple & clean dark theme. Basic enhancements. User settings for variety.
 author: satoru8
 github: 'https://github.com/satoru8/'
 images:

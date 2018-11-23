@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Stalker Notifications
-description_markdown: Lets you observe the status of people that aren't your friends.
+description: Lets you observe the status of people that aren't your friends.
 author: mwittrien
 github: 'https://github.com/mwittrien/'
 download: >-

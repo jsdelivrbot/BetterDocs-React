@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Creation Date
-description_markdown: Displays the Creation Date of an Account in the UserPopout and UserModal.
+description: Displays the Creation Date of an Account in the UserPopout and UserModal.
 author: mwittrien
 github: 'https://github.com/mwittrien/'
 download: >-

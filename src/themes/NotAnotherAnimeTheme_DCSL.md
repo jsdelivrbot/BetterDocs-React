@@ -1,7 +1,7 @@
 ---
 layout: product
 title: NotAnotherAnimeTheme - DCSL
-description_markdown: The double column variant of the easily customizable Discord theme!
+description: The double column variant of the easily customizable Discord theme!
 author: puckzxz
 github: 'https://github.com/puckzxz'
 images:

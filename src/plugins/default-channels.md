@@ -16,4 +16,4 @@ support: 'https://github.com/planetarian/BetterDiscordPlugins/issues'
 ghcommentid: 88
 date: 2018-10-20T05:22:46.270Z
 ---
-
+Allows you to force discord to switch to a specific channel the first time (or every time) you switch to a particular server after launching discord. Good for e.g. checking announcement channels before moving elsewhere.

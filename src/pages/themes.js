@@ -143,6 +143,7 @@ export const allThemesQuery = graphql`
                 download
                 support
                 layout
+                description
                 images {
                   image
                   name

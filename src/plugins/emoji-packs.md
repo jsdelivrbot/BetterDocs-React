@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Emoji Packs
-description_markdown: Allows you to replace Discord's emojis with a new set.
+description: Allows you to replace Discord's emojis with a new set.
 author: joe27g
 github: 'https://github.com/joe27g/'
 download: 'https://github.com/joe27g/EnhancedDiscord/blob/master/plugins/emoji_packs.js'

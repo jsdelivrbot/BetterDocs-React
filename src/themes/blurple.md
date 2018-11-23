@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Blurple
-description_markdown: This theme is for the third year anniversery of Discord!
+description: This theme is for the third year anniversery of Discord!
 author: JimmyHere
 github: 'https://github.com/AltenGD/'
 images:

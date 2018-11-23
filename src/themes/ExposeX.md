@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Expose X
-description_markdown: Brings a sexy translucent look to Discord with customizable options!
+description: Brings a sexy translucent look to Discord with customizable options!
 author: Korbs
 github: 'https://github.com/CorbsEditor'
 images:

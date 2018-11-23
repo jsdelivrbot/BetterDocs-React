@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 36
 ---
+When hovering, resize the avatar. Use Ctrl / Ctrl+Shift.

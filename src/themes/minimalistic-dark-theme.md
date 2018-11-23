@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Minimalistic Dark
-description_markdown: This is a theme for people who like dark easy to the eye versions of Discord
+description: This is a theme for people who like dark easy to the eye versions of Discord
 author: Ruben7173
 github: 'https://github.com/Ruben7173/'
 images:

@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 37
 ---
+Displays Badges (Nitro, Hypesquad, etc...) in the chat/memberlist/userpopout. Thanks for Zerebos' help.

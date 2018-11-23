@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Tag All
-description_markdown: Lets you tag (mention) channels and roles you normally can't.
+description: Lets you tag (mention) channels and roles you normally can't.
 author: joe27g
 github: 'https://github.com/joe27g/'
 download: 'https://github.com/joe27g/EnhancedDiscord/blob/master/plugins/tag_all.js'

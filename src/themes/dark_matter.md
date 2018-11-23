@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Dark Matter
-description_markdown: 'A cold, dark & frosty theme.'
+description: 'A cold, dark & frosty theme.'
 author: cosmicsalad
 github: 'https://github.com/cosmicsalad'
 images:

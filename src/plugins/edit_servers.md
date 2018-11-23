@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Edit Servers
-description_markdown: |-
+description:
   Adds two options to your server context menu.
 
     - You can open a popout, where you can change the local name, initials, icon and several colors for the selected server.

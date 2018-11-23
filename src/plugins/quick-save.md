@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Quick Save
-description_markdown: Adds support for saving guild or channel settings with Ctrl+S.
+description: Adds support for saving guild or channel settings with Ctrl+S.
 author: joe27g
 github: 'https://github.com/joe27g/'
 download: 'https://github.com/joe27g/EnhancedDiscord/blob/master/plugins/quick_save.js'

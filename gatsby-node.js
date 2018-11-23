@@ -16,14 +16,15 @@ return graphql(`{
       totalCount
         edges {
           node {
+            excerpt
             html
             id
             fields {
               slug
             }
             frontmatter {
-              path
               title
+              description
               author
               github
               download
@@ -44,14 +45,15 @@ return graphql(`{
         totalCount
         edges {
           node {
+            excerpt
             html
             id
             fields {
               slug
             }
             frontmatter {
-              path
               title
+              description
               author
               github
               download
@@ -70,11 +72,12 @@ return graphql(`{
       allMarkdownRemark {
         edges {
           node {
+            excerpt
             html
             id
             frontmatter {
-              path
               title
+              description
               author
               github
               download

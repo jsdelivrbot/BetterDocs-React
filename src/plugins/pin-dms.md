@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Pin DMs
-description_markdown: 'Allows you to pin DMs, making them appear at the top of your DM-list.'
+description: 'Allows you to pin DMs, making them appear at the top of your DM-list.'
 author: mwittrien
 github: 'https://github.com/mwittrien/'
 download: 'https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/PinDMs'

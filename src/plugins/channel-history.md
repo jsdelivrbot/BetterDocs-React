@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Channel History
-description_markdown: Allows you to switch channels using mouse 4 & 5 or the added GUI buttons.
+description: Allows you to switch channels using mouse 4 & 5 or the added GUI buttons.
 author: Inve1951
 github: 'https://github.com/Inve1951/'
 download: >-

@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Emoji Statistics
-description_markdown: |-
+description:
   Adds several options to get more information about emojis and emojiservers.
 
     - You can enable/disable the option to get the name and server of an emoji when you hover over it inside the emojipicker.

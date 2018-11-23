@@ -15,3 +15,4 @@ images:
 layout: product
 ghcommentid: 40
 ---
+Displays a more detailed tooltip for servers similar to user popouts. Contains a larger image, owner's tag, date and time created, date and time joined, how many days ago joined, member count, channel count, role count, region, and whether or not the server is partnered.

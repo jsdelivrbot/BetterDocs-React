@@ -13,3 +13,4 @@ images:
 layout: product
 ghcommentid: 38
 ---
+Completely (or partially) remove BD from your system.

@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Double Click Edit
-description_markdown: Allows you to double-click a message to edit it.
+description: Allows you to double-click a message to edit it.
 author: joe27g
 github: 'https://github.com/joe27g/'
 download: >-

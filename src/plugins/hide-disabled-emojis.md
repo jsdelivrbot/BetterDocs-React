@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Hide Disabled Emojis
-description_markdown: Hides disabled emojis from the emoji picker. Useful for non-nitro users.
+description: Hides disabled emojis from the emoji picker. Useful for non-nitro users.
 author: rauenzi
 github: 'https://github.com/rauenzi/'
 download: >-

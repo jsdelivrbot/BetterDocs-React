@@ -14,3 +14,4 @@ images:
 layout: product
 ghcommentid: 35
 ---
+Allows you to auto start Rich Presence when you start Discord, with configurable text and images.

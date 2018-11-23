@@ -1,7 +1,7 @@
 ---
 layout: product
 title: BD Emote Auto Complete
-description_markdown: Adds an auto-complete menu for BetterDiscord emotes.
+description: Adds an auto-complete menu for BetterDiscord emotes.
 author: Metalloriff
 github: 'https://github.com/Metalloriff/'
 images:

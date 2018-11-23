@@ -22,4 +22,4 @@ software:
 ghcommentid: 68
 date: 2018-10-26T03:35:45.373Z
 ---
-
+Automatically replaces misspelled words with the first correction, with optional automatic capitalization and punctuation. Requires either Windows 8 or above, Mac, or DevilBro's SpellCheck plugin.

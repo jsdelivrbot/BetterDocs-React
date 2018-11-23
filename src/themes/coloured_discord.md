@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Coloured Discord
-description_markdown: A theme that lets you choose the color that most suits you.
+description: A theme that lets you choose the color that most suits you.
 author: Waterin
 github: 'https://github.com/Waterin'
 images:

@@ -1,7 +1,7 @@
 ---
 layout: product
 title: ClearVision - Sapphire
-description_markdown: 'A chilly, blue theme with customizable colors & background!'
+description: 'A chilly, blue theme with customizable colors & background!'
 author: Zerthox
 github: 'https://github.com/Zerthox/'
 images:

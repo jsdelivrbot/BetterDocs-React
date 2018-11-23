@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Danganronpa
-description_markdown: A theme dedicated to Danganronpa
+description: A theme dedicated to Danganronpa
 author: DevilsLynAvenged
 github: 'https://github.com/DevilsLynAvenged/'
 images:

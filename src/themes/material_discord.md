@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Material Discord
-description_markdown: A theme based on Google's Material Design
+description: A theme based on Google's Material Design
 author: CapnKitten
 github: 'https://github.com/CapnKitten/'
 images:

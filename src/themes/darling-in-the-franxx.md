@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Darling in the Franxx
-description_markdown: This is a theme based on the anime Darling in the Franxx with 02 on it.
+description: This is a theme based on the anime Darling in the Franxx with 02 on it.
 author: Ruben7173
 github: 'https://github.com/Ruben7173/'
 images:

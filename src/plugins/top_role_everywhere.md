@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Top Role Everywhere
-description_markdown: Adds the highest role of a user as a tag.
+description: Adds the highest role of a user as a tag.
 author: mwittrien
 github: 'https://github.com/mwittrien/'
 download: >-

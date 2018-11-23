@@ -1,7 +1,7 @@
 ---
 layout: product
 title: NotAnotherAnimeTheme - TCSL
-description_markdown: The triple column variant of the easily customizable Discord theme!
+description: The triple column variant of the easily customizable Discord theme!
 author: puckzxz
 github: 'https://github.com/puckzxz'
 images:

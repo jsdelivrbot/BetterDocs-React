@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Triangular Space
-description_markdown: A triangular purple space theme
+description: A triangular purple space theme
 author: xNightWulf
 github: 'https://github.com/xNightWulf/'
 images:

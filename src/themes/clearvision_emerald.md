@@ -1,7 +1,7 @@
 ---
 layout: product
 title: ClearVision - Emerald
-description_markdown: 'A peaceful, green theme with customizable colors & background!'
+description: 'A peaceful, green theme with customizable colors & background!'
 author: Zerthox
 github: 'https://github.com/Zerthox/'
 images:
