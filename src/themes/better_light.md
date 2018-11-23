@@ -1,7 +1,7 @@
 ---
-path: /better_light
 layout: product
 title: Better Light
+description_markdown: 'A light theme that is easy to read, with basic user settings.'
 author: satoru8
 github: 'https://github.com/satoru8/'
 images:
@@ -18,4 +18,4 @@ style: light
 ghcommentid: 7
 date: 2018-10-25T17:02:58.711Z
 ---
-A light theme that is easy to read, with basic user settings.
+

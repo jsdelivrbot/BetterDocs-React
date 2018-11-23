@@ -1,5 +1,6 @@
-const path = require('path');
+const path = require('path')
 const _ = require("lodash")
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({actions, graphql}) => {
 const { createPage } = actions;
@@ -17,6 +18,9 @@ return graphql(`{
           node {
             html
             id
+            fields {
+              slug
+            }
             frontmatter {
               path
               title
@@ -42,6 +46,9 @@ return graphql(`{
           node {
             html
             id
+            fields {
+              slug
+            }
             frontmatter {
               path
               title
@@ -76,6 +83,9 @@ return graphql(`{
               ghcommentid
               date
               tags
+            }
+            fields {
+              slug
             }
           }
         }
@@ -112,7 +122,7 @@ return graphql(`{
 
     res.data.plugins.edges.forEach(({ node }) => {
             createPage({
-            path: '/plugins' + node.frontmatter.path,
+            path: '/plugins' + node.fields.slug,
             component: pluginTemplate,
             context: {}, // additional data can be passed via context
             })
@@ -120,7 +130,7 @@ return graphql(`{
 
     res.data.themes.edges.forEach(({ node }) => {
         createPage({
-        path: '/themes' + node.frontmatter.path,
+        path: '/themes' + node.frontmatter.slug,
         component: themeTemplate,
         context: {}, // additional data can be passed via context
         })
@@ -130,8 +140,21 @@ return graphql(`{
 }
 // Adds 'collection' to node
 exports.onCreateNode =({ node, getNode, actions }) => {
+    const { createNodeField } = actions;
     if (node.internal.type === `MarkdownRemark`) {
-        const { createNodeField } = actions;
         node.collection = getNode(node.parent).sourceInstanceName;
+
+        const relativeFilePath = createFilePath({
+          node,
+          getNode,
+          basePath: "pages",
+        })
+    
+        // Creates new query'able field with name of 'slug'
+        createNodeField({
+          node,
+          name: "slug",
+          value: `${relativeFilePath}`,
+        })
     }
 }

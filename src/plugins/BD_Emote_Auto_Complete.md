@@ -1,7 +1,7 @@
 ---
-path: /plugins/bd_emote_auto_complete
 layout: product
 title: BD Emote Auto Complete
+description_markdown: Adds an auto-complete menu for BetterDiscord emotes.
 author: Metalloriff
 github: 'https://github.com/Metalloriff/'
 images:
@@ -19,4 +19,4 @@ software:
 ghcommentid: 67
 date: 2018-10-26T18:10:05.966Z
 ---
-Adds an auto-complete menu for BetterDiscord emotes.
+

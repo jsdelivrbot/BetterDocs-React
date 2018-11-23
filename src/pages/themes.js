@@ -33,7 +33,7 @@ const Themes = (props) => {
           >
           {themeList.edges.map(({ node }, i) => (
             <Link 
-            to={"themes" + node.frontmatter.path}
+            to={'themes' + node.fields.slug}
             key={node.id}
             className={theme.mobileLink}>
             <div 
@@ -47,7 +47,7 @@ const Themes = (props) => {
               <div className={theme.author}
               >{node.frontmatter.author} /</div>
               <Link 
-              to={"themes" + node.frontmatter.path}>
+              to={"themes" + node.fields.slug}>
                 <div className={theme.title}
                 >{node.frontmatter.title}</div>
               </Link>
@@ -89,7 +89,7 @@ const Themes = (props) => {
           <Link 
           className={theme.resultCard}
           activeClassName={theme.active}
-          to={'themes' + node.frontmatter.path}
+          to={'themes' + node.fields.slug}
           key={node.id}
           >
             <div className={theme.header}
@@ -148,6 +148,9 @@ export const allThemesQuery = graphql`
                   name
                   }
                 }
+            fields {
+                slug
+              }
             }
         }
     }

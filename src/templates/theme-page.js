@@ -66,7 +66,7 @@ const Themes = (props) => {
           <Link 
           className={style.resultCard}
           activeClassName={style.active}
-          to={'themes' + node.frontmatter.path}
+          to={'themes' + node.fields.slug}
           key={node.id}
           >
             <div className={style.header}
@@ -125,6 +125,9 @@ export const themesQuery = graphql`
                   name
                   }
                 }
+            fields {
+                slug
+              }
             }
         }
     },
@@ -146,6 +149,9 @@ export const themesQuery = graphql`
           image
           name
         }
+      }
+      fields {
+        slug
       }
     }
 }

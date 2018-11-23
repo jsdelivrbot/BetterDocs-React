@@ -1,7 +1,7 @@
 ---
-path: /avis
 layout: product
 title: Avis
+description_markdown: 'A clean, vivid and transparent theme with lots of small tweaks'
 author: YuraBrm
 github: 'https://github.com/YuraBrm/'
 images:
@@ -16,6 +16,5 @@ demo: 'https://cdn.rawgit.com/YuraBrm/BetterDiscordThemes/master/Avis/Avis.theme
 style: dark
 ghcommentid: 5
 date: 2018-10-25T17:02:23.986Z
-tags: ["animals", "Chicago", "zoos"]
 ---
-A clean, vivid and transparent theme with lots of small tweaks
+

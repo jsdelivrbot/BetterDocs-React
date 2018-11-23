@@ -199,6 +199,27 @@
         display: flex;
         order: 1;
         flex-direction: column;
+        max-height: calc(((((100vh - 0rem) - 2.5rem) - 2.45rem) - 1.05rem) - 2.8rem);
+        overflow: hidden;
+        overflow-y: scroll;
+        &::-webkit-scrollbar-button { 
+            display: none; 
+            height: 13px; 
+            border-radius: 0px; 
+        } 
+        &::-webkit-scrollbar-thumb { 
+            background-color: rgba(#339b78, 0.3);
+            transition: background-color .2s ease-in-out;
+        } 
+        &::-webkit-scrollbar-thumb:hover { 
+            background-color: #339b78; 
+        } 
+        &::-webkit-scrollbar-track { 
+            background-color: rgba(#339b78, 0.06);
+        }
+        &::-webkit-scrollbar { 
+            width: 8px; 
+        }
         .wrapper {
             display: block;
             width: calc(100% - 70px);

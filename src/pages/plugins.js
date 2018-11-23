@@ -72,7 +72,7 @@ const Plugins = (props) => {
           <Link 
           className={plugin.resultCard}
           activeClassName={plugin.active}
-          to={'plugins' + node.frontmatter.path}
+          to={'plugins' + node.fields.slug}
           key={node.id}
           >
             <div className={plugin.header}
@@ -127,6 +127,9 @@ export const allQuery = graphql`
                 support
                 layout
                 }
+            fields {
+                slug
+              }
             }
         }
     }
