@@ -17,3 +17,4 @@ images:
 layout: product
 ghcommentid: 64
 ---
+Adds an unread count badge on unread servers and channels.

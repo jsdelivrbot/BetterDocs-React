@@ -20,3 +20,6 @@ images:
 layout: product #* DON'T CHANGE
 ghcommentid: 70
 ---
+Adds an extra section to the friends list where you can add your most important contacts on Discord (Bots included). Add users by right clicking their name, opening their profile and then clicking on the star. 
+
+  Also displays VIPs at the top of your Direct Message (can be turned off in settings and group DMs can also be disabled in settings).

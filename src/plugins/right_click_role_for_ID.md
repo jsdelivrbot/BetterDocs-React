@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 58
 ---
+Right click a role in the server settings menu or in the member popout to copy the role ID to your clipboard!

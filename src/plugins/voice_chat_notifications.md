@@ -15,3 +15,4 @@ images:
 layout: product #* DON'T CHANGE
 ghcommentid: 72
 ---
+Displays notifications when users connect to/disconnect from, mute/unmute themselves, and deafen/undeafen themselves in the voice channel you're in.

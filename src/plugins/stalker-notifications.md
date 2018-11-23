@@ -10,4 +10,4 @@ support: 'https://discordapp.com/invite/Z7PBux5'
 ghcommentid: 104
 date: 2018-10-22T23:19:32.754Z
 ---
-
+Lets you observe the status of people that aren't your friends.

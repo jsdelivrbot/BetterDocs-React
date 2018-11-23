@@ -12,4 +12,4 @@ software:
 ghcommentid: 169
 date: 2018-10-26T15:43:11.697Z
 ---
-
+Lets you tag (mention) channels and roles you normally can't.

@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 62
 ---
+Don't send typing notifications.

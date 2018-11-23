@@ -17,3 +17,4 @@ images:
 layout: product
 ghcommentid: 66
 ---
+Allows you to set birthdays for users and get notified when it's a user's birthday.

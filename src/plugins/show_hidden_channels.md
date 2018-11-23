@@ -12,4 +12,4 @@ support: 'https://discord.gg/Z7PBux5'
 ghcommentid: 61
 date: 2018-10-22T23:27:23.547Z
 ---
-
+Displays all hidden channels that can't be accessed due to role restrictions in a new category.

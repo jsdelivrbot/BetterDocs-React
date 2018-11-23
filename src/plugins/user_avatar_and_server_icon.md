@@ -23,3 +23,4 @@ images:
 layout: product
 ghcommentid: 65
 ---
+Allows you to view server icons, user avatars, and emotes in fullscreen via the context menu. You may also directly copy the image URL or open the URL externally.
