@@ -17,4 +17,4 @@ style: dark
 ghcommentid: 15
 date: 2018-10-25T19:48:39.326Z
 ---
-
+A dark purple theme that you can customize! Not compatible with compact mode and light mode.

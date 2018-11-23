@@ -17,4 +17,4 @@ style: dark
 ghcommentid: 96
 date: 2018-10-22T18:07:20.275Z
 ---
-
+This is a theme based on the anime Darling in the Franxx with 02 on it.

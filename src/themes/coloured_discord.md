@@ -25,4 +25,4 @@ style: dark
 ghcommentid: 13
 date: 2018-10-25T19:46:28.033Z
 ---
-
+A theme that lets you choose the color that most suits you.

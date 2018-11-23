@@ -17,4 +17,4 @@ style: dark
 ghcommentid: 5
 date: 2018-10-25T17:02:23.986Z
 ---
-
+A clean, vivid and transparent theme with lots of small tweaks

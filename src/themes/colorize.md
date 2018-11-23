@@ -17,4 +17,4 @@ style: dark
 ghcommentid: 12
 date: 2018-10-25T19:45:45.116Z
 ---
-
+A semi-user friendly theme controlled with a single hex color, just edit the top hex color in the theme file to your own

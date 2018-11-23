@@ -22,4 +22,4 @@ style: dark
 ghcommentid: 181
 date: 2018-10-28T22:42:26.340Z
 ---
-
+A theme dedicated to Danganronpa

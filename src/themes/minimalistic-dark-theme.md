@@ -17,4 +17,4 @@ style: dark
 ghcommentid: 92
 date: 2018-10-22T17:54:13.098Z
 ---
-
+This is a theme for people who like dark easy to the eye versions of Discord

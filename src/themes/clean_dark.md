@@ -15,4 +15,4 @@ style: dark
 ghcommentid: 11
 date: 2018-10-25T17:06:04.715Z
 ---
-
+Simple & clean dark theme. Basic enhancements. User settings for variety.

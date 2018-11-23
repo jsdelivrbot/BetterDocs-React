@@ -27,3 +27,15 @@ images:
 layout: product
 ghcommentid: 18
 ---
+A dark and compact theme, designed for use with Discord's dark theme.
+
+  - Features
+  - Compact lists
+  - Rounded square avatars
+  - Status borders
+  - Bigger emoji
+  - Hide blocked messages
+  - Hide title bar (windows)
+  - Hide apps button (web)
+  - Hide unnecessary scrollbars
+  - No light elements

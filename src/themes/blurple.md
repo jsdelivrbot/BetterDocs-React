@@ -15,4 +15,4 @@ style: dark
 ghcommentid: 8
 date: 2018-10-25T17:04:22.896Z
 ---
-
+This theme is for the third year anniversery of Discord!

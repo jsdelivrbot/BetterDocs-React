@@ -19,4 +19,4 @@ software:
 ghcommentid: 67
 date: 2018-10-26T18:10:05.966Z
 ---
-
+Adds an auto-complete menu for BetterDiscord emotes.

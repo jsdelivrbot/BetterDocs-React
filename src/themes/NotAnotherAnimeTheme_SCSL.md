@@ -17,4 +17,4 @@ style: dark
 ghcommentid: 82
 date: 2018-10-20T17:47:32.157Z
 ---
-
+The single column variant of the easily customizable Discord theme!

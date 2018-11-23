@@ -10,4 +10,4 @@ support: 'https://discordapp.com/invite/Z7PBux5'
 ghcommentid: 132
 date: 2018-10-25T04:17:08.879Z
 ---
-
+Allows you to switch channels using mouse 4 & 5 or the added GUI buttons.

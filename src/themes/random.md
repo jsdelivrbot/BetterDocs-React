@@ -18,3 +18,4 @@ images:
 layout: product
 ghcommentid: 21
 ---
+Customizable default discord theme `Download it , Copy it to themes folder , Reload Discord (Ctrl +R), Enable it`

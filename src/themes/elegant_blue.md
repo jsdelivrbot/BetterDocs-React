@@ -22,3 +22,4 @@ images:
 layout: product
 ghcommentid: 33
 ---
+A theme with a relaxing blue tone. Has a more compressed density on messages when using compact mode so more text fits on the screen at once. Narrow screen width is mostly supported.

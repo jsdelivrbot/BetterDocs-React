@@ -2,7 +2,7 @@
 title: Windows 10
 author: gco360
 description:
-   lets leave #earth and go to #space 
+   A windows 10 theme
 github: https://github.com/gco360/
 download: https://github.com/gco360/windows-10-theme
 demo: https://cdn.rawgit.com/gco360/windows-10-theme/master/windows10.theme.css
@@ -21,3 +21,4 @@ images:
 layout: product
 ghcommentid: 27
 ---
+A windows 10 theme

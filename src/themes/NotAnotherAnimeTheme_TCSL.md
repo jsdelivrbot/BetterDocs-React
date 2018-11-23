@@ -17,4 +17,4 @@ style: dark
 ghcommentid: 84
 date: 2018-10-20T17:48:38.756Z
 ---
-
+The triple column variant of the easily customizable Discord theme!

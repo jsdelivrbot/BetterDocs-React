@@ -16,4 +16,4 @@ style: dark
 ghcommentid: 94
 date: 2018-10-22T18:01:39.728Z
 ---
-
+This is a theme for people who want a clean and dark look of discord.

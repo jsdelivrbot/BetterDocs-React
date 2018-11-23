@@ -18,4 +18,4 @@ style: light
 ghcommentid: 7
 date: 2018-10-25T17:02:58.711Z
 ---
-
+A light theme that is easy to read, with basic user settings.

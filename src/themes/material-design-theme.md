@@ -26,4 +26,4 @@ style: dark
 ghcommentid: 179
 date: 2018-10-28T22:33:52.987Z
 ---
-
+A theme for Discord based on Google's Material design Guidelines.

@@ -17,4 +17,4 @@ style: dark
 ghcommentid: 9
 date: 2018-10-25T17:05:29.641Z
 ---
-
+A variabled theme that lets you edit what color the background is and what colors everything else will be.

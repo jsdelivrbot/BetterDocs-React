@@ -20,4 +20,4 @@ style: dark
 ghcommentid: 6
 date: 2018-10-25T16:39:40.887Z
 ---
-
+Brings a sexy translucent look to Discord with customizable options!
