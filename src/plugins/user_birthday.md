@@ -1,7 +1,7 @@
 ---
 title: User Birthday
 author: Metalloriff
-description_markdown: >-
+description:
   Allows you to set birthdays for users and get notified when it's a user's birthday.
 github: https://github.com/Metalloriff/
 download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/UserBirthdays.plugin.js

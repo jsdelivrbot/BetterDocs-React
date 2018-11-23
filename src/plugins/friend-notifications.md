@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Friend Notifications
-description_markdown: >-
+description:
   Notifies you when a friend either logs in or out. Click the Online
   Friend-Counter to display a timelog of the current session.
 author: mwittrien

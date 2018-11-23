@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Default Channels
-description_markdown: >-
+description:
   Allows you to force discord to switch to a specific channel the first time (or
   every time) you switch to a particular server after launching discord. Good
   for e.g. checking announcement channels before moving elsewhere.

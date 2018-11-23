@@ -10,7 +10,7 @@
 title: {Theme Name} #*
 author: {Author Name} #*
 github: https://github.com/
-description_markdown: >- #* Markdown is allowed
+description: #* Markdown is allowed
   A Description
 download: https://github.com/ #* Github isn't required but if it isn't used then further inspection will happen
 support: # A link to allow people to get support or give feedback for the theme

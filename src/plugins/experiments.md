@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Experiments
-description_markdown: >-
+description:
   Enables Discord staff "experiments", which are generally prototypes of
   features before they're released on Discord Canary.
 author: joe27g

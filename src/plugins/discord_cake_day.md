@@ -1,7 +1,7 @@
 ---
 title: Discord Cake Day
 author: Mega-Mewthree
-description_markdown: >-
+description:
   Displays a cake next to the username of anyone whose account is having a Discord birthday! (Currently only displays in chat and member list.)
 github: https://github.com/Mega-Mewthree
 download: https://github.com/Mega-Mewthree/BetterDiscordPlugins/tree/master/Plugins/DiscordCakeDay

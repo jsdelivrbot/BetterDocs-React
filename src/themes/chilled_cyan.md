@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Chilled Cyan
-description_markdown: >-
+description:
   A variabled theme that lets you edit what color the background is and what
   colors everything else will be.
 author: Mixter213

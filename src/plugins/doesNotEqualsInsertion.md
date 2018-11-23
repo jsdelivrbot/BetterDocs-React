@@ -1,7 +1,7 @@
 ---
 title: doesNotEqualsInsertion
 author: Arashiryuu
-description_markdown: >-
+description:
   Replaces instances of '=/=' in the textarea with '≠'.
 github: https://github.com/Arashiryuu/
 download: https://github.com/Arashiryuu/crap/blob/master/doesNotEqualsInsertion.plugin.js

@@ -1,7 +1,7 @@
 ---
 title: Auto Start Rich Presence
 author: Mega-Mewthree
-description_markdown: >-
+description:
   Allows you to auto start Rich Presence when you start Discord, with configurable text and images.
 github: https://github.com/Mega-Mewthree
 download: https://github.com/Mega-Mewthree/BetterDiscordPlugins/blob/master/Plugins/AutoStartRichPresence/AutoStartRichPresence.plugin.js

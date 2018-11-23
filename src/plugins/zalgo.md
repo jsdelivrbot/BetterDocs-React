@@ -2,7 +2,7 @@
 path: test
 layout: product
 title: Zalgo
-description_markdown: >-
+description:
   Lets you apply a sort of visual 'corruption' to your text, like a messy
   strikethrough.
 

@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Guild Count
-description_markdown: >-
+description:
   Shows the number of servers you're in underneath your number of friends
   online.
 author: joe27g

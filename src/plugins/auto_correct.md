@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Auto Correct
-description_markdown: >-
+description:
   Automatically replaces misspelled words with the first correction, with
   optional automatic capitalization and punctuation. Requires either Windows 8
   or above, Mac, or DevilBro's SpellCheck plugin.

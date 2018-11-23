@@ -2,7 +2,7 @@
 title: New Nihilism
 author: NewNihilism
 github: https://github.com/NewNihilism/
-description_markdown: >-
+description:
   A dark and compact theme, designed for use with Discord's dark theme.
 
   - Features

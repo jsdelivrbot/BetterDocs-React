@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Reply System
-description_markdown: >-
+description:
   Adds a native-esque reply button with preview. (Similar idea to
   Replyer/BetterReplyer but with a fancy UI, component injection, and additional
   features to be added)

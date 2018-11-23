@@ -2,7 +2,7 @@
 title: Spotify Discord
 author: CapnKitten
 github: https://github.com/CapnKitten/
-description_markdown: >-
+description:
   Combine Discord and Spotify into one
 download: https://github.com/CapnKitten/Spotify-Discord
 demo: https://cdn.rawgit.com/CapnKitten/Spotify-Discord/master/Spotify-Discord.theme.css

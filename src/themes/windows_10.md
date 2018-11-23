@@ -1,7 +1,7 @@
 ---
 title: Windows 10
 author: gco360
-description_markdown: >-
+description:
    lets leave #earth and go to #space 
 github: https://github.com/gco360/
 download: https://github.com/gco360/windows-10-theme

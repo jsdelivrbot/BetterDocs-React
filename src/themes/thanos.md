@@ -1,7 +1,7 @@
 ---
 title: Thanos
 author: gco360
-description_markdown: >-
+description:
    infinity war set one theme
 github: https://github.com/gco360/
 download: https://github.com/gco360/thanos-theme

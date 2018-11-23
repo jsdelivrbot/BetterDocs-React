@@ -2,7 +2,7 @@
 title: Shades of Red
 author: trueprominency
 github: https://github.com/trueprominency/
-description_markdown: >-
+description:
   great colors of red collide in my first theme.
 download: https://github.com/trueprominency/Shades-of-Red-Theme
 demo: https://cdn.rawgit.com/trueprominency/Shades-of-Red-Theme/master/shades-of-red.theme.css

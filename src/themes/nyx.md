@@ -1,7 +1,7 @@
 ---
 title: Nyx
 author: satoru8
-description_markdown: >-
+description:
   A simple yet complex theme.
 github: https://github.com/satoru8/
 download: https://github.com/satoru8/Nyx/blob/master/Nyx.theme.css

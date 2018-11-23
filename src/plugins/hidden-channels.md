@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Hidden Channels
-description_markdown: >-
+description:
   Shows names and topics of channels in which you don't have permission to read
   messages.
 author: joe27g

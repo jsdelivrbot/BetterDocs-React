@@ -1,7 +1,7 @@
 ---
 title: Unread Count Badges
 author: Metalloriff
-description_markdown: >-
+description:
   Adds an unread count badge on unread servers and channels.
 github: https://github.com/Metalloriff
 download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/UnreadCountBadges.plugin.js

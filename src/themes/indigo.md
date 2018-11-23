@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Indigo
-description_markdown: >-
+description:
   A dark purple theme that you can customize! Not compatible with compact mode
   and light mode.
 author: Vaxu

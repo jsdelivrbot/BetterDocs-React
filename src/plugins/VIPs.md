@@ -2,7 +2,7 @@
 title: VIPs #* Anything with * is REQUIRED
 author: Curtis-D #*
 github: https://github.com/Curtis-D
-description_markdown: >-
+description:
   Adds an extra section to the friends list where you can add your most important contacts on Discord (Bots included). Add users by right clicking their name, opening their profile and then clicking on the star. 
 
   Also displays VIPs at the top of your Direct Message (can be turned off in settings and group DMs can also be disabled in settings).

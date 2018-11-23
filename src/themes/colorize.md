@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Colorize
-description_markdown: >-
+description:
   A semi-user friendly theme controlled with a single hex color, just edit the
   top hex color in the theme file to your own
 author: mrmaple240

@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Show Hidden Channels
-description_markdown: >-
+description:
   Displays all hidden channels that can't be accessed due to role restrictions
   in a new category.
 author: mwittrien

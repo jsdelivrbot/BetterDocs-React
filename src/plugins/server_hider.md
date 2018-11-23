@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Server Hider
-description_markdown: >-
+description:
   Adds two options on your server context menu. (Right click a servericon or the
   servercreation button)
 

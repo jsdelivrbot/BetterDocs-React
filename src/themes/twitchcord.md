@@ -1,7 +1,7 @@
 ---
 layout: product
 title: TwitchCord
-description_markdown: >-
+description:
   Twitchcord is a theme created with the idea of bringing Twitch to Discord, combined with a little extra personality.
   <br />
   Every aspect and element is carefully crafted and themed with both aesthetics and performance in mind.

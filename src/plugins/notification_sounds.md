@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Notification Sounds
-description_markdown: >-
+description:
   Let's you change the default sounds with your own sounds. You can add your own
   sounds in the plugin settkngs either via file or url.
 author: mwittrien

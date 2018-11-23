@@ -1,7 +1,7 @@
 ---
 title: Always Mention Everyone
 author: Mega-Mewthree
-description_markdown: >-
+description:
   Removes* the confirmation prompt when mentioning everyone in a large server. Requires "Normalize Classes" to be enabled in Zere's Fork settings.
 
   * Actually only clicks the Send Now button faster than you can notice.

@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Spell Check
-description_markdown: >-
+description:
   Adds a spellcheck to all textareas. Select a word inside the textarea and
   rightclick it to add it to your dictionary.
 author: mwittrien

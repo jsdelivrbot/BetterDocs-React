@@ -1,7 +1,7 @@
 ---
 title: Badges Everywhere
 author: mwittrien
-description_markdown: >-
+description:
   Displays Badges (Nitro, Hypesquad, etc...) in the chat/memberlist/userpopout. Thanks for Zerebos' help.
 github: https://github.com/mwittrien
 download: https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/BadgesEverywhere

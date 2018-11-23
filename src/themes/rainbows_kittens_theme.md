@@ -2,7 +2,7 @@
 title: Rainbows Kittens Theme
 author: Author
 github: https://github.com/Azagwen/
-description_markdown: >-
+description:
   A cute theme with changing color kittens.
 download: https://github.com/Azagwen/Rainbow_kittens_theme
 demo: https://cdn.rawgit.com/Azagwen/Rainbow_kittens_theme/master/Rainbow_kittens_V0.1.2.theme.css
