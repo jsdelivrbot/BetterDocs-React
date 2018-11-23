@@ -14,4 +14,4 @@ software:
 ghcommentid: 163
 date: 2018-10-26T15:28:50.718Z
 ---
-
+Enables Discord staff "experiments", which are generally prototypes of features before they're released on Discord Canary.

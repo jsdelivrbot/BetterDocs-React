@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 43
 ---
+Requires you to double click voice channels to connect to them.

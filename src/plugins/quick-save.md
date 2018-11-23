@@ -12,4 +12,4 @@ software:
 ghcommentid: 177
 date: 2018-10-28T22:23:31.670Z
 ---
-
+Adds support for saving guild or channel settings with Ctrl+S.

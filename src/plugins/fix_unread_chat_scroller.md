@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 46
 ---
+Fixes channels not getting marked as read upon scrolling to the bottom of the chat when using custom themes.

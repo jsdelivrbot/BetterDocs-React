@@ -10,4 +10,4 @@ support: 'http://discord.zackrauen.com/'
 ghcommentid: 124
 date: 2018-10-23T21:29:26.770Z
 ---
-
+Hides disabled emojis from the emoji picker. Useful for non-nitro users.

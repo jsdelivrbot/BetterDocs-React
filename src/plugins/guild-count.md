@@ -14,4 +14,4 @@ software:
 ghcommentid: 173
 date: 2018-10-28T22:18:44.062Z
 ---
-
+Shows the number of servers you're in underneath your number of friends online.

@@ -10,3 +10,4 @@ tags:
 layout: product #* DON'T CHANGE
 ghcommentid: 69
 ---
+Opens links in a new window in Discord, instead of in your web browser. Hold shift to open links normally.

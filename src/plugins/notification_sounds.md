@@ -12,4 +12,4 @@ support: 'https://discord.gg/Z7PBux5'
 ghcommentid: 49
 date: 2018-10-22T23:26:41.466Z
 ---
-
+Let's you change the default sounds with your own sounds. You can add your own sounds in the plugin settkngs either via file or url.

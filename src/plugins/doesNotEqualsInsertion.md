@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 51
 ---
+Replaces instances of '=/=' in the textarea with '≠'.

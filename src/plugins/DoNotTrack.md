@@ -15,4 +15,4 @@ software:
 ghcommentid: 42
 date: 2018-10-24T01:39:42.191Z
 ---
-
+Stops Discord from tracking everything you do like Sentry and Analytics.

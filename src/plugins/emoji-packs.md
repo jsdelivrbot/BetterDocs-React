@@ -12,4 +12,4 @@ software:
 ghcommentid: 165
 date: 2018-10-26T15:37:52.612Z
 ---
-
+Allows you to replace Discord's emojis with a new set.

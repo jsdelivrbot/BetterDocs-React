@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 48
 ---
+Replaces "XD"s (case-insensitively) with "I'm a retard lol."

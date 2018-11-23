@@ -10,3 +10,4 @@ tags:
 layout: product
 ghcommentid: 47
 ---
+Revives hashtags on Discord.

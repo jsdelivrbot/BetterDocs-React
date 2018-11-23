@@ -13,3 +13,4 @@ images:
 layout: product
 ghcommentid: 41
 ---
+Displays a cake next to the username of anyone whose account is having a Discord birthday! (Currently only displays in chat and member list.)

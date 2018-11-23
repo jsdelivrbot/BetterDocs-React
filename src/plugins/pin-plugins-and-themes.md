@@ -17,3 +17,4 @@ images:
 layout: product
 ghcommentid: 50
 ---
+Allows you to pin plugins and themes via the context menu.

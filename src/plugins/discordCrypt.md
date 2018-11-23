@@ -12,3 +12,6 @@ tags:
 layout: product
 ghcommentid: 52
 ---
+Provides end to end message encryption for Discord using various cryptography standards. Supports code blocks, user tagging, encrypted file uploads up to 50 MB, global emotes ( Nitro not required ) and more.
+
+  Check out the readme for more information, you may need it to use the plugin properly.

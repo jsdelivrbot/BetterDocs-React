@@ -9,4 +9,4 @@ support: 'https://discord.gg/Z7PBux5'
 ghcommentid: 106
 date: 2018-10-22T23:21:27.954Z
 ---
-
+Allows you to pin DMs, making them appear at the top of your DM-list.

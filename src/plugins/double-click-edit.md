@@ -13,4 +13,4 @@ software:
 ghcommentid: 160
 date: 2018-10-26T15:24:35.324Z
 ---
-
+Allows you to double-click a message to edit it.
