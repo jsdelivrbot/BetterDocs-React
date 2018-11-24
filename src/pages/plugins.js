@@ -5,12 +5,10 @@ import plugin from '../styles/plugin.module.scss'
 import { Helmet } from "react-helmet";
 import Sidebar from '../components/plugin-sidebar'
 import Info from '../components/plugin-info'
-import PageTransition from 'gatsby-plugin-page-transitions';
 
 const Plugins = (props) => {
   
   return (
-  <PageTransition>
   <Layout>
     <Helmet>
       <meta charSet="utf-8" />
@@ -52,7 +50,6 @@ const Plugins = (props) => {
 
     </div>
   </Layout>
-  </PageTransition>
 )
 }
 
