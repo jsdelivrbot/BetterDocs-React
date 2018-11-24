@@ -75,6 +75,9 @@ return graphql(`{
             excerpt
             html
             id
+            fields {
+              slug
+            }
             frontmatter {
               title
               description
@@ -86,9 +89,6 @@ return graphql(`{
               ghcommentid
               date
               tags
-            }
-            fields {
-              slug
             }
           }
         }
@@ -152,12 +152,17 @@ exports.onCreateNode =({ node, getNode, actions }) => {
           getNode,
           basePath: "pages",
         })
-    
+        const slug = createFilePath({ node, getNode, basePath: `pages` })
         // Creates new query'able field with name of 'slug'
         createNodeField({
           node,
           name: "slug",
-          value: `${relativeFilePath}`,
+          value: slug,
+        })
+        createNodeField({
+          node,
+          name: "path",
+          value: slug,
         })
     }
 }
