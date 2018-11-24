@@ -8,7 +8,7 @@ description:
 github: https://github.com/Mega-Mewthree
 download: https://github.com/Mega-Mewthree/BetterDiscordPlugins/tree/master/Plugins/AlwaysMentionEveryone
 support: https://discordapp.com/invite/ZYND2Xd
-tags:
+tags: [test, test1]
 layout: product
 ghcommentid: 34
 ---

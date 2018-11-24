@@ -2,16 +2,11 @@ import React from 'react'
 import Layout from '../components/layout'
 import hero from '../styles/hero.module.scss'
 import plugin from '../styles/plugin.module.scss'
-import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import Sidebar from '../components/plugin-sidebar'
 
 const Plugins = (props) => {
   const pluginList = props.data.listPlugins;
-  const { totalCount } = props.data.listPlugins;
-  const listCount = `${totalCount} Plugin${
-    totalCount === 1 ? "" : "s"
-  }`
   
   return (
   <Layout>

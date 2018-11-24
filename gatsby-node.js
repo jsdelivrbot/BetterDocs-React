@@ -135,7 +135,7 @@ return graphql(`{
 
     res.data.themes.edges.forEach(({ node }) => {
         createPage({
-        path: '/themes' + node.frontmatter.slug,
+        path: '/themes' + node.fields.slug,
         component: themeTemplate,
         context: {
           slug: node.fields.slug,

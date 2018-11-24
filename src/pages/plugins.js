@@ -2,16 +2,11 @@ import React from 'react'
 import Layout from '../components/layout'
 import hero from '../styles/hero.module.scss'
 import plugin from '../styles/plugin.module.scss'
-import { Link } from 'gatsby'
-import { graphql } from "gatsby"
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
+import Sidebar from '../components/plugin-sidebar'
+import Info from '../components/plugin-info'
 
 const Plugins = (props) => {
-  const pluginList = props.data.allMarkdownRemark;
-  const { totalCount } = props.data.allMarkdownRemark;
-  const listCount = `${totalCount} Plugin${
-    totalCount === 1 ? "" : "s"
-  }`
   
   return (
   <Layout>
@@ -42,61 +37,16 @@ const Plugins = (props) => {
 
       <div className={plugin.content}
         >
-          <div className={plugin.wrapper}
-          >
-          <p>
-            text
-          </p>
+        <div className={plugin.wrapper}
+        >
+        <Info />
         </div>
       </div>
 
     </section>
 
 
-      <section className={plugin.sidebarSearch}
-      >
-        <div className={plugin.searchContainer}
-        >
-          <input 
-          className={plugin.input}
-          placeholder='Search plugins library'
-          >
-          </input>
-          <div className={plugin.searchOutput}>
-          {listCount}
-          </div>
-        </div>
-        <div className={plugin.Results}
-        >
-        {pluginList.edges.map(({ node }, i) => (
-          <Link 
-          className={plugin.resultCard}
-          activeClassName={plugin.active}
-          to={'plugins' + node.fields.slug}
-          key={node.id}
-          >
-            <div className={plugin.header}
-            >
-              <span className={plugin.title}
-              >
-              {node.frontmatter.title}
-              </span>
-              <span className={plugin.author}
-              >
-              {node.frontmatter.author}
-              </span>
-            </div>
-            <div className={plugin.description}
-            >
-              <p className={plugin.p}
-              >
-                {node.excerpt}
-              </p>
-            </div>
-          </Link>
-          ))}
-        </div>
-      </section>
+      <Sidebar />
 
     </div>
   </Layout>
@@ -104,35 +54,3 @@ const Plugins = (props) => {
 }
 
 export default Plugins;
-
-export const allQuery = graphql`
-  query allQuery {
-    allMarkdownRemark(filter: { collection: { eq: "plugins" } }) {
-      group(field: collection) {
-        fieldValue
-        totalCount
-      }
-      totalCount
-      edges {
-        node {
-            excerpt
-            html
-            id
-            frontmatter {
-                path
-                title
-                author
-                github
-                download
-                support
-                layout
-                description
-                }
-            fields {
-                slug
-              }
-            }
-        }
-    }
-  }
-`

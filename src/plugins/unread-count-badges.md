@@ -6,7 +6,6 @@ description:
 github: https://github.com/Metalloriff
 download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/UnreadCountBadges.plugin.js
 support: https://discordapp.com/invite/yNqzuJa
-tags:
 images:
   - name: Unread Count Badges Preview
     image: https://i.imgur.com/oqvn83W.png

@@ -8,7 +8,6 @@ download: https://github.com/Azagwen/Rainbow_kittens_theme
 demo: https://cdn.rawgit.com/Azagwen/Rainbow_kittens_theme/master/Rainbow_kittens_V0.1.2.theme.css
 support: https://github.com/Azagwen/Rainbow_kittens_theme/issues
 style: dark
-tags:
 images:
   - name: Rainbows Kittens Theme Preview
     image: /images/themes/Rainbows_Kittens_Theme_Preview.png

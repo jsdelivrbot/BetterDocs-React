@@ -6,7 +6,6 @@ description:
 github: https://github.com/Inve1951/
 download: https://github.com/Inve1951/BetterDiscordStuff/blob/master/plugins/CharacterCounter.plugin.js
 support: https://github.com/Inve1951/BetterDiscordStuff/issues
-tags:
 layout: product
 ghcommentid: 39
 ---

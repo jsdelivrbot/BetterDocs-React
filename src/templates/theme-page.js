@@ -2,16 +2,11 @@ import React from 'react'
 import Layout from '../components/layout'
 import hero from '../styles/hero.module.scss'
 import style from '../styles/theme.module.scss'
-import { Link } from 'gatsby'
 import { graphql } from "gatsby"
+import Sidebar from '../components/theme-sidebar'
 
 const Themes = (props) => {
   const themeList = props.data.listThemes;
-  const themeCurrent = props.data.currentThemes;
-  const { totalCount } = themeList;
-  const listCount = `${totalCount} Theme${
-    totalCount === 1 ? "" : "s"
-  }`
   
   return (
   <Layout>
@@ -35,62 +30,20 @@ const Themes = (props) => {
         </div>
         <div className={style.content}
           >
-            <div className={style.wrapper}
+            <div className={style.mdWrapper}
             >
-            
+            {themeList.edges.map(({ node }, i) => (
             <div
             className={style.md}
-            key={themeCurrent.key}>
-              {themeCurrent.html}
-            </div>
+            key={node.id}
+            dangerouslySetInnerHTML={{ __html: node.html }}>
             
+            </div>
+            ))}
           </div>
         </div>
       </section>
-      <section className={style.sidebarSearch}
-      >
-        <div className={style.searchContainer}
-        >
-          <input 
-          className={style.input}
-          placeholder='Search themes library'
-          >
-          </input>
-          <div className={style.searchOutput}>
-            {listCount}
-          </div>
-        </div>
-        <div className={style.Results}
-        >
-        {themeList.edges.map(({ node }, i) => (
-          <Link 
-          className={style.resultCard}
-          activeClassName={style.active}
-          to={'themes' + node.fields.slug}
-          key={node.id}
-          >
-            <div className={style.header}
-            >
-              <span className={style.title}
-              >
-              {node.frontmatter.title}
-              </span>
-              <span className={style.author}
-              >
-              {node.frontmatter.author}
-              </span>
-            </div>
-            <div className={style.description}
-            >
-              <p className={style.p}
-              >
-                {node.excerpt}
-              </p>
-            </div>
-          </Link>
-          ))}
-        </div>
-      </section>
+      <Sidebar />
 
     </div>
   </Layout>
@@ -100,8 +53,19 @@ const Themes = (props) => {
 export default Themes;
 
 export const themesQuery = graphql`
-  query themesQuery {
-    listThemes:allMarkdownRemark(filter: { collection: { eq: "themes" } }) {
+  query themesQuery($slug: String!) {
+    listThemes:allMarkdownRemark(
+      filter: { 
+        collection: { 
+          eq: "themes" 
+        } 
+        fields: {
+          slug: {
+            eq: $slug
+          }
+        }
+      }
+      ) {
       group(field: collection) {
         fieldValue
         totalCount

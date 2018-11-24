@@ -8,7 +8,6 @@ download: https://github.com/TakosThings/Metro-for-Discord#download
 demo: https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.theme.css
 support: https://github.com/TakosThings/Metro-for-Discord/issues
 style: dark
-tags:
 images:
   - name: Metro For Discord Preview
     image: /images/themes/Metro_For_Discord_Preview.png

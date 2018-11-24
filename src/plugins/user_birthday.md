@@ -6,7 +6,6 @@ description:
 github: https://github.com/Metalloriff/
 download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/UserBirthdays.plugin.js
 support: https://discord.gg/yNqzuJa
-tags:
 images:
   - name: User Birthday Preview
     image: https://i.imgur.com/9pDhYlm.png

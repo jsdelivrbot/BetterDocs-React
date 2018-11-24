@@ -6,7 +6,6 @@ description:
 github: https://github.com/Mega-Mewthree
 download: https://github.com/Mega-Mewthree/BetterDiscordPlugins/tree/master/Plugins/RightClickRoleForID
 support: https://discordapp.com/invite/ZYND2Xd
-tags:
 layout: product
 ghcommentid: 58
 ---

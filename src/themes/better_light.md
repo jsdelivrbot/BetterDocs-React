@@ -13,7 +13,6 @@ auto: true
 support: 'http://discord.gg/fjvwb95'
 demo: >-
   https://raw.githubusercontent.com/satoru8/BetterLightTheme/master/BetterLightTheme.theme.css
-tags:
 style: light
 ghcommentid: 7
 date: 2018-10-25T17:02:58.711Z

@@ -9,7 +9,6 @@ description:
 
 download: https://github.com/Curtis-D/VIPs #* Github isn't required but if it isn't used then further inspection will happen
 support: https://github.com/Curtis-D/VIPs/issues # A link to allow people to get support or give feedback for the Plugin
-tags:
 images:
   - name: VIPs Preview
     image: https://i.imgur.com/g1ytdK3.png # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen

@@ -6,7 +6,6 @@ description:
 github: https://github.com/Metalloriff
 download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/DetailedServerTooltips.plugin.js
 support: https://discordapp.com/invite/yNqzuJa
-tags:
 images:
   - name: Detailed Server Tooltips Preview
     image: https://i.imgur.com/ASfjHaw.png

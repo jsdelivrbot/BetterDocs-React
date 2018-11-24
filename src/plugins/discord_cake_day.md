@@ -6,7 +6,6 @@ description:
 github: https://github.com/Mega-Mewthree
 download: https://github.com/Mega-Mewthree/BetterDiscordPlugins/tree/master/Plugins/DiscordCakeDay
 support: https://discordapp.com/invite/ZYND2Xd
-tags:
 images:
   - name: Discord Cake Day Preview
     image: https://i.imgur.com/KmgoZPY.png

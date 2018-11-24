@@ -6,7 +6,6 @@ description:
 github: https://github.com/Metalloriff
 download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/PinPluginsAndThemes.plugin.js
 support: https://discordapp.com/invite/yNqzuJa
-tags:
 images:
   - name: Pin Plugins And Themes Preview
     image: https://i.imgur.com/5OiSRAn.png

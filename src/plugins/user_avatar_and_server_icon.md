@@ -6,7 +6,6 @@ description:
 github: https://github.com/Metalloriff/
 download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/AvatarIconViewer.plugin.js
 support: https://discord.gg/yNqzuJa
-tags:
 images:
   - name: User Avatar And Server Icon Viewer Preview
     image: https://i.imgur.com/i5HjrWi.png

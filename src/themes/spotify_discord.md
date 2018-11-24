@@ -8,7 +8,6 @@ download: https://github.com/CapnKitten/Spotify-Discord
 demo: https://cdn.rawgit.com/CapnKitten/Spotify-Discord/master/Spotify-Discord.theme.css
 support: https://github.com/CapnKitten/Spotify-Discord/issues
 style: dark
-tags:
 images:
   - name: Spotify Discord Preview
     image: /images/themes/Spotify_Discord_Preview.png

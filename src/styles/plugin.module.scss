@@ -7,6 +7,7 @@
     .contentWrapper {
         order: 1;
         display: none;
+        overflow: hidden;
         @media (min-width: 850px) {
             display: flex;
             flex: 3;
@@ -146,12 +147,15 @@
         flex-direction: column;
         .wrapper {
             display: flex;
-            width: calc(100% - 300px);
+            width: calc(100% - 75px);
             margin: 0 auto;
             padding-top: 2.1rem;
             padding-bottom: 2.1rem;
             word-break: break-all;
             flex-direction: column;
+            @media (min-width: 850px) {
+                width: calc(100% - 300px);
+            }
             .md {
                 visibility: visible;
             }

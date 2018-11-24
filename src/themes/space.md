@@ -8,7 +8,6 @@ download: https://github.com/gco360/space-theme
 demo: https://cdn.rawgit.com/gco360/space-theme/master/space.theme.css
 support: https://discord.gg/6fXRKyx
 style: dark
-tags:
 images:
   - name: Space Preview
     image: /images/themes/Space_Preview.jpg

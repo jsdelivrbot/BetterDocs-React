@@ -6,7 +6,6 @@ description:
 github: https://github.com/Metalloriff
 download: https://github.com/Metalloriff/BetterDiscordPlugins/blob/master/ReactionImages.plugin.js
 support: https://discordapp.com/invite/yNqzuJa
-tags:
 images:
   - name: Reaction Images Preview
     image: https://i.imgur.com/ZOb6wCF.png

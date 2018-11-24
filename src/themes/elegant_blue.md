@@ -8,7 +8,6 @@ download: https://github.com/archnemeziz/Discord
 demo: https://cdn.rawgit.com/archnemeziz/Discord/master/ElegantBlue.theme.css
 support: https://github.com/archnemeziz/Discord/issues
 style: dark
-tags:
 images:
   - name: Elegant Blue Preview
     image: /images/themes/Elegant_Blue_Preview.png
