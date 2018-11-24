@@ -127,7 +127,9 @@ return graphql(`{
             createPage({
             path: '/plugins' + node.fields.slug,
             component: pluginTemplate,
-            context: {}, // additional data can be passed via context
+            context: {
+              slug: node.fields.slug,
+            }, // additional data can be passed via context
             })
         })
 
@@ -135,7 +137,9 @@ return graphql(`{
         createPage({
         path: '/themes' + node.frontmatter.slug,
         component: themeTemplate,
-        context: {}, // additional data can be passed via context
+        context: {
+          slug: node.fields.slug,
+        }, // additional data can be passed via context
         })
     })
 

@@ -17,6 +17,9 @@ const Sidebar = () => (
               excerpt
               html
               id
+              fields {
+                slug
+              }
               frontmatter {
                   path
                   title
@@ -47,16 +50,16 @@ const Sidebar = () => (
           >
           </input>
           <div className={plugin.searchOutput}>
-            {data.listPlugins.totalCount}
+            {data.listPlugins.totalCount + ' Plugins'}
           </div>
         </div>
         <div className={plugin.Results}
         >
-        {data.edges.forEach(({ node }) => (
+        {data.listPlugins.edges.map(({ node }, i) => (
           <Link 
           className={plugin.resultCard}
           activeClassName={plugin.active}
-          to={'plugins' + node.frontmatter.path}
+          to={'plugins' + node.fields.slug}
           key={node.id}
           >
             <div className={plugin.header}

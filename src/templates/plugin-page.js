@@ -4,10 +4,10 @@ import hero from '../styles/hero.module.scss'
 import plugin from '../styles/plugin.module.scss'
 import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
+import Sidebar from '../components/plugin-sidebar'
 
 const Plugins = (props) => {
   const pluginList = props.data.listPlugins;
-  const pluginCurrent = props.data.currentPlugins;
   const { totalCount } = props.data.listPlugins;
   const listCount = `${totalCount} Plugin${
     totalCount === 1 ? "" : "s"
@@ -37,60 +37,18 @@ const Plugins = (props) => {
           >
             <div className={plugin.wrapper}
             >
-
+          {pluginList.edges.map(({ node }, i) => (
             <div
             className={plugin.md}
-            key={pluginCurrent.key}>
-              {pluginCurrent.html}
+            key={node.id}
+            dangerouslySetInnerHTML={{ __html: node.html }}>
+              
             </div>
-
-          </div>
-        </div>
-      </section>
-      <section className={plugin.sidebarSearch}
-      >
-        <div className={plugin.searchContainer}
-        >
-          <input 
-          className={plugin.input}
-          placeholder='Search plugins library'
-          >
-          </input>
-          <div className={plugin.searchOutput}>
-            {listCount}
-          </div>
-        </div>
-        <div className={plugin.Results}
-        >
-        {pluginList.edges.map(({ node }, i) => (
-          <Link 
-          className={plugin.resultCard}
-          activeClassName={plugin.active}
-          to={'plugins' + node.fields.slug}
-          key={node.id}
-          >
-            <div className={plugin.header}
-            >
-              <span className={plugin.title}
-              >
-              {node.frontmatter.title}
-              </span>
-              <span className={plugin.author}
-              >
-              {node.frontmatter.author}
-              </span>
-            </div>
-            <div className={plugin.description}
-            >
-              <p className={plugin.p}
-              >
-                {node.excerpt}
-              </p>
-            </div>
-          </Link>
           ))}
+          </div>
         </div>
       </section>
+      <Sidebar />
 
     </div>
   </Layout>
@@ -100,17 +58,17 @@ const Plugins = (props) => {
 export default Plugins;
 
 export const pluginsQuery = graphql`
-  query pluginsQuery($title: String) {
+  query pluginsQuery($slug: String!) {
     listPlugins:allMarkdownRemark(
-      filter: { 
+      filter: {
         collection: { 
           eq: "plugins" 
         }
-        frontmatter: { 
-          tags: { 
-            in: [$title] 
-          } 
-        } 
+        fields: {
+          slug: {
+            eq: $slug
+          }
+        }
       }) {
       group(field: collection) {
         fieldValue
@@ -138,25 +96,6 @@ export const pluginsQuery = graphql`
               }
             }
         }
-    },
-    currentPlugins:markdownRemark(collection: { eq: "plugins" }) {
-    excerpt
-    html
-    id
-    frontmatter {
-        path
-        title
-        author
-        github
-        download
-        support
-        layout
-        ghcommentid
-        date
-        }
-      fields {
-        slug
-      }
     }
   }
 `
