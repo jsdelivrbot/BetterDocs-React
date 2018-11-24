@@ -27,15 +27,11 @@ const Themes = (props) => {
       <input className={theme.input} placeholder="Search Themes"></input>
     </div>
 
-      <div className={theme.content}
+      <div className={theme.mainContent}
         >
           <div className={theme.wrapper}
           >
           {themeList.edges.map(({ node }, i) => (
-            <Link 
-            to={'themes' + node.fields.slug}
-            key={node.id}
-            className={theme.mobileLink}>
             <div 
             className={theme.cardWrapper}
             
@@ -46,19 +42,19 @@ const Themes = (props) => {
               </div>
               <div className={theme.author}
               >{node.frontmatter.author} /</div>
-              <Link 
-              to={"themes" + node.fields.slug}>
                 <div className={theme.title}
-                >{node.frontmatter.title}</div>
-              </Link>
+                >
+                <Link 
+                to={"themes" + node.fields.slug}>
+                {node.frontmatter.title}
+                </Link>
+                </div>
               <div className={theme.description}
               >
                 <p className={theme.p}
                 >{node.excerpt}</p>
               </div>
             </div>
-
-            </Link>
           ))}
           <p>
             Themes page WIP.

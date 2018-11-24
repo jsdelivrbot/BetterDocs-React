@@ -1,3 +1,6 @@
+---
+title: README
+---
 # Uploading a Theme
 
 1. [Create a new file](https://github.com/MrRobotjs/BetterDocs/new/gh-pages/_themes)
