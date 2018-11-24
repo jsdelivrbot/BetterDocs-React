@@ -1,6 +1,6 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import mystyles from '../styles/header.module.scss'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = () => (
   <div
@@ -12,10 +12,7 @@ const Header = () => (
       <div
       className={mystyles.logo}
       >
-        <AniLink 
-        paintDrip 
-        to="/" 
-        hex="#262626">
+        <Link to="/">
           <svg xmlns='http://www.w3.org/2000/svg' id='Calque_1' viewBox='0 0 1100.2603 578.46808' width='90' height='100%'>
             <g id='g3' transform='translate(-28.6 -43.2)' fill='#fff'>
                 <path d='m 156.1,273.9 -127.1,0 0,142.7 84.6,76.2 0,-138.6 45.2,0 c 28.7,0 42.9,13.8 42.9,36 l 0,106 c 0,22.2 -13.4,37.1 -42.9,37.1 l -130.2,0 0,80.7 127,0 c 68.1,0.4 132,-33.7 132,-111.7 l 0,-114 C 288.1,308.7 224.2,273.9 156.1,273.9 l 0,0 z'
@@ -40,16 +37,13 @@ const Header = () => (
             <path d='m 422.31942,226.64861 c -70.4,0 -140.39998,38.3 -140.39998,116.7 l 0,116 c 0,77.7 70.39998,116.7 141.19998,116.7 70.4,0 140.4,-39 140.4,-116.7 l 0,-116 c 0,-78.1 -70.8,-116.7 -141.2,-116.7 z m 55.1,232.7 c 0,24.5 -27.6,37.1 -54.7,37.1 -27.6,0 -55.1,-11.9 -55.1,-37.1 l 0,-116 c 0,-24.9 26.8,-38.3 53.6,-38.3 27.9,0 56.3,11.9 56.3,38.3 l 0,116 z'
             id='path15-5' fill='#fff' />
           </svg>
-        </AniLink>
+        </Link>
       </div>
       <nav className={mystyles.nav}>
 
-          <AniLink 
-          paintDrip 
-          to="/" 
+          <Link to="/" 
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
-          hex="#262626"
           >
             <svg xmlns='http://www.w3.org/2000/svg' id='Capa_1' height='60' viewBox='0 0 512 512' width='22' className={mystyles.linkIcon}>
                   <path d='M511.864,221.487c-0.921-11.988-6.455-22.896-15.581-30.716l-44.286-37.96V44.944c0-8.284-6.716-14.999-14.999-14.999 h-59.998c-8.284,0-14.799,6.716-14.799,14.999v30.728l-75.911-64.695c-16.97-14.539-41.603-14.537-58.519-0.043L15.728,190.769 c-18.753,16.068-21.186,44.423-4.866,63.473c12.439,14.465,32.364,19.077,49.35,13.107v229.584 c0,8.284,6.516,14.999,14.799,14.999h361.986c8.284,0,14.999-6.716,14.999-14.999V267.352c17.534,6.2,37.039,1.004,49.167-13.13 C508.983,245.094,512.784,233.468,511.864,221.487z M391.999,59.943h30.199v67.154l-30.199-25.713V59.943z M317.202,481.934 H195.007V361.738h122.195V481.934z M422.198,481.934h-75.197V346.939c0-8.284-6.716-14.999-14.999-14.999H180.007 c-8.284,0-14.799,6.716-14.799,14.999v134.995H90.011V245.775l166.943-141.613l165.245,141.473V481.934z M478.389,234.694 c-5.318,6.198-14.772,7.107-21.158,1.631L266.765,73.061c-5.595-4.797-13.845-4.817-19.464-0.05 C243.242,76.453,55.58,235.643,54.786,236.317c-6.282,5.375-15.782,4.642-21.161-1.615c-5.385-6.285-4.657-15.774,1.569-21.11 L247.238,33.756c5.66-4.848,13.874-4.849,19.53-0.002l209.994,179.795C483.04,218.929,483.767,228.419,478.389,234.694z'
@@ -59,14 +53,11 @@ const Header = () => (
                   <circle cx='271.999' cy='406.934' r='14.999' fill='#FFF' />
             </svg>
             <span className={mystyles.link}>Home</span>
-          </AniLink>
+          </Link>
 
-          <AniLink 
-          paintDrip 
-          to="/themes/" 
+          <Link to="/themes/" 
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
-          hex="#262626"
           >
             <svg xmlns='http://www.w3.org/2000/svg' height='60' viewBox='0 0 512 512' width='22' className={mystyles.linkIcon}>
                 <path d='m435.496094 99.632812-134.496094 19.089844v-118.722656c-36.519531 0-263.832031 0-301 0v85.339844l42.011719 20.660156-42.011719 20.660156v205.339844h31v15c0 24.8125 20.1875 45 45 45s45-20.1875 45-45v-15h180v-118.722656l134.480469 19.085937c40.386719 5.773438 76.519531-25.605469 76.519531-66.363281 0-40.710938-36.078125-72.140625-76.503906-66.367188zm-344.496094 202.367188v45c0 8.269531-6.730469 15-15 15s-15-6.730469-15-15v-45h-31v-156.660156l79.988281-39.339844-79.988281-39.339844v-36.660156h121v272zm120 0h-30v-272h30zm228.710938-99.335938-168.710938-23.941406v123.277344h-30v-272h30v123.277344l168.726562-23.941406c22.3125-3.191407 42.273438 14.148437 42.273438 36.664062 0 22.523438-19.964844 39.855469-42.289062 36.664062zm0 0'
@@ -75,14 +66,11 @@ const Header = () => (
                 fill='#FFF' />
             </svg>
             <span className={mystyles.link}>Themes</span>
-          </AniLink>
+          </Link>
 
-          <AniLink 
-          paintDrip 
-          to="/plugins/" 
+          <Link to="/plugins/" 
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
-          hex="#262626"
           >
           <svg xmlns='http://www.w3.org/2000/svg' height='60' viewBox='0 0 512 512' width='22' className={mystyles.linkIcon}>
                 <path d='m181.40625 184.816406 63.070312 19.605469-231.304687 231.308594c-17.535156 17.53125-17.535156 46.0625 0 63.597656s46.0625 17.535156 63.597656 0l231.308594-231.308594 19.605469 63.074219 67.46875-95.410156 116.847656 1.492187-69.890625-93.648437 37.53125-110.667969-110.667969 37.527344-93.652344-69.886719 1.496094 116.84375zm-125.835938 293.3125c-5.84375 5.84375-15.351562 5.84375-21.199218 0-5.84375-5.84375-5.84375-15.355468 0-21.199218l116.597656-116.597657 21.199219 21.199219zm137.796876-137.796875-21.199219-21.199219 104.65625-104.65625 16.171875 5.027344 5.027344 16.171875zm170.308593-236.488281 68.0625-23.082031-23.082031 68.0625 42.984375 57.597656-71.863281-.917969-41.496094 58.679688-21.335938-68.628906-68.628906-21.332032 58.679688-41.5-.917969-71.863281zm0 0'
@@ -95,17 +83,14 @@ const Header = () => (
                 fill='#FFF' />
             </svg>
             <span className={mystyles.link}>Plugins</span>
-          </AniLink>
+          </Link>
 
-          <AniLink 
-          paintDrip 
-          to="/download/"
+          <Link to="/download/"
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
-          hex="#262626"
           >
             <span className={mystyles.link}>Download</span>
-          </AniLink>
+          </Link>
 
           <a href="https://discord.gg/D4cAkXX"
           className={mystyles.linkWrapper}
@@ -114,17 +99,14 @@ const Header = () => (
             <span className={mystyles.link}>Server</span>
           </a> 
           
-          <AniLink 
-          paintDrip 
-          to="/getting-started/"
+          <Link to="/getting-started/"
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
-          hex="#262626"
           >
             <span className={mystyles.link}>Getting Started</span>
-          </AniLink>
+          </Link>
 
-          <AniLink paintDrip to="/more/" 
+          <Link to="/more/" 
           className={mystyles.linkWrapper}
           activeClassName={mystyles.active}
           >
@@ -139,7 +121,7 @@ const Header = () => (
                 </g>
             </svg>
             <span className={mystyles.link}>More</span>
-          </AniLink>
+          </Link>
 
       </nav>
     </div>

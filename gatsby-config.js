@@ -7,7 +7,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-netlify-cache',
-    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
