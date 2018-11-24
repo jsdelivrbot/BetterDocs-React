@@ -5,7 +5,13 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-page-transitions',
+      options: {
+        transitionTime: 250
+      },
+    },
     'gatsby-plugin-netlify-cache',
     {
       resolve: `gatsby-plugin-nprogress`,

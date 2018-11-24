@@ -3,7 +3,8 @@ import Layout from '../components/layout'
 import theme from '../styles/theme.module.scss'
 import { Link } from 'gatsby'
 import { graphql } from "gatsby"
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet"
+import PageTransition from 'gatsby-plugin-page-transitions'
 
 const Themes = (props) => {
   const themeList = props.data.allMarkdownRemark;
@@ -11,6 +12,7 @@ const Themes = (props) => {
   const listCount = `${totalCount}`
   
   return (
+  <PageTransition>
   <Layout>
     <Helmet>
         <meta charSet="utf-8" />
@@ -34,7 +36,7 @@ const Themes = (props) => {
           {themeList.edges.map(({ node }, i) => (
             <div 
             className={theme.cardWrapper}
-            
+            key={node.id}
             >
               <div className={theme.imgContainer}
               >
@@ -113,6 +115,7 @@ const Themes = (props) => {
 
     </div>
   </Layout>
+  </PageTransition>
 )
 }
 
