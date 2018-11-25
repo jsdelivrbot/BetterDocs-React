@@ -47,7 +47,7 @@ const Sidebar = () => (
         >
           <input 
           className={plugin.input}
-          placeholder='Search plugins library'
+          placeholder='Search Plugins library'
           >
           </input>
           <div className={plugin.searchOutput}>

@@ -46,7 +46,7 @@ const Sidebar = () => (
         >
           <input 
           className={theme.input}
-          placeholder='Search themes library'
+          placeholder='Search Themes library'
           >
           </input>
           <div className={theme.searchOutput}>

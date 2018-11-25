@@ -336,3 +336,17 @@
         max-height: 32.3em;
     }
 }
+.backButton {
+    position: fixed;
+    top: 22px;
+    left: 17px;
+    z-index: 100;
+    display: block;
+    @media (min-width: 850px) {
+        display: none;
+    }
+    svg {
+        height: 20px;
+        width: 20px;
+    }
+}
