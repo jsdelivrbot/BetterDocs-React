@@ -154,6 +154,7 @@
         flex-direction: column;
         max-height: 26em;
         overflow: auto;
+        -webkit-overflow-scrolling: touch;
         &::-webkit-scrollbar-button { 
             display: none; 
             height: 13px; 
