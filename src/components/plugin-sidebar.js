@@ -1,6 +1,7 @@
 import React from 'react'
 import plugin from '../styles/plugin.module.scss'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Sidebar = () => (
   <StaticQuery
@@ -57,11 +58,13 @@ const Sidebar = () => (
         <div className={plugin.Results}
         >
         {data.listPlugins.edges.map(({ node }, i) => (
-          <Link 
+          <AniLink 
           className={plugin.resultCard}
           activeClassName={plugin.active}
           to={'plugins' + node.fields.slug}
           key={node.id}
+          cover
+          bg="#262626"
           >
             <div className={plugin.header}
             >
@@ -81,7 +84,7 @@ const Sidebar = () => (
                 {node.excerpt}
               </p>
             </div>
-          </Link>
+          </AniLink>
           ))}
         </div>
       </section>

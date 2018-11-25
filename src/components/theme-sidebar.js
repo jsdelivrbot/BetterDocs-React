@@ -1,6 +1,7 @@
 import React from 'react'
 import theme from '../styles/theme.module.scss'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Sidebar = () => (
   <StaticQuery
@@ -56,11 +57,13 @@ const Sidebar = () => (
         <div className={theme.Results}
         >
         {data.listThemes.edges.map(({ node }, i) => (
-          <Link 
+          <AniLink 
           className={theme.resultCard}
           activeClassName={theme.active}
           to={'themes' + node.fields.slug}
           key={node.id}
+          cover
+          bg="#262626"
           >
             <div className={theme.header}
             >
@@ -80,7 +83,7 @@ const Sidebar = () => (
                 {node.excerpt}
               </p>
             </div>
-          </Link>
+          </AniLink>
           ))}
         </div>
       </section>

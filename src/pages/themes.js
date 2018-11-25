@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
 import theme from '../styles/theme.module.scss'
-import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import {Helmet} from "react-helmet";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Themes = (props) => {
   const themeList = props.data.allMarkdownRemark;
@@ -47,10 +47,12 @@ const Themes = (props) => {
               >{node.frontmatter.author} /</a>
                 <div className={theme.title}
                 >
-                <Link 
-                to={"themes" + node.fields.slug}>
+                <AniLink 
+                to={"themes" + node.fields.slug}
+                cover
+                bg="#262626">
                 {node.frontmatter.title}
-                </Link>
+                </AniLink>
                 </div>
               <div className={theme.description}
               >
@@ -75,12 +77,14 @@ const Themes = (props) => {
         <div className={theme.submitDescription}>
              Want your theme featured?
           </div>
-          <Link 
+          <AniLink 
           to="/themes/upload_a_theme/"
           className={theme.submitBtn}
+          cover
+          bg="#262626"
           >
           Submit a Theme
-          </Link>
+          </AniLink>
         </div>
         <div className={theme.Results}
         >
