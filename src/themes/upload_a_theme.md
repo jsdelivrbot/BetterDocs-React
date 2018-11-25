@@ -1,5 +1,5 @@
 ---
-title: README
+title: Upload a Theme
 ---
 # Uploading a Theme
 

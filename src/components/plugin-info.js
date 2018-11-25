@@ -5,7 +5,7 @@ const pluginPageInfo = () => (
   <StaticQuery
     query={ graphql`
     query pluginPageInfo {
-        markdownRemark(frontmatter: { title: { eq: "READMEP"}}) {
+        markdownRemark(frontmatter: { title: { eq: "Upload a Plugin"}}) {
               excerpt
               html
               id

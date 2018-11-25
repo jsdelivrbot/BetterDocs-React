@@ -75,42 +75,16 @@ const Themes = (props) => {
         <div className={theme.submitDescription}>
              Want your theme featured?
           </div>
-          <a 
-          href="https://betterdocs.us"
+          <Link 
+          to="/themes/upload_a_theme/"
           className={theme.submitBtn}
           >
           Submit a Theme
-          </a>
+          </Link>
         </div>
         <div className={theme.Results}
         >
-        {themeList.edges.map(({ node }, i) => (
-          <Link 
-          className={theme.resultCard}
-          activeClassName={theme.active}
-          to={'themes' + node.fields.slug}
-          key={node.id}
-          >
-            <div className={theme.header}
-            >
-              <span className={theme.title}
-              >
-              {node.frontmatter.title}
-              </span>
-              <span className={theme.author}
-              >
-              {node.frontmatter.author}
-              </span>
-            </div>
-            <div className={theme.description}
-            >
-              <p className={theme.p}
-              >
-                {node.excerpt}
-              </p>
-            </div>
-          </Link>
-          ))}
+        
         </div>
       </section>
 

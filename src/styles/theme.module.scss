@@ -324,8 +324,10 @@
         }
         .mdWrapper {
             width: calc(100% - 75px);
+            display: block;
             @media (min-width: 850px) {
-                width: calc(100% - 300px)
+                width: calc(100% - 300px);
+                display: block;
             }
         }
     }

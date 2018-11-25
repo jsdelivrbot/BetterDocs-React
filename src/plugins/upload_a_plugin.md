@@ -1,5 +1,5 @@
 ---
-title: READMEP
+title: Upload a Plugin
 ---
 # Uploading a Plugin
 

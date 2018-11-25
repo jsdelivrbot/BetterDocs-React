@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'BetterDocs | #1 Discord Themes & Plugins',
+    title: `BetterDocs | #1 Discord Themes & Plugins`,
     siteUrl: `https://betterdocs-react.netlify.com`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
-    'gatsby-plugin-netlify-cache',
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-netlify-cache`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
@@ -19,7 +20,7 @@ module.exports = {
       options: {
         name: `themes`,
         path: `${__dirname}/src/themes/`,
-        ignore: ['_defaults'],
+        ignore: [`_defaults`],
       },
     },
     {
@@ -27,7 +28,7 @@ module.exports = {
       options: {
         name: `plugins`,
         path: `${__dirname}/src/plugins/`,
-        ignore: ['_defaults'],
+        ignore: [`_defaults`],
       },
     },
     {
@@ -37,39 +38,39 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-image',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-image`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BetterDocs Discord #1 Plugins & Themes',
-        short_name: 'BetterDocs',
-        start_url: '/',
-        background_color: '#262626',
-        theme_color: '#262626',
-        display: 'standalone',
-        icon: 'src/images/mobile.png', // This path is relative to the root of the site.
+        name: `BetterDocs Discord #1 Plugins & Themes`,
+        short_name: `BetterDocs`,
+        start_url: `/`,
+        background_color: `#262626`,
+        theme_color: `#262626`,
+        display: `standalone`,
+        icon: `src/images/mobile.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
         sourceMap: true,
-        outFile: './src/styles/main.css',
-        includePaths: ['src/styles'],
+        outFile: `./src/styles/main.css`,
+        includePaths: [`src/styles`],
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Roboto'],
+          families: [`Roboto`],
           variants: [`100`,`200`,`300`,`400`,`500`,`600`,`700`,`800`]
         }
       }
     },
-    'gatsby-transformer-remark',
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
@@ -82,6 +83,6 @@ module.exports = {
         //generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
       },
     },
-    'gatsby-plugin-offline',
+    `gatsby-plugin-offline`,
   ],
 }

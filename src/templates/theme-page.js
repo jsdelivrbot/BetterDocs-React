@@ -30,17 +30,14 @@ const Themes = (props) => {
         </div>
         <div className={style.content}
           >
-            <div className={style.mdWrapper}
-            >
             {themeList.edges.map(({ node }, i) => (
             <div
-            className={style.md}
+            className={style.mdWrapper}
             key={node.id}
             dangerouslySetInnerHTML={{ __html: node.html }}>
             
             </div>
             ))}
-          </div>
         </div>
       </section>
       <Sidebar />
