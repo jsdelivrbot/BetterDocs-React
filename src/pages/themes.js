@@ -113,8 +113,8 @@ export const allThemesQuery = graphql`
             html
             id
             frontmatter {
-                path
                 title
+                sub
                 author
                 github
                 download

@@ -19,11 +19,18 @@ const Plugins = (props) => {
         >
         {pluginList.edges.map(({ node }, i) => (
           <div className={hero.container}
+          key={node.id}
           >
             <h2 className={hero.h2}
             >
             {node.frontmatter.title}
             </h2>
+            <div className={hero.paragraph}
+            >
+              <p className={hero.p}>
+              {node.frontmatter.sub}
+              </p>
+            </div>
             <div className={hero.wrapperIcon}>
               <a 
               href={node.frontmatter.github} 
@@ -96,6 +103,7 @@ export const pluginsQuery = graphql`
             frontmatter {
                 path
                 title
+                sub
                 author
                 github
                 download

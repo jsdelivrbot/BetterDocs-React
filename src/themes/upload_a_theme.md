@@ -1,5 +1,6 @@
 ---
 title: Upload a Theme
+sub: Uploading a theme is as easy as 1, 2, 3...uhh and maybe more.
 ---
 # Uploading a Theme
 

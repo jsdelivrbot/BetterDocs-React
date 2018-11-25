@@ -24,6 +24,7 @@ return graphql(`{
             }
             frontmatter {
               title
+              sub
               description
               author
               github
@@ -57,6 +58,7 @@ return graphql(`{
             }
             frontmatter {
               title
+              sub
               description
               author
               github
@@ -84,6 +86,7 @@ return graphql(`{
             }
             frontmatter {
               title
+              sub
               description
               author
               github
