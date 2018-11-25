@@ -34,14 +34,17 @@ const Themes = (props) => {
           {themeList.edges.map(({ node }, i) => (
             <div 
             className={theme.cardWrapper}
-            
+            key={node.id}
             >
               <div className={theme.imgContainer}
               >
                 <img className={theme.img} alt=""></img>
               </div>
-              <div className={theme.author}
-              >{node.frontmatter.author} /</div>
+              <a 
+              className={theme.author}
+              href={node.frontmatter.github}
+              target="blank"
+              >{node.frontmatter.author} /</a>
                 <div className={theme.title}
                 >
                 <Link 

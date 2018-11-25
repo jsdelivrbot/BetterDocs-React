@@ -33,6 +33,10 @@ return graphql(`{
               ghcommentid
               date
               tags
+              images {
+                image
+                name
+              }
             }
           }
         }
@@ -89,6 +93,10 @@ return graphql(`{
               ghcommentid
               date
               tags
+              images {
+                image
+                name
+              }
             }
           }
         }

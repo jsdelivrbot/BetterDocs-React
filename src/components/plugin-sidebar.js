@@ -28,6 +28,7 @@ const Sidebar = () => (
                   download
                   support
                   layout
+                  tags
                   images {
                     image
                     name

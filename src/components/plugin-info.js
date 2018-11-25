@@ -5,7 +5,7 @@ const pluginPageInfo = () => (
   <StaticQuery
     query={ graphql`
     query pluginPageInfo {
-        markdownRemark(frontmatter: { title: { eq: "README"}}) {
+        markdownRemark(frontmatter: { title: { eq: "READMEP"}}) {
               excerpt
               html
               id

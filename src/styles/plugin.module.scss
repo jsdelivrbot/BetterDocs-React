@@ -120,6 +120,13 @@
                         margin-bottom: unset;
                     }
                 }
+                .more {
+                    display: flex;
+                    justify-content: flex-end;
+                    .icon {
+                        margin-right: 10px;
+                    }
+                }
             }
             &::-webkit-scrollbar-button { 
                 display: none; 
