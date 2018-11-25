@@ -198,7 +198,30 @@
             @media (min-width: 850px) {
                 width: calc(100% - 300px);
             }
-            .md {
+            .wrapperIcon {
+                display: flex;
+                position: relative;
+                top: -7px;
+                .icon {
+                    display: block;
+                    opacity: 0.6;
+                    transition: .2s ease-in-out opacity;
+                    border-bottom: unset;
+                    box-shadow: unset;
+                    &:hover {
+                        opacity: 1;
+                        background-color: unset;
+                    }
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+            .childWrapper {
+                display: block;
+            }
+            .mdWrapper {
                 visibility: visible;
             }
         }

@@ -85,7 +85,7 @@
     text-align: center;
     position: relative;
     z-index: 99;
-    padding: 20px 0px 35px 0px;
+    padding: 20px 0px 20px 0px;
     background: linear-gradient(135deg, #339b78 0%, #1868df 100%);
     &::before {
         content: "";
@@ -127,25 +127,6 @@
             }
             @media (min-width: 850px) {
                 font-size: 3.5rem;
-            }
-        }
-        .wrapperIcon {
-            display: flex;
-            //position: relative;
-            //top: 15px;
-            bottom: -30px;
-            position: absolute;
-            .icon {
-                display: block;
-                opacity: 0.6;
-                transition: .2s ease-in-out opacity;
-                &:hover {
-                    opacity: 1;
-                }
-                svg {
-                    height: 20px;
-                    width: 20px;
-                }
             }
         }
         .p {
