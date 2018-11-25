@@ -131,8 +131,10 @@
         }
         .wrapperIcon {
             display: flex;
-            position: relative;
-            top: 15px;
+            //position: relative;
+            //top: 15px;
+            bottom: -30px;
+            position: absolute;
             .icon {
                 display: block;
                 opacity: 0.6;
