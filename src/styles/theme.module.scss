@@ -203,6 +203,7 @@
         max-height: 26em;
         overflow: hidden;
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         &::-webkit-scrollbar-button { 
             display: none; 
             height: 13px; 
