@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import mystyles from '../styles/header.module.scss'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import './fix.css'
+
 
 const Header = () => (
   <div
