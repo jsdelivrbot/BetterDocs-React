@@ -8,7 +8,6 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Plugins = (props) => {
   const pluginList = props.data.listPlugins;
-  
   return (
   <Layout>
     <div className={plugin.pluginsContainer}
@@ -53,6 +52,22 @@ const Plugins = (props) => {
               <div
               className={plugin.childWrapper}
               dangerouslySetInnerHTML={{ __html: node.html }}>
+              </div>
+              <div
+              className={plugin.footer}
+              >
+                <div
+                className={plugin.first}
+                >One</div>
+
+                <a
+                className={plugin.second}
+                href={ 'https://github.com/MrRobotjs/BetterDocs-React/edit/master/src/plugins' + node.fields.slug + '.md'}
+                >
+                <svg id='Capa_1' xmlns='http://www.w3.org/2000/svg' width='459' height='459' viewBox='0 0 459 459'>
+                    <path d='M0,362.1V459h96.9l280.5-283.05l-96.9-96.9L0,362.1z M451.35,102c10.2-10.2,10.2-25.5,0-35.7L392.7,7.649 c-10.2-10.2-25.5-10.2-35.7,0l-45.9,45.9l96.9,96.9L451.35,102z' id='create' />
+                </svg>Second
+                </a>
               </div>
             </div>
           ))}
