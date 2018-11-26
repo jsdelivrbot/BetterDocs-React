@@ -9,6 +9,7 @@
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-netlify": "^2.0.4",
     "gatsby-plugin-netlify-cache": "^1.0.0",
+    "gatsby-plugin-netlify-cms": "^3.0.7",
     "gatsby-plugin-nprogress": "^2.0.6",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
@@ -21,10 +22,12 @@
     "gatsby-transformer-remark": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.4",
     "gsap": "^2.0.2",
+    "netlify-cms": "^2.2.0",
     "node-sass": "^4.9.4",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "uglifyjs-webpack-plugin": "^2.0.1"
   },
   "keywords": [
     "gatsby"

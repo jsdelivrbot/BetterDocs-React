@@ -20,7 +20,6 @@ module.exports = {
       options: {
         name: `themes`,
         path: `${__dirname}/src/themes/`,
-        ignore: [`_defaults`],
       },
     },
     {
@@ -28,7 +27,6 @@ module.exports = {
       options: {
         name: `plugins`,
         path: `${__dirname}/src/plugins/`,
-        ignore: [`_defaults`],
       },
     },
     {
@@ -38,6 +36,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-image`,

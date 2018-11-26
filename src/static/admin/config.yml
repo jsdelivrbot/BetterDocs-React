@@ -1,0 +1,142 @@
+backend:
+  name: git-gateway
+
+media_folder: src/static/assets
+public_folder: /static/assets
+publish_mode: editorial_workflow
+display_url: https://betterdocs.us
+
+collections:
+  - name: "themes" # Used in routes, e.g., /admin/collections/blog
+    label: "Themes" # Used in the UI
+    folder: "src/themes/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    delete: false
+    media_folder: "images/themes"
+    fields: # The fields for each document, usually in front matter
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "product"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        default: "{Theme Name}"
+      - label: "Description"
+        name: "description_markdown"
+        widget: "markdown"
+      - label: "Author"
+        name: "author" 
+        widget: "string"
+        default: "{Author}"
+      - label: "Github" 
+        name: "github"
+        widget: "string"
+        default: "https://github.com/{Author}/"
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - label: "Image Name"
+            name: "name"
+            default: " {NAME} Preview "
+            widget: "string"
+          - label: "Image"
+            name: "image"
+            widget: "image"
+      - label: "Download URL"
+        name: "download"
+        widget: "string"
+      - label: "Auto Download?"
+        name: "auto"
+        widget: "boolean"
+      - label: "Support URL"
+        name: "support"
+        widget: "string"
+        default: "https://discord.gg/invite"
+      - label: "Demo URL"
+        name: "demo"
+        widget: "string"
+        default: "https://rawcdn.githack.com/USER/REPO/master/"
+      - label: "Tags (Seperated by comma ',')" 
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Supported Software (Seperated by comma ',')" 
+        name: "software"
+        widget: "list"
+      - label: "Style" 
+        name: "style"
+        widget: "select"
+        options: ["dark", "light"]
+        default: "dark"
+      - label: "Github Comment ID" 
+        name: "ghcommentid"
+        widget: "number"
+        required: false
+      - label: "Publish Date"
+        name: "date" 
+        widget: "datetime"
+  - name: "plugins" # Used in routes, e.g., /admin/collections/blog
+    label: "Plugins" # Used in the UI
+    folder: "src/plugins/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    media_folder: "images/plugins"
+    delete: false
+    fields: # The fields for each document, usually in front matter
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "product"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        default: "Plugin Title"
+      - label: "Description"
+        name: "description_markdown"
+        widget: "markdown"
+      - label: "Author"
+        name: "author" 
+        widget: "string"
+        default: "Author"
+      - label: "Github" 
+        name: "github"
+        widget: "string"
+        default: "https://github.com/Author/"
+      - label: "Images"
+        name: "images"
+        required: false
+        widget: "list"
+        fields:
+          - label: "Image Name"
+            name: "name"
+            widget: "string"
+          - label: "Image"
+            name: "image"
+            widget: "image"
+      - label: "Download URL"
+        name: "download"
+        widget: "string"
+      - label: "Auto Download?"
+        name: "auto"
+        widget: "boolean"
+      - label: "Support URL"
+        name: "support"
+        widget: "string"
+        default: "https://discord.gg/invite"
+      - label: "Tags (Seperated by comma ',')" 
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Supported Software (Seperated by comma ',')" 
+        name: "software"
+        widget: "list"
+      - label: "Github Comment ID" 
+        name: "ghcommentid"
+        widget: "number"
+        required: false
+      - label: "Publish Date"
+        name: "date" 
+        widget: "datetime"

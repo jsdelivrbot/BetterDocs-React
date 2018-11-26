@@ -9,6 +9,7 @@ github: https://github.com/Mega-Mewthree
 download: https://github.com/Mega-Mewthree/BetterDiscordPlugins/tree/master/Plugins/AlwaysMentionEveryone
 support: https://discordapp.com/invite/ZYND2Xd
 tags: [test, test1]
+software: [BandagedBD, BetterDiscord]
 layout: product
 ghcommentid: 34
 ---

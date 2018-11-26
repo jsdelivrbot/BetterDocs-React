@@ -7,6 +7,8 @@ const { createPage } = actions;
 const pluginTemplate = path.resolve('src/templates/plugin-page.js');  
 const themeTemplate = path.resolve('src/templates/theme-page.js');
 const tagTemplate = path.resolve("src/templates/tags.js");
+const pluginstagTemplate = path.resolve("src/templates/plugin-tags.js");
+
 return graphql(`{
     plugins:allMarkdownRemark(filter: { collection: { eq: "plugins" } }) {
       group(field: collection) {
@@ -34,6 +36,7 @@ return graphql(`{
               ghcommentid
               date
               tags
+              software
               images {
                 image
                 name
@@ -67,6 +70,8 @@ return graphql(`{
               layout
               ghcommentid
               date
+              tags
+              software
               images {
                 image
                 name
@@ -96,6 +101,7 @@ return graphql(`{
               ghcommentid
               date
               tags
+              software
               images {
                 image
                 name
@@ -113,23 +119,23 @@ return graphql(`{
     const posts = res.data.allMarkdownRemark.edges
 
     // Tag pages:
-    let tags = []
+    let software = []
     // Iterate through each post, putting all found tags into `tags`
     _.each(posts, edge => {
-      if (_.get(edge, "node.frontmatter.tags")) {
-        tags = tags.concat(edge.node.frontmatter.tags)
+      if (_.get(edge, "node.frontmatter.software")) {
+        software = software.concat(edge.node.frontmatter.software)
       }
     })
     // Eliminate duplicate tags
-    tags = _.uniq(tags)
+    software = _.uniq(software)
 
     // Make tag pages
-    tags.forEach(tag => {
+    software.forEach(softwares => {
       createPage({
-        path: `/tags/${_.kebabCase(tag)}/`,
-        component: tagTemplate,
+        path: `/plugins/tags/${_.kebabCase(softwares)}/`,
+        component: pluginstagTemplate,
         context: {
-          tag,
+          softwares,
         },
       })
     })

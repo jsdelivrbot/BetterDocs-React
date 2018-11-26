@@ -4,12 +4,12 @@ import PropTypes from "prop-types"
 // Components
 import { Link, graphql } from "gatsby"
 
-const Tags = ({ pageContext, data }) => {
-  const { tag } = pageContext
+const Softwares = ({ pageContext, data }) => {
+  const { software } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+  } tagged with "${software}"`
 
   return (
     <div>
@@ -28,14 +28,14 @@ const Tags = ({ pageContext, data }) => {
               This links to a page that does not yet exist.
               We'll come back to it!
             */}
-      <Link to="/tags">All tags</Link>
+      <Link to="/plugins/tags">All Softwares</Link>
     </div>
   )
 }
 
-Tags.propTypes = {
+Softwares.propTypes = {
     pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
+    software: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
@@ -54,12 +54,12 @@ Tags.propTypes = {
   }),
 }
 
-export default Tags
+export default Softwares
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query($software: String) {
     allMarkdownRemark(
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { software: { in: [$software] } } }
     ) {
       totalCount
       edges {
@@ -67,6 +67,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            software
           }
         }
       }
