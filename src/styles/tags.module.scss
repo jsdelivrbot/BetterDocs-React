@@ -1,29 +1,32 @@
 .tagsContainer {
     display: flex;
     overflow-x: auto;
-    width: 21em;
+    width: 100%;
     -webkit-overflow-scrolling: touch;
-        &::-webkit-scrollbar-button { 
-            display: none; 
-            height: 7px;
-            border-radius: 0px; 
-        } 
-        &::-webkit-scrollbar-thumb { 
-            background-color: rgba(#339b78, 0.3);
-            transition: background-color .2s ease-in-out;
-            height: 7px;
-        } 
-        &::-webkit-scrollbar-thumb:hover { 
-            background-color: #339b78;
-        } 
-        &::-webkit-scrollbar-track { 
-            background-color: rgba(#339b78, 0.06);
-            height: 7px;
-        }
-        &::-webkit-scrollbar { 
-            width: 8px;
-            height: 7px;
-        }
+    @media (min-width: 850px) {
+        width: 21em;
+    }
+    &::-webkit-scrollbar-button { 
+        display: none; 
+        height: 7px;
+        border-radius: 0px; 
+    } 
+    &::-webkit-scrollbar-thumb { 
+        background-color: rgba(#339b78, 0.3);
+        transition: background-color .2s ease-in-out;
+        height: 7px;
+    } 
+    &::-webkit-scrollbar-thumb:hover { 
+        background-color: #339b78;
+    } 
+    &::-webkit-scrollbar-track { 
+        background-color: rgba(#339b78, 0.06);
+        height: 7px;
+    }
+    &::-webkit-scrollbar { 
+        width: 8px;
+        height: 7px;
+    }
     .tag {
         background-color: #fff;
         border-radius: 25px;
