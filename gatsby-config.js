@@ -36,16 +36,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        enableIdentityWidget: true,
-        publicPath: `admin`,
-        htmlTitle: `Content Manager`,
-        manualInit: true,
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-image`,
