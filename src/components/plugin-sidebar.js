@@ -2,7 +2,7 @@ import React from 'react'
 import plugin from '../styles/plugin.module.scss'
 import { StaticQuery, graphql } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-
+import Tags from '../components/pluginTags'
 const Sidebar = () => (
   <StaticQuery
     query={ graphql`
@@ -54,6 +54,7 @@ const Sidebar = () => (
           <div className={plugin.searchOutput}>
             {data.listPlugins.totalCount + ' Plugins'}
           </div>
+          <Tags />
         </div>
         <div className={plugin.Results}
         >

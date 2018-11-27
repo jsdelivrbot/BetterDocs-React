@@ -40,15 +40,18 @@ const Themes = (props) => {
               >
                 <img className={theme.img} alt=""></img>
               </div>
-              <a 
-              className={theme.author}
-              href={node.frontmatter.github}
-              target="blank"
-              >{node.frontmatter.author} /</a>
+                <div>
+                  <a 
+                  className={theme.author}
+                  href={node.frontmatter.github}
+                  target="blank"
+                  >{node.frontmatter.author} /</a>
+                </div>
                 <div className={theme.title}
                 >
                 <AniLink 
                 to={"themes" + node.fields.slug}
+                className={theme.titleLink}
                 cover
                 bg="#262626">
                 {node.frontmatter.title}

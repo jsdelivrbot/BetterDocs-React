@@ -4,12 +4,12 @@ import PropTypes from "prop-types"
 // Components
 import { Link, graphql } from "gatsby"
 
-const Software = ({ pageContext, data }) => {
-  const { softwares } = pageContext
+const Tags = ({ pageContext, data }) => {
+  const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with "${softwares}"`
+  } tagged with "${tag}"`
 
   return (
     <div>
@@ -20,7 +20,7 @@ const Software = ({ pageContext, data }) => {
           const { slug } = node.fields
           return (
             <li key={slug}>
-              <Link to={ '/plugins' + slug}>{title}</Link>
+              <Link to={slug}>{title}</Link>
             </li>
           )
         })}
@@ -29,14 +29,14 @@ const Software = ({ pageContext, data }) => {
               This links to a page that does not yet exist.
               We'll come back to it!
             */}
-      <Link to="/plugins/tags">All Softwares</Link>
+      <Link to="/tags">All tags</Link>
     </div>
   )
 }
 
-Software.propTypes = {
+Tags.propTypes = {
     pageContext: PropTypes.shape({
-    softwares: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
@@ -48,7 +48,7 @@ Software.propTypes = {
               title: PropTypes.string.isRequired,
             }),
             fields: PropTypes.shape({
-              slug: PropTypes.string.isRequired,
+                slug: PropTypes.string.isRequired,
             }),
           }),
         }).isRequired
@@ -57,22 +57,22 @@ Software.propTypes = {
   }),
 }
 
-export default Software
+export default Tags
 
 export const pageQuery = graphql`
-  query($softwares: String) {
+  query($tag: String) {
     allMarkdownRemark(
-      filter: { frontmatter: { software: { in: [$softwares] } } collection: { eq: "plugins" } }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
         node {
           frontmatter {
             title
-            software
+            tags
           }
           fields {
-            slug
+              slug
           }
         }
       }

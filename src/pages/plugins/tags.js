@@ -53,7 +53,7 @@ pluginsTagsPage.propTypes = {
 
 export default pluginsTagsPage
 
-export const pageQuery = graphql`
+export const tagsPageQuery = graphql`
   query pluginTagsQuery {
     site {
       siteMetadata {
