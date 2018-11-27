@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
 
-media_folder: static/assets
+media_folder: static/media
 public_folder: static/assets
 publish_mode: editorial_workflow
 display_url: https://betterdocs.us
