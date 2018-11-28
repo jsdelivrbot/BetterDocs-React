@@ -5,11 +5,11 @@ description: 'A clean, vivid and transparent theme with lots of small tweaks'
 author: YuraBrm
 github: 'https://github.com/YuraBrm/'
 images:
-  - image: static/media/Avis_Preview.jpg
+  - image: /static/media/Avis_Preview.jpg
     name: Avis Preview
-  - image: static/media/Avis_Preview_-_Keybind_Settings_Page.png
+  - image: /static/media/Avis_Preview_-_Keybind_Settings_Page.png
     name: Avis Preview - Keybind Settings Page
-  - image: /static/assets/wolf-of-wall-street.jpg
+  - image: /static/media/wolf-of-wall-street.jpg
     name: test
 download: 'https://github.com/YuraBrm/BetterDiscordThemes/blob/master/Avis/Avis.theme.css'
 auto: true
