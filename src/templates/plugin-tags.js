@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Layout from '../components/layout'
 
 // Components
 import { Link, graphql } from "gatsby"
@@ -12,25 +13,27 @@ const Software = ({ pageContext, data }) => {
   } tagged with "${softwares}"`
 
   return (
-    <div>
-      <h1>{tagHeader}</h1>
-      <ul>
-        {edges.map(({ node }) => {
-          const { title } = node.frontmatter
-          const { slug } = node.fields
-          return (
-            <li key={slug}>
-              <Link to={ '/plugins' + slug}>{title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      {/*
-              This links to a page that does not yet exist.
-              We'll come back to it!
-            */}
-      <Link to="/plugins/tags">All Softwares</Link>
-    </div>
+    <Layout>
+      <div>
+        <h1>{tagHeader}</h1>
+        <ul>
+          {edges.map(({ node }) => {
+            const { title } = node.frontmatter
+            const { slug } = node.fields
+            return (
+              <li key={slug}>
+                <Link to={ '/plugins' + slug}>{title}</Link>
+              </li>
+            )
+          })}
+        </ul>
+        {/*
+                This links to a page that does not yet exist.
+                We'll come back to it!
+              */}
+        <Link to="/plugins/tags">All Softwares</Link>
+      </div>
+    </Layout>
   )
 }
 
