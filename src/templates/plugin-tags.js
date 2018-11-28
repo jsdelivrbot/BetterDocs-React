@@ -6,9 +6,7 @@ import plugin from '../styles/plugin.module.scss'
 import hero from '../styles/hero.module.scss'
 import Tags from '../components/pluginTags'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-
-// Components
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 const Software = ({ pageContext, data }) => {
   const { softwares } = pageContext
