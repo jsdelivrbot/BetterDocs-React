@@ -98,50 +98,42 @@ export const themesQuery = graphql`
       totalCount
       edges {
         node {
-            excerpt
-            html
-            id
-            frontmatter {
-                title
-                sub
-                author
-                github
-                download
-                support
-                layout
-                images {
-                  image
-                  name
-                  }
-                }
-            fields {
-                slug
-              }
-            }
+          excerpt
+          html
+          id
+          frontmatter {
+            title
+            sub
+            author
+            github
+            download
+            support
+            layout
+          }
+          fields {
+            slug
+          }
         }
+      }
     },
     currentThemes:markdownRemark(collection: { eq: "themes" }) {
     excerpt
     html
     id
     frontmatter {
-        path
-        title
-        author
-        github
-        download
-        support
-        layout
-        ghcommentid
-        date
-        images {
-          image
-          name
-        }
-      }
-      fields {
-        slug
-      }
+      path
+      title
+      author
+      github
+      download
+      support
+      layout
+      ghcommentid
+      date
     }
+    fields {
+      slug
+    }
+  }
 }
 `

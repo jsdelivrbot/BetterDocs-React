@@ -29,10 +29,6 @@ const Sidebar = () => (
                   download
                   support
                   layout
-                  images {
-                    image
-                    name
-                    }
                   }
               }
           }
@@ -47,12 +43,20 @@ const Sidebar = () => (
         >
           <input 
           className={theme.input}
-          placeholder='Search Themes library'
+          placeholder={'Search ' + data.listThemes.totalCount + ' Themes'}
           >
           </input>
-          <div className={theme.searchOutput}>
-            {data.listThemes.totalCount + ' Themes'}
+          <div className={theme.submitDescription}>
+            Want your theme featured?
           </div>
+          <AniLink 
+          to="/themes/upload_a_theme/"
+          className={theme.submitBtn}
+          cover
+          bg="#262626"
+          >
+          Submit a Theme
+          </AniLink>
         </div>
         <div className={theme.Results}
         >

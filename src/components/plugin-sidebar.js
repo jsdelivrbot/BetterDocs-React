@@ -30,10 +30,6 @@ const Sidebar = () => (
                   support
                   layout
                   tags
-                  images {
-                    image
-                    name
-                    }
                   }
               }
           }

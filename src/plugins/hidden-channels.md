@@ -15,6 +15,6 @@ tags: [test, test2]
 software:
   - EnhancedDiscord
 date: 2018-10-28T22:21:57.592Z
-ghcommmendid: 175
+ghcommentid: 175
 ---
 Shows names and topics of channels in which you don't have permission to read messages.

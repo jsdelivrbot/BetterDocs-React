@@ -1,6 +1,7 @@
 const path = require('path')
 const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.createPages = ({actions, graphql}) => {
 const { createPage } = actions;
@@ -38,7 +39,15 @@ return graphql(`{
               tags
               software
               images {
-                image
+                image {
+                  id
+                  childImageSharp {
+                    fluid {
+                      src
+                      srcSet
+                    }
+                  }
+                }
                 name
               }
             }
@@ -73,7 +82,15 @@ return graphql(`{
               tags
               software
               images {
-                image
+                image {
+                  id
+                  childImageSharp {
+                    fluid {
+                      src
+                      srcSet
+                    }
+                  }
+                }
                 name
               }
             }
@@ -103,7 +120,15 @@ return graphql(`{
               tags
               software
               images {
-                image
+                image {
+                  id
+                  childImageSharp {
+                    fluid {
+                      src
+                      srcSet
+                    }
+                  }
+                }
                 name
               }
             }
@@ -118,18 +143,18 @@ return graphql(`{
 
     const posts = res.data.allMarkdownRemark.edges
 
-    // Tag pages:
+    // plugins/tags/software pages:
     let software = []
-    // Iterate through each post, putting all found tags into `tags`
+    // Iterate through each post, putting all found softwares into `tags`
     _.each(posts, edge => {
       if (_.get(edge, "node.frontmatter.software")) {
         software = software.concat(edge.node.frontmatter.software)
       }
     })
-    // Eliminate duplicate tags
+    // Eliminate duplicate softwares
     software = _.uniq(software)
 
-    // Make tag pages
+    // Make software tag pages
     software.forEach(softwares => {
       createPage({
         path: `/plugins/tags/${_.kebabCase(softwares)}/`,
@@ -188,6 +213,9 @@ return graphql(`{
 // Adds 'collection' to node
 exports.onCreateNode =({ node, getNode, actions }) => {
     const { createNodeField } = actions;
+
+    fmImagesToRelative(node);
+
     if (node.internal.type === `MarkdownRemark`) {
         node.collection = getNode(node.parent).sourceInstanceName;
 

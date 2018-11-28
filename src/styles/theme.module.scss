@@ -94,7 +94,6 @@
                 color: rgba(0, 0, 0, 0.54);
                 font-size: 0.8409rem;
                 margin: 0 1.05rem;
-                margin-top: 0.9em;
             }
             .input {
                 background: #fff;
@@ -323,12 +322,13 @@
                 }
                 .imgContainer {
                     display: initial;
-                    height: 160px;
+                    height: 14em;
                     .img {
                         background-color: #000;
                         width: 100%;
                         height: 100%;
                         margin: unset;
+                        display: -webkit-box;
                     }
                 }
                 .title {

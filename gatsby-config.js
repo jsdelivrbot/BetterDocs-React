@@ -18,6 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `media`,
+        path: `${__dirname}/static/media`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `themes`,
         path: `${__dirname}/src/themes/`,
       },
@@ -30,13 +37,37 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: `media` // Must match the source name ^
+            }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {	
+
+            },
+          },
+        ],
       },
     },
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+        //allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        //mergeSecurityHeaders: true, // boolean to turn off the default security headers
+        //mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+        //mergeCachingHeaders: true, // boolean to turn off the default caching headers
+        //transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+        //generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-image`,
@@ -68,19 +99,6 @@ module.exports = {
           variants: [`100`,`200`,`300`,`400`,`500`,`600`,`700`,`800`]
         }
       }
-    },
-    `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
-        //allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
-        //mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        //mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
-        //mergeCachingHeaders: true, // boolean to turn off the default caching headers
-        //transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-        //generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
-      },
     },
     `gatsby-plugin-offline`,
   ],

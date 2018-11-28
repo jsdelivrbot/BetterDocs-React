@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import theme from '../styles/theme.module.scss'
 import { graphql } from "gatsby"
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Themes = (props) => {
@@ -38,7 +38,7 @@ const Themes = (props) => {
             >
               <div className={theme.imgContainer}
               >
-                <img className={theme.img} alt=""></img>
+                <img className={theme.img} alt="src={node.frontmatter.images}"/>
               </div>
                 <div>
                   <a 
@@ -72,29 +72,6 @@ const Themes = (props) => {
 
     </section>
 
-
-      <section className={theme.sidebarSearch}
-      >
-        <div className={theme.searchContainer}
-        >
-        <div className={theme.submitDescription}>
-             Want your theme featured?
-          </div>
-          <AniLink 
-          to="/themes/upload_a_theme/"
-          className={theme.submitBtn}
-          cover
-          bg="#262626"
-          >
-          Submit a Theme
-          </AniLink>
-        </div>
-        <div className={theme.Results}
-        >
-        
-        </div>
-      </section>
-
     </div>
   </Layout>
 )
@@ -112,28 +89,37 @@ export const allThemesQuery = graphql`
       totalCount
       edges {
         node {
-            excerpt
-            html
-            id
-            frontmatter {
-                title
-                sub
-                author
-                github
-                download
-                support
-                layout
-                description
-                images {
-                  image
-                  name
+          excerpt
+          html
+          id
+          frontmatter {
+            title
+            sub
+            author
+            github
+            download
+            support
+            layout
+            description
+            date
+            images {
+              image {
+                id
+                childImageSharp {
+                  fluid {
+                    src
+                    srcSet
                   }
                 }
-            fields {
-                slug
               }
+              name
             }
+          }
+          fields {
+            slug
+          }
         }
+      }
     }
   }
 `
