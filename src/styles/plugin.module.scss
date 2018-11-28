@@ -225,54 +225,15 @@
                     flex: 1;
                     margin-top: 25px;
                 }
-                .edit {
+                .second {
+                    margin-top: 25px;
+                    opacity: 0.7;
                     border-color: transparent;
                     box-shadow: 0px 0px transparent;
-                    @media (min-width: 850px) {
-                        margin-top: 25px;
-                        opacity: 0.7;
-                    }
-                    span {
-                        display: none;
-                        font-size: 1em;
-                        @media (min-width: 850px) {
-                            display: initial;
-                        }
-                    }
                     svg {
-                        height: 5em;
-                        width: 5em;
-                        background-color: #262626;
-                        color: #fff;
-                        padding: 0 23px;
-                        border-radius: 50%;
-                        position: fixed;
-                        bottom: 19px;
-                        left: 43%;
-                        z-index: 100;
-                        border: 4px solid;
-                        @media (min-width: 850px) {
-                            background-color: transparent;
-                            color: #fff;
-                            padding: 0;
-                            border-radius: 0%;
-                            height: 15px;
-                            width: 15px;
-                            margin-right: 8px;
-                            padding: unset;
-                            border-radius: unset;
-                            position: relative;
-                            bottom: unset;
-                            left: unset;
-                            z-index: unset;
-                            border: unset;
-                        }
-                        path {
-                            fill: #fff;
-                            @media (min-width: 850px) {
-                                fill: #000;
-                            }
-                        }
+                        height: 15px;
+                        width: 15px;
+                        margin-right: 8px;
                     }
                 }
             }
