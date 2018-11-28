@@ -38,10 +38,6 @@ return graphql(`{
               date
               tags
               software
-              images {
-                image
-                name
-              }
             }
           }
         }
@@ -74,10 +70,6 @@ return graphql(`{
               date
               tags
               software
-              images {
-                image
-                name
-              }
             }
           }
         }
@@ -105,10 +97,6 @@ return graphql(`{
               date
               tags
               software
-              images {
-                image
-                name
-              }
             }
           }
         }
