@@ -11,6 +11,8 @@ images:
     name: Avis Preview - Keybind Settings Page
   - image: /static/media/wolf-of-wall-street.jpg
     name: changed
+  - image: /static/media/Chilled_Cyan_Preview.png
+    name: test
 download: 'https://github.com/YuraBrm/BetterDiscordThemes/blob/master/Avis/Avis.theme.css'
 auto: true
 support: 'https://github.com/YuraBrm/BetterDiscordThemes/issues'
