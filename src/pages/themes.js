@@ -100,10 +100,6 @@ export const allThemesQuery = graphql`
             layout
             description
             date
-            images {
-              image
-              name
-            }
           }
           fields {
             slug
