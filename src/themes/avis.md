@@ -4,6 +4,7 @@ title: Avis
 description: 'A clean, vivid and transparent theme with lots of small tweaks'
 author: YuraBrm
 github: 'https://github.com/YuraBrm/'
+thumbnail: static/media/Avis_Preview.jpg
 images:
   - image: static/media/Avis_Preview.jpg
     name: Avis Preview

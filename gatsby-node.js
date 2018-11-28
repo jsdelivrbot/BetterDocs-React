@@ -39,15 +39,7 @@ return graphql(`{
               tags
               software
               images {
-                image {
-                  id
-                  childImageSharp {
-                    fluid {
-                      src
-                      srcSet
-                    }
-                  }
-                }
+                image
                 name
               }
             }
@@ -73,6 +65,7 @@ return graphql(`{
               sub
               description
               author
+              thumbnail
               github
               download
               support
@@ -82,15 +75,7 @@ return graphql(`{
               tags
               software
               images {
-                image {
-                  id
-                  childImageSharp {
-                    fluid {
-                      src
-                      srcSet
-                    }
-                  }
-                }
+                image
                 name
               }
             }
@@ -111,6 +96,7 @@ return graphql(`{
               sub
               description
               author
+              thumbnail
               github
               download
               support
@@ -120,15 +106,7 @@ return graphql(`{
               tags
               software
               images {
-                image {
-                  id
-                  childImageSharp {
-                    fluid {
-                      src
-                      srcSet
-                    }
-                  }
-                }
+                image
                 name
               }
             }

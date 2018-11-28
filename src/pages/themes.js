@@ -64,9 +64,6 @@ const Themes = (props) => {
               </div>
             </div>
           ))}
-          <p>
-            Themes page WIP.
-          </p>
         </div>
       </div>
 
@@ -96,6 +93,7 @@ export const allThemesQuery = graphql`
             title
             sub
             author
+            thumbnail
             github
             download
             support
@@ -103,15 +101,7 @@ export const allThemesQuery = graphql`
             description
             date
             images {
-              image {
-                id
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                  }
-                }
-              }
+              image
               name
             }
           }
