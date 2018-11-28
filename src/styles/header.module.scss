@@ -33,7 +33,7 @@
                 justify-content: flex-start;
             }
         }
-        .nav {
+        .nav, .mobileNav {
             position: fixed;
             bottom: 0px;
             display: flex;
@@ -152,6 +152,18 @@
                         top: unset !important;
                     }
                 }
+            }
+        }
+        .nav {
+            display: none;
+            @media (min-width: 850px) {
+                display: -webkit-box;
+            }
+        }
+        .mobileNav {
+            display: flex;
+            @media (min-width: 850px) {
+                display: none;
             }
         }
     }
