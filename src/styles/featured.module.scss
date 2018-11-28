@@ -1,0 +1,79 @@
+.featured {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    .header {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #454545;
+        font-weight: bold;
+        &::after {
+            content: "";
+            display: block;
+            width: 7%;
+            height: 2px;
+            background-color: #339b78;
+            margin: 0 auto;
+        }
+    }
+    .cardsContainer {
+        display: block;
+        justify-content: space-around;
+        @media (min-width: 850px) {
+            display: flex;
+        }
+        .card {
+            display: block;
+            padding: 15px 20px;
+            background-color: #fff;
+            border: 1px solid #eff2f6;
+            -webkit-transition-duration: 800ms;
+            -o-transition-duration: 800ms;
+            transition-duration: 800ms;
+            border-radius: 40px;
+            border-bottom-left-radius: 0px;
+            margin: 0 auto;
+            margin-bottom: 35px;
+            width: calc(100% - 250px);
+            @media (min-width: 850px) {
+                display: inline;
+                flex-basis: 24%;
+                width: unset;
+                margin: unset
+            }
+            &:hover {
+                -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+                box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+            }
+            .image {
+                display: block;
+                svg {
+                    width: 5em;
+                    height: 5em;
+                    margin: 0 auto;
+                    display: -webkit-box;
+                    background-color: #e6e6e6;
+                    border-radius: 50%;
+                    padding: 3px;
+                }
+            }
+            .title {
+                color: #454545;
+                font-weight: bold;
+                padding-top: 1.5em;
+                text-align: center;
+            }
+            .paragraph {
+                font-size: 0.7em;
+                padding-top: 10px;
+                text-align: center;
+                p {
+                    margin: unset;
+                    line-height: 1.6em;
+                    color: #454545;
+                }
+            }
+        }
+    }
+}

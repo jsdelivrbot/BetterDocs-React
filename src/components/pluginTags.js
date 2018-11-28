@@ -40,20 +40,6 @@ const pluginTags = ({ siteTitle }) => (
         cover
         bg="#262626"
         >DiscordInjections</AniLink>
-        <AniLink 
-        className={style.tag}
-        activeClassName={style.active}
-        to="/plugins/#1"
-        cover
-        bg="#262626"
-        >DiscordInjections</AniLink>
-        <AniLink 
-        className={style.tag}
-        activeClassName={style.active}
-        to="/plugins/#1"
-        cover
-        bg="#262626"
-        >DiscordInjections</AniLink>
     </div>
 )
 
