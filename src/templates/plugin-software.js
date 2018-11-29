@@ -8,12 +8,12 @@ import Tags from '../components/pluginTags'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from "gatsby"
 
-const Tagss = ({ pageContext, data }) => {
-  const { tag } = pageContext
+const Software = ({ pageContext, data }) => {
+  const { softwares } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} plugin${
     totalCount === 1 ? "" : "s"
-  } compatible with "${tag}"`
+  } compatible with "${softwares}"`
 
   return (
     <Layout>
@@ -102,9 +102,9 @@ const Tagss = ({ pageContext, data }) => {
   )
 }
 
-Tagss.propTypes = {
+Software.propTypes = {
     pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
+    softwares: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
@@ -125,11 +125,11 @@ Tagss.propTypes = {
   }),
 }
 
-export default Tagss
+export default Software
 
 export const pageQuery = graphql`
-  query($tag: String) {
-    allMarkdownRemark( filter: { frontmatter: { tags: { in: [$tag] } } collection: { eq: "plugins" } } ) {
+  query($softwares: String) {
+    allMarkdownRemark( filter: { frontmatter: { software: { in: [$softwares] } } collection: { eq: "plugins" } } ) {
       totalCount
       edges {
         node {

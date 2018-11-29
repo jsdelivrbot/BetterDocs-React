@@ -1,29 +1,28 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Layout from '../components/layout'
-import Info from '../components/plugin-info'
-import plugin from '../styles/plugin.module.scss'
+import Info from '../components/theme-info'
+import style from '../styles/theme.module.scss'
 import hero from '../styles/hero.module.scss'
-import Tags from '../components/pluginTags'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from "gatsby"
 
 const Tagss = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} plugin${
+  const tagHeader = `${totalCount} theme${
     totalCount === 1 ? "" : "s"
-  } compatible with "${tag}"`
+  } with the tag "${tag}"`
 
   return (
     <Layout>
-    <div className={plugin.pluginsContainer}
+    <div className={style.themesContainer}
     >
 
-    <section className={plugin.contentWrapper}
+    <section className={style.openContentWrapper}
     >
 
-      <div className={hero.heroPlugins}
+      <div className={hero.heroThemes}
       >
         <div className={hero.container}
         >
@@ -38,9 +37,9 @@ const Tagss = ({ pageContext, data }) => {
         </div>
       </div>
 
-      <div className={plugin.content}
+      <div className={style.content}
         >
-        <div className={plugin.wrapper}
+        <div className={style.mdWrapper}
         >
         <Info />
         </div>
@@ -48,44 +47,54 @@ const Tagss = ({ pageContext, data }) => {
 
     </section>
 
-      <section className={plugin.sidebarSearch}>
-        <div className={plugin.searchContainer}>
+      <section className={style.sidebarSearch}>
+        <div className={style.searchContainer}>
           <input 
-          className={plugin.input}
-          placeholder='Search Plugins library'
+          className={style.input}
+          placeholder="Search Themes library"
           >
           </input>
-          <div className={plugin.searchOutput}>
+          <div className={style.submitDescription}>
+            Want your theme featured?
+          </div>
+          <AniLink 
+          to="/themes/upload_a_theme/"
+          className={style.submitBtn}
+          cover
+          bg="#262626"
+          >
+          Submit a Theme
+          </AniLink>
+          <div className={style.searchOutput}>
             {tagHeader}
           </div>
-          <Tags />
         </div>
 
-            <div className={plugin.Results}>
+            <div className={style.Results}>
             {edges.map(({ node }) => {
           return (
               <AniLink 
-              className={plugin.resultCard}
-              activeClassName={plugin.active}
-              to={'plugins' + node.fields.slug}
+              className={style.resultCard}
+              activeClassName={style.active}
+              to={'themes' + node.fields.slug}
               key={node.id}
               cover
               bg="#262626"
               >
-                <div className={plugin.header}
+                <div className={style.header}
                 >
-                  <span className={plugin.title}
+                  <span className={style.title}
                   >
                   {node.frontmatter.title}
                   </span>
-                  <span className={plugin.author}
+                  <span className={style.author}
                   >
                   {node.frontmatter.author}
                   </span>
                 </div>
-                <div className={plugin.description}
+                <div className={style.description}
                 >
-                  <p className={plugin.p}
+                  <p className={style.p}
                   >
                     {node.excerpt}
                   </p>
@@ -129,7 +138,7 @@ export default Tagss
 
 export const pageQuery = graphql`
   query($tag: String) {
-    allMarkdownRemark( filter: { frontmatter: { tags: { in: [$tag] } } collection: { eq: "plugins" } } ) {
+    allMarkdownRemark( filter: { frontmatter: { tags: { in: [$tag] } } collection: { eq: "themes" } } ) {
       totalCount
       edges {
         node {

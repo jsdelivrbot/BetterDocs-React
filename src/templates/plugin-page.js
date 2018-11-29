@@ -40,7 +40,7 @@ const Plugins = (props) => {
               </a>
               <div className={hero.tagContainer}>
               {pluginList.group.map(tag => (
-              <Link to={`/softwares/${kebabCase(tag.fieldValue)}/`} key={tag.fieldValue} className={hero.tag}>
+              <Link to={`/plugins/tags/${kebabCase(tag.fieldValue)}/`} key={tag.fieldValue} className={hero.tag}>
                 {tag.fieldValue} <span>{tag.totalCount}</span>
               </Link>
               ))}

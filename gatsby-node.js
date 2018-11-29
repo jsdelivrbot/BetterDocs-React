@@ -6,9 +6,10 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 exports.createPages = ({actions, graphql}) => {
 const { createPage } = actions;
 const pluginTemplate = path.resolve('src/templates/plugin-page.js');  
+const pluginTagTemplate = path.resolve("src/templates/plugin-tags.js");
+const pluginsSoftwareTemplate = path.resolve("src/templates/plugin-software.js");
+const themeTagTemplate = path.resolve("src/templates/theme-tags.js");
 const themeTemplate = path.resolve('src/templates/theme-page.js');
-const tagTemplate = path.resolve("src/templates/tags.js");
-const pluginstagTemplate = path.resolve("src/templates/plugin-tags.js");
 
 return graphql(`{
     plugins:allMarkdownRemark(filter: { collection: { eq: "plugins" } }) {
@@ -107,12 +108,13 @@ return graphql(`{
         return Promise.reject(res.errors);
     }
 
-    const posts = res.data.allMarkdownRemark.edges
+    const themes = res.data.themes.edges
+    const plugins = res.data.plugins.edges
 
     // plugins/tags/software pages:
     let software = []
     // Iterate through each post, putting all found softwares into `tags`
-    _.each(posts, edge => {
+    _.each(plugins, edge => {
       if (_.get(edge, "node.frontmatter.software")) {
         software = software.concat(edge.node.frontmatter.software)
       }
@@ -124,7 +126,7 @@ return graphql(`{
     software.forEach(softwares => {
       createPage({
         path: `/plugins/softwares/${_.kebabCase(softwares)}/`,
-        component: pluginstagTemplate,
+        component: pluginsSoftwareTemplate,
         context: {
           softwares,
         },
@@ -132,10 +134,10 @@ return graphql(`{
     })
     
     //Next set
-    // Tag pages:
+    // Theme Tag pages:
     let tags = []
     // Iterate through each post, putting all found tags into `tags`
-    _.each(posts, edge => {
+    _.each(themes, edge => {
       if (_.get(edge, "node.frontmatter.tags")) {
         tags = tags.concat(edge.node.frontmatter.tags)
       }
@@ -146,8 +148,31 @@ return graphql(`{
     // Make tag pages
     tags.forEach(tag => {
       createPage({
-        path: `/tags/${_.kebabCase(tag)}/`,
-        component: tagTemplate,
+        path: `/themes/tags/${_.kebabCase(tag)}/`,
+        component: themeTagTemplate,
+        context: {
+          tag,
+        },
+      })
+    })
+
+    //Next set
+    // Plugin Tag pages:
+    let plugintags = []
+    // Iterate through each post, putting all found tags into `tags`
+    _.each(plugins, edge => {
+      if (_.get(edge, "node.frontmatter.tags")) {
+        plugintags = plugintags.concat(edge.node.frontmatter.tags)
+      }
+    })
+    // Eliminate duplicate tags
+    plugintags = _.uniq(plugintags)
+
+    // Make tag pages
+    plugintags.forEach(tag => {
+      createPage({
+        path: `/plugins/tags/${_.kebabCase(tag)}/`,
+        component: pluginTagTemplate,
         context: {
           tag,
         },
