@@ -35,11 +35,9 @@
             border-bottom-left-radius: 0px;
             margin: 0 auto;
             margin-bottom: 35px;
-            width: calc(100% - 250px);
             @media (min-width: 850px) {
                 display: inline;
                 flex-basis: 24%;
-                width: unset;
                 margin: unset
             }
             &:hover {
