@@ -71,6 +71,7 @@ const Software = ({ pageContext, data }) => {
               key={node.id}
               cover
               bg="#262626"
+              duration={0.65}
               >
                 <div className={plugin.header}
                 >

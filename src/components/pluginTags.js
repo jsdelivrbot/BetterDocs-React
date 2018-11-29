@@ -18,6 +18,7 @@ const pluginTags = ({ siteTitle }) => (
         to="/plugins/softwares/bandaged-bd/"
         cover
         bg="#262626"
+        duration={0.65}
         >BandagedBD</AniLink>
         <AniLink 
         className={style.tag}
@@ -25,6 +26,7 @@ const pluginTags = ({ siteTitle }) => (
         to="/plugins/softwares/enhanced-discord/"
         cover
         bg="#262626"
+        duration={0.65}
         >EnhancedDiscord</AniLink>
         <AniLink 
         className={style.tag}
@@ -32,6 +34,7 @@ const pluginTags = ({ siteTitle }) => (
         to="/plugins/#1"
         cover
         bg="#262626"
+        duration={0.65}
         >BeautifulDiscord</AniLink>
         <AniLink 
         className={style.tag}
@@ -39,6 +42,7 @@ const pluginTags = ({ siteTitle }) => (
         to="/plugins/#1"
         cover
         bg="#262626"
+        duration={0.65}
         >DiscordInjections</AniLink>
     </div>
 )
