@@ -79,7 +79,7 @@ const pluginPageInfo = () => (
                         </svg>
 
                         </div>
-                        <div className={style.title}>DiscordCrypt</div>
+                        <div className={style.title}>Discord Encryption</div>
                         <div className={style.paragraph}>
                             <p>Provides end to end message (50mb files supported) encryption for Discord using various cryptography standards.
                             </p>
@@ -171,7 +171,7 @@ const pluginPageInfo = () => (
                             </svg>
 
                         </div>
-                        <div className={style.title}>DoNotTrack</div>
+                        <div className={style.title}>Block Data Leaks</div>
                         <div className={style.paragraph}>
                             <p>Stops Discord from tracking everything you do like Sentry and Analytics.
                             </p>
