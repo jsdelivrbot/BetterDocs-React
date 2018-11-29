@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import hero from '../styles/hero.module.scss'
+import hero from '../styles/altHero.module.scss'
 import plugin from '../styles/plugin.module.scss'
 import { graphql, Link } from 'gatsby'
 import Sidebar from '../components/plugin-sidebar'

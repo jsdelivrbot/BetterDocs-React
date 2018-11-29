@@ -160,74 +160,9 @@
         }
     }
 }
-.heroPlugins, .heroThemes {
+.heroPlugins {
     order: 1;
-    background: transparent;
-    border-bottom: 2px solid #f0f0f0;
     .container {
-        text-align: left;
-        .h2 {
-            color: #282828;
-            font-size: 1.3em;
-            font-weight: normal;
-        }
-        .paragraph {
-            .p {
-                color: #999;
-                a {
-                    border-bottom: 1px solid rgba(51, 155, 120, 0.3);
-                    box-shadow: inset 0 -2px 0px 0px rgba(51, 155, 120, 0.4);
-                    color: rgba(0, 0, 0, 0.88);
-                    font-weight: bold;
-                    transition: .1s linear background-color, .1s linear box-shadow, .1s linear border-bottom;
-                    &:hover {
-                        background-color: rgba(51, 155, 120, 0.3);
-                        border-bottom: 1px solid transparent;
-                        box-shadow: inset 0 -2px 0px 0px transparent;
-                    }
-                }
-            }
-        }
-        .tagContainer {
-            margin-top: 10px;
-            .tag {
-                margin-left: 7px;
-                background-color: #fff;
-                padding: 5px 13px;
-                border-radius: 25px;
-                color: #5f6368;
-                font-size: 0.7em;
-                -webkit-transition-duration: 800ms;
-                -o-transition-duration: 800ms;
-                transition-duration: 800ms;
-                border: 1px solid #eff2f6;
-                &[href="/tags/undefined/"], &[href="/tags/"] {
-                    display: none;
-                }
-                &:first-child {
-                    margin-left: unset;
-                }
-                span {
-                    background-color: #eeeeee;
-                    border-radius: 100%;
-                    color: #5f6368;
-                    padding: 0px 4px;
-                }
-                &:hover {
-                    border-bottom-left-radius: 0px;
-                    -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-                    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-                }
-                &:active, &:focus {
-                    background-color: rgba(#339b78, 0.1);
-                    box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15), 0 1px 2px 0 rgba(60,64,67,0.3);
-                    outline: unset;
-                    border-color: transparent;
-                    border-bottom-left-radius: 0px;
-                    color: #339b78;
-                }
-            }
-        }
         .input {
             @media (min-width: 850px) {
                 width: calc(100% - 500px);
