@@ -44,12 +44,16 @@
                 -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
                 box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
             }
+            &:active, &:focus {
+                background-color: #ccc;
+                outline: unset;
+            }
             .image {
-                display: block;
+                display: flex;
+                justify-content: center;
                 svg {
                     width: 5em;
                     height: 5em;
-                    margin: 0 auto;
                     display: -webkit-box;
                     background-color: #e6e6e6;
                     border-radius: 50%;

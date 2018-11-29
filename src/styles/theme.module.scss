@@ -371,6 +371,25 @@
                 }
             }
         }
+        .footer {
+            display: flex;
+            border-top: 1px solid #f5f3f7;
+            .first {
+                flex: 1;
+                margin-top: 25px;
+            }
+            .edit {
+                margin-top: 25px;
+                opacity: 0.7;
+                border-color: transparent !important;
+                box-shadow: 0px 0px transparent !important;
+                svg {
+                    height: 15px;
+                    width: 15px;
+                    margin-right: 8px;
+                }
+            }
+        }
         .mdWrapper {
             width: calc(100% - 75px);
             display: block;

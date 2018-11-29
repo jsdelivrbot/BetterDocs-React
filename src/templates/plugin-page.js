@@ -61,7 +61,7 @@ const Plugins = (props) => {
                 >One</div>
 
                 <a
-                className={plugin.second}
+                className={plugin.edit}
                 href={ 'https://github.com/MrRobotjs/BetterDocs-React/edit/master/src/plugins' + node.fields.slug + '.md'}
                 >
                 <svg id='Capa_1' xmlns='http://www.w3.org/2000/svg' width='459' height='459' viewBox='0 0 459 459'>
