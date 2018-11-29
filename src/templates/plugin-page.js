@@ -2,9 +2,10 @@ import React from 'react'
 import Layout from '../components/layout'
 import hero from '../styles/hero.module.scss'
 import plugin from '../styles/plugin.module.scss'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Sidebar from '../components/plugin-sidebar'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import kebabCase from "lodash/kebabCase"
 
 const Plugins = (props) => {
   const pluginList = props.data.listPlugins;
@@ -27,8 +28,16 @@ const Plugins = (props) => {
             <div className={hero.paragraph}
             >
               <p className={hero.p}>
-              {node.frontmatter.sub}
+              made by <a href={node.frontmatter.github} target="blank">
+              {node.frontmatter.author}</a>
               </p>
+            </div>
+            <div className={hero.tagContainer}>
+            {pluginList.group.map(tag => (
+            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`} key={tag.fieldValue} className={hero.tag}>
+              {tag.fieldValue} <span>{tag.totalCount}</span>
+            </Link>
+            ))}
             </div>
           </div>
         ))}
@@ -105,7 +114,7 @@ export const pluginsQuery = graphql`
           }
         }
       }) {
-      group(field: collection) {
+      group(field: frontmatter___tags) {
         fieldValue
         totalCount
       }
