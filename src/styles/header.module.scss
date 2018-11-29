@@ -33,27 +33,23 @@
                 justify-content: flex-start;
             }
         }
-        .nav, .mobileNav {
-            position: fixed;
-            bottom: 0px;
-            display: flex;
-            width: 100%;
+        .nav {
+            display: none;
             top: unset;
             z-index: 100;
             max-width: 100%;
             transition: .2s linear background-color, .2s linear box-shadow;
             background-color: #262626;
             height: 51px;
-            margin-left: unset;
             left: 0px;
+            vertical-align: top;
+            width: auto;
+            padding: 0;
+            margin-left: -18px;
+            margin-top: 9px;
+            position: initial;
+            bottom: unset;
             @media (min-width: 850px) {
-                vertical-align: top;
-                width: auto;
-                padding: 0;
-                margin-left: -18px;
-                margin-top: 9px;
-                position: initial;
-                bottom: unset;
                 display: -webkit-box;
             }
             .linkWrapper {
@@ -61,9 +57,6 @@
                 flex: 1 1;
                 align-items: center;
                 flex-direction: column;
-                &:nth-child(6), &:nth-child(5), &:nth-child(4) {
-                    display: none;
-                }
                 &.active {
                     border-bottom: 0px solid transparent;
                     .linkIcon {
@@ -98,14 +91,6 @@
                     }
                     @media (min-width: 850px) {
                         display: none;
-                    }
-                }
-                @media (min-width: 850px) {
-                    &:nth-child(7) {
-                        display: none;
-                    }
-                    &:nth-child(6), &:nth-child(5), &:nth-child(4) {
-                        display: -webkit-box;
                     }
                 }
             }
@@ -154,10 +139,96 @@
                 }
             }
         }
-        .nav {
-            display: none;
+        .mobileNav {
+            position: fixed;
+            bottom: 0px;
+            display: flex;
+            width: 100%;
+            top: unset;
+            z-index: 100;
+            max-width: 100%;
+            transition: .2s linear background-color, .2s linear box-shadow;
+            background-color: #262626;
+            height: 51px;
+            margin-left: unset;
+            left: 0px;
+            display: flex;
             @media (min-width: 850px) {
+                vertical-align: top;
+                width: auto;
+                padding: 0;
+                margin-left: -18px;
+                margin-top: 9px;
+                position: initial;
+                bottom: unset;
                 display: -webkit-box;
+            }
+            .linkWrapper {
+                display: flex;
+                flex: 1 1;
+                align-items: center;
+                flex-direction: column;
+                &.active {
+                    border-bottom: 0px solid transparent;
+                    .linkIcon {
+                        opacity: 1;
+                    }
+                    .link {
+                        color: #fff;
+                    }
+                    @media (min-width: 850px) {
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+                &:hover, &:active, &:focus {
+                    .linkIcon {
+                        opacity: 1;
+                    }
+                    .link {
+                        color: #fff;
+                    }
+                }
+                .linkIcon {
+                    width: 22px;
+                    margin: unset;
+                    top: 8px;
+                    position: relative;
+                    fill: #fff;
+                    opacity: 0.6;
+                    transition: .2s linear ease-in-out;
+                    & ~ .link {
+                        line-height: 3em;
+                        top: 6px;
+                    }
+                }
+            }
+            .link {
+                margin: unset;
+                border-bottom: 1px solid rgba(255, 255, 255, 0);
+                color: rgba(255, 255, 255, 0.6);
+                transition: 200ms linear color, .2s linear border-bottom;
+                display: inline-block;
+                text-decoration: none;
+                z-index: 1;
+                position: relative;
+                height: 100%;
+                line-height: 6em;
+                flex: 1;
+                text-align: center;
+                font-size: 0.70711rem;
+                &:nth-child(4), &:nth-child(5) {
+                    display: none;
+                }
+                &.active {
+                    color: #fff;
+                    font-weight: bold;
+                }
+                &:hover {
+                    color: #fff;
+                }
+            }
+            @media (min-width: 850px) {
+                display: none;
             }
         }
         .mobileNav {

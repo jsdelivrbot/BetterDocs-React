@@ -53,7 +53,8 @@ const Themes = (props) => {
                 to={"themes" + node.fields.slug}
                 className={theme.titleLink}
                 cover
-                bg="#262626">
+                bg="#262626"
+                duration={0.65}>
                 {node.frontmatter.title}
                 </AniLink>
                 </div>
