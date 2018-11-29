@@ -123,7 +123,7 @@ return graphql(`{
     // Make software tag pages
     software.forEach(softwares => {
       createPage({
-        path: `/plugins/tags/${_.kebabCase(softwares)}/`,
+        path: `/plugins/softwares/${_.kebabCase(softwares)}/`,
         component: pluginstagTemplate,
         context: {
           softwares,

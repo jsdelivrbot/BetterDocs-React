@@ -23,7 +23,7 @@ const pluginsTagsPage = ({
       <ul>
         {group.map(software => (
           <li key={software.fieldValue}>
-            <Link to={`/plugins/tags/${kebabCase(software.fieldValue)}/`}>
+            <Link to={`/plugins/softwares/${kebabCase(software.fieldValue)}/`}>
               {software.fieldValue} ({software.totalCount})
             </Link>
           </li>

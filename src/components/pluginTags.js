@@ -15,14 +15,14 @@ const pluginTags = ({ siteTitle }) => (
         <AniLink 
         className={style.tag}
         activeClassName={style.active}
-        to="/plugins/tags/bandaged-bd/"
+        to="/plugins/softwares/bandaged-bd/"
         cover
         bg="#262626"
         >BandagedBD</AniLink>
         <AniLink 
         className={style.tag}
         activeClassName={style.active}
-        to="/plugins/tags/enhanced-discord/"
+        to="/plugins/softwares/enhanced-discord/"
         cover
         bg="#262626"
         >EnhancedDiscord</AniLink>
