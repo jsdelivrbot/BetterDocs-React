@@ -49,6 +49,12 @@ const Themes = (props) => {
             </div>
           </div>
         ))}
+        {themeList.edges.map(({ node }, i) => (
+          <div className={hero.options} key={node.id}>
+            <a href={node.frontmatter.download} className={hero.downloadBtn} target="blank">Download</a>
+            <a href={node.frontmatter.support} className={hero.supportBtn} target="blank">Support</a>
+          </div>
+          ))}
         </div>
         <div className={style.content}
           >
@@ -65,7 +71,7 @@ const Themes = (props) => {
               >
                 <div
                 className={style.first}
-                >One</div>
+                ></div>
 
                 <a
                 className={style.edit}

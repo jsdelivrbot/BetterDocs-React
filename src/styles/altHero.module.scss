@@ -164,8 +164,56 @@
     order: 1;
     background: transparent;
     border-bottom: 2px solid #f0f0f0;
+    display: block;
+    @media (min-width: 850px) {
+        display: flex;
+    }
+    .options {
+        flex: 1;
+        display: block;
+        @media (min-width: 850px) {
+            display: flex;
+            flex-direction: column;
+        }
+        .downloadBtn {
+            background-color: #339b78;
+            display: block;
+            padding: 10px 0px;
+            width: calc(100% - 180px);
+            border-radius: 25px;
+            color: #fff;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            transition: 300ms ease-in-out;
+            &:hover {
+                background-color: rgba(#339b78,0.85);
+            }
+            &:active, &:focus {
+                background-color: rgba(#339b78,0.65);
+            }
+        }
+        .supportBtn {
+            background-color: #fff;
+            display: block;
+            margin-bottom: 5px;
+            padding: 10px 0px;
+            width: calc(100% - 180px);
+            border-radius: 25px;
+            color: #339b78;
+            margin: 0 auto;
+            transition: 300ms ease-in-out;
+            &:hover {
+                background-color: #ebebeb;
+            }
+            &:active, &:focus {
+                background-color: #339b78;
+                color: #fff;
+            }
+        }
+    }
     .container {
         text-align: left;
+        flex: 2;
         .h2 {
             color: #282828;
             font-size: 1.3em;
