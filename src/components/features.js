@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import style from '../styles/featured.module.scss'
 
-const pluginPageInfo = () => (
+const Features = () => (
   <StaticQuery
     query={ graphql`
     query featuredThemesQuery {
@@ -39,7 +39,7 @@ const pluginPageInfo = () => (
   `}
     render={data => (
         <section className={style.featured}>
-            <div className={style.header}>Some features</div>
+            <div className={style.header}>Why it is Special</div>
             <div className={style.cardsContainer}>
                     <Link className={style.card}
                     to="/plugins/discordCrypt/">
@@ -183,4 +183,4 @@ const pluginPageInfo = () => (
   />
 )
 
-export default pluginPageInfo
+export default Features
