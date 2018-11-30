@@ -70,7 +70,7 @@ const Plugins = (props) => {
               >
                 <div
                 className={plugin.first}
-                >One</div>
+                ></div>
 
                 <a
                 className={plugin.edit}
