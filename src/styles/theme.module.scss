@@ -321,9 +321,12 @@
                     border-radius: unset;
                 }
                 .imgContainer {
-                    height: 12em;
+                    height: 8.5em;
+                    @media (min-width: 450px) {
+                        height: 15em;
+                    }
                     @media (min-width: 550px) {
-                        height: 17em;
+                        height: 18em;
                     }
                     @media (min-width: 850px) {
                         height: 14em;
