@@ -140,7 +140,6 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            path
             title
             author
             github

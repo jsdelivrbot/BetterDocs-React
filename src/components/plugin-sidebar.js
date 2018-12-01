@@ -22,7 +22,6 @@ const Sidebar = () => (
                 slug
               }
               frontmatter {
-                  path
                   title
                   author
                   github

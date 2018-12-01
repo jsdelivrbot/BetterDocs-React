@@ -10,7 +10,6 @@ const themePageInfo = () => (
               html
               id
               frontmatter {
-                path
                 title
                 author
                 github

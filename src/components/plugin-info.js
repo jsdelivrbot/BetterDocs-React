@@ -10,7 +10,6 @@ const pluginPageInfo = () => (
               html
               id
               frontmatter {
-                path
                 title
                 author
                 github

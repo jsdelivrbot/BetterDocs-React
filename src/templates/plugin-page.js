@@ -128,7 +128,6 @@ export const pluginsQuery = graphql`
             html
             id
             frontmatter {
-                path
                 title
                 sub
                 author

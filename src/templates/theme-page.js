@@ -149,7 +149,6 @@ export const themesQuery = graphql`
     html
     id
     frontmatter {
-      path
       title
       author
       github
