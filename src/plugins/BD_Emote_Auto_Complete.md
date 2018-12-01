@@ -1,5 +1,4 @@
 ---
-layout: product
 title: BD Emote Auto Complete
 description: Adds an auto-complete menu for BetterDiscord emotes.
 author: Metalloriff
