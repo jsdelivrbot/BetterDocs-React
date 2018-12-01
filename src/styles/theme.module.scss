@@ -321,8 +321,13 @@
                     border-radius: unset;
                 }
                 .imgContainer {
-                    display: initial;
-                    height: 14em;
+                    height: 12em;
+                    @media (min-width: 550px) {
+                        height: 17em;
+                    }
+                    @media (min-width: 850px) {
+                        height: 14em;
+                    }
                     .img {
                         background-color: #000;
                         width: 100%;

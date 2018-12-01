@@ -39,7 +39,7 @@ const Reasons = () => (
   `}
     render={data => (
         <section className={style.reasons}>
-            <div className={style.row}>
+            <div className={style.firstWrapper}>
                 <div className={style.firstContainer} >
                     <div className={style.header}>BENEFITS</div>
                     <div className={style.title}>Ever wanted to see Discord's secret settings?</div>
@@ -50,16 +50,19 @@ const Reasons = () => (
                 ></img>
                 </div>
             </div>
-            <div className={style.cardContainer}>
-                {data.allMarkdownRemark.edges.map(({ node }, i) => (
-                    <Link 
-                    className={style.card} 
-                    to={'/plugins' + node.fields.slug} 
-                    key={node.id}>
-                        <div className={style.title}>{node.frontmatter.title}</div>
-                        <div className={style.excerpt}>{node.excerpt}</div>
-                    </Link>
-                ))}
+            <div className={style.secondWrapper}>
+                <div className={style.header}>Recently Added</div>
+                <div className={style.cardContainer}>
+                    {data.allMarkdownRemark.edges.map(({ node }, i) => (
+                        <Link 
+                        className={style.card} 
+                        to={'/plugins' + node.fields.slug} 
+                        key={node.id}>
+                            <div className={style.title}>{node.frontmatter.title}</div>
+                            <div className={style.excerpt}>{node.excerpt}</div>
+                        </Link>
+                    ))}
+                </div>
             </div>
         </section>      
     )}
