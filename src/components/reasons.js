@@ -46,7 +46,9 @@ const Reasons = () => (
                     <div className={style.header}>BENEFITS</div>
                     <div className={style.title}>Ever wanted to see Discord's secret settings?</div>
                     <div className={style.description}>With the help of our talented developers from our <a href="https://discord.gg/D4cAkXX">community</a> you can install plugins to modify Discord to your knees. Look at hidden channels, hidden voice channels, server roles and more. Today is the day you can make your Discord on steroids!</div>
-                    <AniLink className={style.unimportantBtn}
+                    <AniLink 
+                    to="/plugins/"
+                    className={style.unimportantBtn}
                     cover
                     bg="#262626"
                     duration={0.65}
