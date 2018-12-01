@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import style from '../styles/reasons.module.scss'
-
+import discord from '../images/discordcog.svg'
 const Reasons = () => (
   <StaticQuery
     query={ graphql`
@@ -39,14 +39,26 @@ const Reasons = () => (
   `}
     render={data => (
         <section className={style.reasons}>
-            <div className={style.header}>Recently Added</div>
-            <div className={style.description}>Here are some of our most recent plugins from the talented and hard working developers in our community.</div>
+            <div className={style.row}>
+                <div className={style.firstContainer} >
+                    <div className={style.header}>BENEFITS</div>
+                    <div className={style.title}>Ever wanted to see Discord's secret settings?</div>
+                    <div className={style.description}>With the help of our talented developers from our <a href="https://discord.gg/D4cAkXX">community</a> you can install plugins to modify Discord to your knees. Look at hidden channels, hidden voice channels, server roles and more. Today is the day you can make your Discord on steroids!</div>
+                </div>
+                <div className={style.secondContainer}>
+                    <img src={discord} alt="Discord Themes Preview"
+                ></img>
+                </div>
+            </div>
             <div className={style.cardContainer}>
                 {data.allMarkdownRemark.edges.map(({ node }, i) => (
-                    <div className={style.card}>
-                        <Link className={style.title} to={'/plugins' + node.fields.slug}>{node.frontmatter.title}</Link>
+                    <Link 
+                    className={style.card} 
+                    to={'/plugins' + node.fields.slug} 
+                    key={node.id}>
+                        <div className={style.title}>{node.frontmatter.title}</div>
                         <div className={style.excerpt}>{node.excerpt}</div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>      

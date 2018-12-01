@@ -1,49 +1,35 @@
 import React from 'react'
 import style from '../styles/tags.module.scss'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from 'gatsby'
 
 const pluginTags = ({ siteTitle }) => (
     <div className={style.tagsContainer}
     >
-        <AniLink 
+        <Link 
         className={style.tag}
         activeClassName={style.active}
         to="/plugins/"
-        cover
-        bg="#262626"
-        >All</AniLink>
-        <AniLink 
+        >All</Link>
+        <Link 
         className={style.tag}
         activeClassName={style.active}
         to="/plugins/softwares/bandaged-bd/"
-        cover
-        bg="#262626"
-        duration={0.65}
-        >BandagedBD</AniLink>
-        <AniLink 
+        >BandagedBD</Link>
+        <Link 
         className={style.tag}
         activeClassName={style.active}
         to="/plugins/softwares/enhanced-discord/"
-        cover
-        bg="#262626"
-        duration={0.65}
-        >EnhancedDiscord</AniLink>
-        <AniLink 
+        >EnhancedDiscord</Link>
+        <Link 
         className={style.tag}
         activeClassName={style.active}
         to="/plugins/#1"
-        cover
-        bg="#262626"
-        duration={0.65}
-        >BeautifulDiscord</AniLink>
-        <AniLink 
+        >BeautifulDiscord</Link>
+        <Link 
         className={style.tag}
         activeClassName={style.active}
         to="/plugins/#1"
-        cover
-        bg="#262626"
-        duration={0.65}
-        >DiscordInjections</AniLink>
+        >DiscordInjections</Link>
     </div>
 )
 
