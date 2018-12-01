@@ -46,12 +46,12 @@ const Reasons = () => (
                     <div className={style.description}>With the help of our talented developers from our <a href="https://discord.gg/D4cAkXX">community</a> you can install plugins to modify Discord to your knees. Look at hidden channels, hidden voice channels, server roles and more. Today is the day you can make your Discord on steroids!</div>
                 </div>
                 <div className={style.secondContainer}>
-                    <img src={discord} alt="Discord Themes Preview"
+                    <img src={discord} alt="Discord logo with Cogs inside"
                 ></img>
                 </div>
             </div>
             <div className={style.secondWrapper}>
-                <div className={style.header}>Recently Added</div>
+                <div className={style.header}>RECENTLY ADDED</div>
                 <div className={style.cardContainer}>
                     {data.allMarkdownRemark.edges.map(({ node }, i) => (
                         <Link 

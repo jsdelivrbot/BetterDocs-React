@@ -28,11 +28,11 @@ const Tagss = ({ pageContext, data }) => {
         >
           <h2 className={hero.h2}
           >
-          #1 Source for Discord Plugins!
+          #1 Source for Discord Themes!
           </h2> 
           <p className={hero.p}
           >
-          Custom JS plugins made by our commuity!
+          Custom CSS themes made by our commuity!
           </p> 
         </div>
       </div>
