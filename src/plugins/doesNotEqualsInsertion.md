@@ -3,11 +3,11 @@ title: doesNotEqualsInsertion
 author: Arashiryuu
 description:
   Replaces instances of '=/=' in the textarea with '≠'.
-github: https://github.com/Arashiryuu/
 download: https://github.com/Arashiryuu/crap/blob/master/doesNotEqualsInsertion.plugin.js
+github: https://github.com/Arashiryuu/
 support: https://github.com/Arashiryuu/crap/issues
-tags:
-layout: product
+software: [BandagedBD, BetterDiscord]
 ghcommentid: 51
+layout: product
 ---
 Replaces instances of '=/=' in the textarea with '≠'.
