@@ -1,7 +1,7 @@
 .hero {
     justify-content: space-between;
     display: block;
-    padding: 25px 10px 40px 10px;
+    padding: 30px 25px;
     flex-direction: row;
     color: #ffffff;
     text-align: center;
@@ -13,11 +13,14 @@
         padding: 100px 0;
     }
     .textContainer {
-        max-width: calc(100% - 125px);
+        max-width: unset;
         flex-basis: 21%;
         padding: unset;
         margin: 0 auto;
         position: relative;
+        @media (min-width: 850px) {
+            max-width: calc(100% - 125px);
+        }
         .header2 {
             font-size: 2.5em;
             text-align: left;
@@ -37,7 +40,9 @@
             }
         }
         .button {
-            margin-bottom: 25px;
+            margin-bottom: 50px;
+            text-align: left;
+            margin-top: 20px;
             @media (min-width: 850px) {
                 margin-bottom: 0;
                 margin-top: 15px;

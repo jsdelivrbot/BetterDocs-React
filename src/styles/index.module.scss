@@ -10,8 +10,12 @@
             color: #fff;
             font-family: sans-serif;
             font-weight: 200;
-            width: 84%;
-            padding-left: 75px;
+            width: 64%;
+            padding-left: 45px;
+            @media (min-width: 850px) {
+                padding-left: 75px;
+                width: 84%;
+            }
         }
         @media (min-width: 850px) {
             padding: 80px;
