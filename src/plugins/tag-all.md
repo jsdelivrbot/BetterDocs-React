@@ -1,15 +1,14 @@
 ---
-layout: product
 title: Tag All
-description: Lets you tag (mention) channels and roles you normally can't.
 author: joe27g
-github: 'https://github.com/joe27g/'
+description: Lets you tag (mention) channels and roles you normally can't.
 download: 'https://github.com/joe27g/EnhancedDiscord/blob/master/plugins/tag_all.js'
-auto: true
+github: 'https://github.com/joe27g/'
 support: 'https://discord.gg/XAvh9tq'
-software:
-  - EnhancedDiscord
+software: [EnhancedDiscord]
+auto: true
 ghcommentid: 169
+layout: product
 date: 2018-10-26T15:43:11.697Z
 ---
 Lets you tag (mention) channels and roles you normally can't.
