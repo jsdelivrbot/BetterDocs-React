@@ -1,9 +1,9 @@
 ---
 title: Experiments
+author: joe27g
 description:
   Enables Discord staff "experiments", which are generally prototypes of
   features before they're released on Discord Canary.
-author: joe27g
 download: 'https://github.com/joe27g/EnhancedDiscord/blob/master/plugins/experiments.js'
 github: 'https://github.com/joe27g/'
 support: 'https://discord.gg/XAvh9tq'
