@@ -1,7 +1,9 @@
 import React from 'react'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import style from '../styles/reasons.module.scss'
 import discord from '../images/discordcog.svg'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 const Reasons = () => (
   <StaticQuery
     query={ graphql`
@@ -44,6 +46,11 @@ const Reasons = () => (
                     <div className={style.header}>BENEFITS</div>
                     <div className={style.title}>Ever wanted to see Discord's secret settings?</div>
                     <div className={style.description}>With the help of our talented developers from our <a href="https://discord.gg/D4cAkXX">community</a> you can install plugins to modify Discord to your knees. Look at hidden channels, hidden voice channels, server roles and more. Today is the day you can make your Discord on steroids!</div>
+                    <AniLink className={style.unimportantBtn}
+                    cover
+                    bg="#262626"
+                    duration={0.65}
+                    >SEE ALL PLUGINS</AniLink>
                 </div>
                 <div className={style.secondContainer}>
                     <img src={discord} alt="Discord logo with Cogs inside"
@@ -54,13 +61,16 @@ const Reasons = () => (
                 <div className={style.header}>RECENTLY ADDED</div>
                 <div className={style.cardContainer}>
                     {data.allMarkdownRemark.edges.map(({ node }, i) => (
-                        <Link 
+                        <AniLink 
                         className={style.card} 
                         to={'/plugins' + node.fields.slug} 
-                        key={node.id}>
+                        key={node.id}
+                        cover
+                        bg="#262626"
+                        duration={0.65}>
                             <div className={style.title}>{node.frontmatter.title}</div>
                             <div className={style.excerpt}>{node.excerpt}</div>
-                        </Link>
+                        </AniLink>
                     ))}
                 </div>
             </div>

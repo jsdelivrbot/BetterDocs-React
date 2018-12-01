@@ -11,7 +11,7 @@ import { graphql } from "gatsby"
 const Software = ({ pageContext, data }) => {
   const { softwares } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} plugin${
+  const tagHeader = `${totalCount} Plugin${
     totalCount === 1 ? "" : "s"
   } compatible with "${softwares}"`
 
