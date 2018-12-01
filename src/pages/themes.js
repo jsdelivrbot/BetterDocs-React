@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/layout-mobile-footer'
 import theme from '../styles/theme.module.scss'
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";

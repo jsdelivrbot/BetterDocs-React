@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/layout-mobile-footer'
 import hero from '../styles/hero.module.scss'
 import plugin from '../styles/plugin.module.scss'
 import { Helmet } from "react-helmet";

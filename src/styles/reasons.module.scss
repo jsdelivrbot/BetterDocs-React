@@ -71,6 +71,10 @@
         }
         .secondContainer {
             flex-basis: 50%;
+            margin-top: 25px;
+                @media (min-width: 850px) {
+                    margin-top: 0px;
+                }
             img {
                 margin: 0 auto;
                 display: -webkit-box;

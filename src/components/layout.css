@@ -651,3 +651,11 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar { 
   width: 8px; 
 }
+.mobile-version > footer {
+  display: flex;
+}
+@media only screen and (max-width: 850px) {
+  .mobile-version > footer {
+    display: none;
+  }
+}

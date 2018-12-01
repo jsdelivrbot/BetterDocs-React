@@ -1,8 +1,20 @@
 .pluginsContainer {
     display: block;
     flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 68px;
     @media (min-width: 850px) {
         display: flex;
+        position: initial;
+        top: unset;
+        right: unset;
+        bottom: unset;
+        left: unset;
+        padding-top: unset;
     }
     .contentWrapper {
         order: 1;
@@ -68,9 +80,12 @@
         .Results { 
             display: flex;
             flex-direction: column;
-            max-height: calc(((((100vh - 3.5rem) - 2.5rem) - 2.45rem) - 1.05rem) - 2.8rem); //28.2em
+            max-height: calc(((((100vh - 7.3rem) - 2.5rem) - 2.45rem) - 1.05rem) - 2.8rem); //28.2em
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
+            @media (min-width: 850px) {
+                max-height: calc(((((100vh - 3.5rem) - 2.5rem) - 2.45rem) - 1.05rem) - 2.8rem);
+            }
             .resultCard {
                 padding: 1.05rem;
                 transition: .2s ease-in-out background-color, .2s ease-in-out border-left;
@@ -83,6 +98,9 @@
                 border-bottom-left-radius: 0px;
                 &:hover {
                     background-color: rgba(#339b78, 0.3);
+                }
+                &:last-child {
+                    margin-bottom: 10px;
                 }
                 &.active {
                     border-left: 4px solid #339b78;
@@ -112,6 +130,9 @@
                     border-left: 4px solid transparent;
                     &.active {
                         border-radius: unset !important;
+                    }
+                    &:last-child {
+                        margin-bottom: unset;
                     }
                 }
                 .header {
