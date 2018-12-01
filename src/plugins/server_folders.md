@@ -1,6 +1,6 @@
 ---
-layout: product
 title: Server Folders
+author: mwittrien
 description:
   Adds the feature to create folders to organize your servers.
 
@@ -12,12 +12,12 @@ description:
         - Clear all notifications of the servers within the folder (greyed out if no notifications are present).
         - Open the settingspopout for the folder to change the icon, the name and/or the color of the folder.
         - Delete the folder.
-author: mwittrien
+download: https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/ServerFolders
 github: 'https://github.com/mwittrien/'
-download: >-
-  https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/ServerFolders
 support: 'https://discord.gg/Z7PBux5'
+software: [BandagedBD, BetterDiscord]
 ghcommentid: 59
+layout: product
 date: 2018-10-22T23:26:57.729Z
 ---
 Adds the feature to create folders to organize your servers.
