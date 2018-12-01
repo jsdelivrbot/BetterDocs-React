@@ -192,7 +192,7 @@
         display: flex;
         order: 1;
         flex-direction: column;
-        max-height: 26em;
+        max-height: 29.4em;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
         &::-webkit-scrollbar-button { 
@@ -268,6 +268,7 @@
                     opacity: 0.7;
                     border-color: transparent;
                     box-shadow: 0px 0px transparent;
+                    margin-bottom: 40px;
                     svg {
                         height: 15px;
                         width: 15px;
@@ -296,5 +297,14 @@
     svg {
         height: 20px;
         width: 20px;
+    }
+}
+[alt="Upload a Plugin"] {
+    display: none !important;
+    ~ .content {
+        max-height: calc(((((100vh - -1.4rem) - 2.5rem) - 2.45rem) - 1.05rem) - 2.8rem);
+        @media (min-width: 850px) {
+            max-height: 38em;
+        }
     }
 }

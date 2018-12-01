@@ -466,3 +466,12 @@
         width: 20px;
     }
 }
+[alt="Upload a Theme"] {
+    display: none !important;
+    ~ .content {
+        max-height: calc(((((100vh - -1.8rem) - 2.5rem) - 2.45rem) - 1.05rem) - 2.8rem);
+        @media (min-width: 850px) {
+            max-height: 39.5em;
+        }
+    }
+}

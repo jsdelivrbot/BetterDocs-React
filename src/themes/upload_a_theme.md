@@ -2,7 +2,8 @@
 title: Upload a Theme
 sub: Uploading a theme is as easy as 1, 2, 3...uhh and maybe more.
 ---
-# Uploading a Theme
+# Steps
+There are only three major steps :)
 
 1. [Create a new file](https://github.com/MrRobotjs/BetterDocs/new/gh-pages/_themes)
 2. Name has to **match** your theme name. 
@@ -32,7 +33,3 @@ sub: Uploading a theme is as easy as 1, 2, 3...uhh and maybe more.
 ---
 ```
   4. Submit. You're done!
-
-# Adding comments
-
-  1. Todo

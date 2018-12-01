@@ -15,7 +15,10 @@ const Plugins = (props) => {
     >
       <section className={plugin.openContentWrapper}
       >
+      {pluginList.edges.map(({ node }, i) => (
         <div className={hero.heroPlugins}
+        key={node.id}
+        alt={node.frontmatter.title}
         >
         {pluginList.edges.map(({ node }, i) => (
           <div className={hero.container}
@@ -55,6 +58,7 @@ const Plugins = (props) => {
         </div>
         ))}
         </div>
+      ))}
         <div className={plugin.content}
           >
           {pluginList.edges.map(({ node }, i) => (

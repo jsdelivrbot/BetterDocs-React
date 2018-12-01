@@ -16,7 +16,10 @@ const Themes = (props) => {
     >
       <section className={style.openContentWrapper}
       >
+      {themeList.edges.map(({ node }, i) => (
         <div className={hero.heroThemes}
+        alt={node.frontmatter.title}
+        key={node.id}
         >
         {themeList.edges.map(({ node }, i) => (
           <div className={hero.container}
@@ -50,12 +53,14 @@ const Themes = (props) => {
           </div>
         ))}
         {themeList.edges.map(({ node }, i) => (
-          <div className={hero.options} key={node.id}>
+          <div className={hero.options} 
+          key={node.id}>
             <a href={node.frontmatter.download} className={hero.downloadBtn} target="blank">Download</a>
             <a href={node.frontmatter.support} className={hero.supportBtn} target="blank">Support</a>
           </div>
           ))}
         </div>
+        ))}
         <div className={style.content}
           >
             {themeList.edges.map(({ node }, i) => (
