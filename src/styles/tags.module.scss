@@ -35,7 +35,6 @@
         font-size: 0.8em;
         margin-left: 5px;
         background-color: #fff;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 0 0px rgba(0, 0, 0, 0.08);
         color: #6f6f6f;
         margin-top: 0.3em;
         margin-bottom: 0.8em;
@@ -44,6 +43,7 @@
             border: 1px solid rgba(51, 155, 120, 0.15);
             outline: unset;
             background-color: rgba(51, 155, 120, 0.1);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 0 0px rgba(0, 0, 0, 0.08);
         }
         &:first-child {
             margin-left: 18px;

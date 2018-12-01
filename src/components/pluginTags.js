@@ -23,12 +23,12 @@ const pluginTags = ({ siteTitle }) => (
         <Link 
         className={style.tag}
         activeClassName={style.active}
-        to="/plugins/#1"
+        to="/plugins/softwares/beautiful-discord/"
         >BeautifulDiscord</Link>
         <Link 
         className={style.tag}
         activeClassName={style.active}
-        to="/plugins/#1"
+        to="/plugins/softwares/discord-injections/"
         >DiscordInjections</Link>
     </div>
 )

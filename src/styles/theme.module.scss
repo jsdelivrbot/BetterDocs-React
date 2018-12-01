@@ -125,17 +125,22 @@
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             .resultCard {
-                width: 100%;
                 padding: 1.05rem;
-                border-bottom: 1px solid rgb(237, 231, 243);
                 transition: .2s ease-in-out background-color, .2s ease-in-out border-left;
-                border-left: 4px solid transparent;
+                width: calc(100% - 50px);
+                margin: 0 auto;
+                background-color: #fff;
+                border: 1px solid #ede7f3;
+                margin-top: 10px;
+                border-radius: 8px;
+                border-bottom-left-radius: 0px;
                 &:hover {
                     background-color: rgba(#339b78, 0.3);
                 }
                 &.active {
                     border-left: 4px solid #339b78;
                     background-color: #fff;
+                    border-radius: 4px !important;
                     .header {
                         .title {
                             color: #339b78;
@@ -148,6 +153,18 @@
                         .p {
                             color: rgba(0, 0, 0, 0.92);
                         }
+                    }
+                }
+                @media (min-width: 850px) {
+                    width: 100%;
+                    margin: unset;
+                    border-radius: unset;
+                    border-bottom-left-radius: unset;
+                    border: unset;
+                    border-bottom: 1px solid #ede7f3;
+                    border-left: 4px solid transparent;
+                    &.active {
+                        border-radius: unset !important;
                     }
                 }
                 .header {

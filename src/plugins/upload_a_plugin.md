@@ -1,6 +1,7 @@
 ---
 title: Upload a Plugin
 sub: Uploading a plugin is as easy as 1, 2, 3...uhh and maybe more.
+software: [BandagedBD,EnhancedDiscord,DiscordInjections,BeautifulDiscord,BetterDiscord]
 ---
 # Uploading a Plugin
 
