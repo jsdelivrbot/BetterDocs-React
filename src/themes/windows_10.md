@@ -3,11 +3,10 @@ title: Windows 10
 author: gco360
 description:
    A windows 10 theme
-github: https://github.com/gco360/
 download: https://github.com/gco360/windows-10-theme
-demo: https://cdn.rawgit.com/gco360/windows-10-theme/master/windows10.theme.css
+github: https://github.com/gco360/
 support: https://discord.gg/6fXRKyx
-style: dark
+demo: https://cdn.rawgit.com/gco360/windows-10-theme/master/windows10.theme.css
 images:
   - name: Windows 10 Preview
     image: /images/themes/Windows_10_Preview.png
@@ -17,7 +16,8 @@ images:
     image: /images/themes/Windows_10_Preview_-_Delete_Message.png
   - name: Windows 10 Preview - Friends Modal
     image: /images/themes/Windows_10_Preview_-_Friends_Modal.png
-layout: product
+style: dark
 ghcommentid: 27
+layout: product
 ---
 A windows 10 theme

@@ -2,12 +2,11 @@
 title: Space
 author: gco360
 description:
-   lets leave #earth and go to #space 
-github: https://github.com/gco360/
+  lets leave '#earth and go to '#space 
 download: https://github.com/gco360/space-theme
-demo: https://cdn.rawgit.com/gco360/space-theme/master/space.theme.css
+github: https://github.com/gco360/
 support: https://discord.gg/6fXRKyx
-style: dark
+demo: https://cdn.rawgit.com/gco360/space-theme/master/space.theme.css
 images:
   - name: Space Preview
     image: /images/themes/Space_Preview.jpg
@@ -17,7 +16,8 @@ images:
     image: /images/themes/Space_Preview_-_Voice_Settings_Page.jpg
   - name: Space Preview - Friends Page
     image: /images/themes/Space_Preview_-_Friends_Page.jpg
-layout: product
+style: dark
 ghcommentid: 24
+layout: product
 ---
 lets leave #earth and go to #space 

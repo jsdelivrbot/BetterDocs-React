@@ -1,6 +1,6 @@
 ---
-layout: product
 title: TwitchCord
+author: BakedPvP
 description:
   Twitchcord is a theme created with the idea of bringing Twitch to Discord, combined with a little extra personality.
   <br />
@@ -14,8 +14,10 @@ description:
   <br />
   **EVER EVOLVING**
   As Discord continues to grow, change, and update, so too shall Twitchcord. Fear not, there is no end in sight for this theme.
-author: BakedPvP
+download: https://github.com/twitchcord/twitchcord/blob/master/theme/Twitchcord.theme.css
 github: 'https://github.com/twitchcord/'
+support: 'https://discordapp.com/invite/XtA2pv'
+demo: https://rawcdn.githack.com/twitchcord/twitchcord/71e23438e9c89b6d1818e047ee2c2dcb7f768922/theme/Twitchcord.theme.css
 images:
   - image: /images/user_uploads/twitchcord_preview.jpg
     name: TwitchCord Preview
@@ -23,17 +25,10 @@ images:
     name: TwitchCord Preview - Bot Service
   - image: /images/user_uploads/twitchcord_preview_-_user_popouts.jpg
     name: TwitchCord Preview - User Popouts
-download: >-
-  https://github.com/twitchcord/twitchcord/blob/master/theme/Twitchcord.theme.css
 auto: true
-support: 'https://discordapp.com/invite/XtA2pv'
-demo: >-
-  https://rawcdn.githack.com/twitchcord/twitchcord/71e23438e9c89b6d1818e047ee2c2dcb7f768922/theme/Twitchcord.theme.css
-software:
-  - BandagedBD
-  - BetterDiscord
 style: dark
 ghcommentid: 183
+layout: product
 date: 2018-10-28T22:52:22.444Z
 ---
 Twitchcord is a theme created with the idea of bringing Twitch to Discord, combined with a little extra personality.

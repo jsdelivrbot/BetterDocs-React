@@ -3,11 +3,10 @@ title: Thanos
 author: gco360
 description:
    infinity war set one theme
-github: https://github.com/gco360/
 download: https://github.com/gco360/thanos-theme
-demo: https://cdn.rawgit.com/gco360/thanos-theme/master/thanos.theme.css
+github: https://github.com/gco360/
 support: https://discord.gg/6fXRKyx
-style: dark
+demo: https://cdn.rawgit.com/gco360/thanos-theme/master/thanos.theme.css
 images:
   - name: Thanos Preview
     image: /images/themes/Thanos_Preview.jpg
@@ -17,7 +16,8 @@ images:
     image: /images/themes/Thanos_Preview_-_Recent_Mentions_Popup.png
   - name: Thanos Preview - Upload Modal
     image: /images/themes/Thanos_Preview_-_Upload_Modal.png
-layout: product
+style: dark
 ghcommentid: 26
+layout: product
 ---
 infinity war set one theme
