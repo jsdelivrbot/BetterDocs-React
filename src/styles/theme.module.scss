@@ -433,9 +433,12 @@
         .mdWrapper {
             width: calc(100% - 75px);
             display: block;
+            flex-wrap: unset;
+            justify-content: unset;
             @media (min-width: 850px) {
                 width: calc(100% - 300px);
-                display: block;
+                display: flex;
+                flex-direction: column;
             }
         }
     }
