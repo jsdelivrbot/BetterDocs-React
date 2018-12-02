@@ -10,25 +10,45 @@ There are only three major steps :)
 2. Name has to **match** your Plugin name. 
     > Make sure it's a markdown file ".md"
 3. Follow the following format for the file
-    > Anything that has a ```#*``` is a ***requirement!***
 ```md
 ---
-  title: {Plugin Name} #*
-  author: {Author Name} #*
-  description: #* Markdown is allowed
+  # [REQUIRED]
+  title: {Plugin Name}
+  #PLACEHOLDER
+  # [REQUIRED]
+  author: {Author Name}
+  #PLACEHOLDER
+  # [REQUIRED] - Short paragraph describing the content and/or purpose of the plugin that will appear in the permalink of your page and other places on the site
+  description:
     A Description
-  download: https://github.com/ #* Github isn't required but if it isn't used then further inspection will happen
+  #PLACEHOLDER
+  # [REQUIRED] - Github isn't required but if it isn't used then further inspection will happen
+  download: https://github.com/
+  # [OPTIONAL]
   github: https://github.com/{Author Name}/
-  support: # A link to allow people to get support or give feedback for the Plugin
-  tags: [tag,tag2] # Tags are in an array and can seperate theme with commas ","
-  software: [BandagedBD,EnhancedDiscord,DiscordInjections,BeautifulDiscord,BetterDiscord] # The list of softwares your plugin supports (remove if you don't support it)
+  #PLACEHOLDER
+  # [OPTIONAL] - A link to allow people to get support or give feedback for the Plugin
+  support:
+  #PLACEHOLDER
+  # [OPTIONAL] - Tags are in an array and can seperate plugin with commas ","
+  tags: [tag,tag2]
+  #PLACEHOLDER
+  # [REQUIRED] - The list of softwares your plugin supports (remove if you don't support it)
+  software: [BandagedBD,EnhancedDiscord,DiscordInjections,BeautifulDiscord,BetterDiscord]
+  #PLACEHOLDER
+  # [OPTIONAL]
   images:
     - name: {Plugin Name} Preview
       image: https://imgur.com/upload # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen
     - name: {Plugin Name} Preview - {Image Name}
       image: https://imgur.com/upload # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen
+  #PLACEHOLDER
+  # [REQUIRED] - LEAVE AS IS
   ghcommentid: #0
+  #PLACEHOLDER
+  # [REQUIRED] - LEAVE AS IS
   layout: product #* DON'T CHANGE
 ---
+  # A full description of your plugin. All Markdown is allowed.
 ```
   4. Submit. You're done!

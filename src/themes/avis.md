@@ -14,9 +14,7 @@ download: 'https://github.com/YuraBrm/BetterDiscordThemes/blob/master/Avis/Avis.
 auto: true
 support: 'https://github.com/YuraBrm/BetterDiscordThemes/issues'
 demo: 'https://cdn.rawgit.com/YuraBrm/BetterDiscordThemes/master/Avis/Avis.theme.css'
-tags: [tag, tag33]
-software:
-  - BetterDiscord
+tags: [Tag1, Tag2]
 style: dark
 ghcommentid: 5
 date: 2018-10-25T17:02:23.986Z
