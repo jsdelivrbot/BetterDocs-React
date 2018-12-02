@@ -11,7 +11,6 @@ style: dark
 images:
   - name: Metro For Discord Preview
     image: /images/themes/Metro_For_Discord_Preview.png
-    
 layout: product
 ghcommentid: 17
 ---
