@@ -61,6 +61,7 @@ collections:
       - label: "Images"
         name: "images"
         widget: "list"
+        required: false
         fields:
           - label: "Image Name"
             name: "name"
