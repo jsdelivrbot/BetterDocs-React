@@ -19,7 +19,7 @@ const Themes = (props) => {
     <div className={theme.themesContainer}
     >
 
-    <section className={theme.contentWrapper}
+    <section className={theme.contentSection}
     >
 
     <div className={theme.titleBar}>

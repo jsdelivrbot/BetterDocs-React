@@ -14,7 +14,7 @@ const Themes = (props) => {
   <Layout>
     <div className={style.themesContainer}
     >
-      <section className={style.openContentWrapper}
+      <section className={style.openContentSection}
       >
       {themeList.edges.map(({ node }, i) => (
         <div className={hero.heroThemes}

@@ -3,8 +3,11 @@ title: Upload a Plugin
 sub: Uploading a plugin is as easy as 1, 2, 3...uhh and maybe more.
 software: [BandagedBD,EnhancedDiscord,DiscordInjections,BeautifulDiscord,BetterDiscord]
 ---
-# Steps
-There are only three major steps :)
+# Submit your work
+Want to submit your theme to our [Showcase](https://betterdocs.us/plugins/)? Follow these instructions slow & carefully.
+
+## Steps
+I promise it doesn't take long :)
 
 1. [Create a new file](https://github.com/MrRobotjs/BetterDocs/new/gh-pages/_Plugins)
 2. Name has to **match** your Plugin name. 
@@ -52,3 +55,6 @@ There are only three major steps :)
   # A full description of your plugin. All Markdown is allowed.
 ```
   4. Submit. You're done!
+
+## Changed your mind / need to edit your submission?
+If you want to edit anything in your submission later, simply edit the .md file by submitting another PR.

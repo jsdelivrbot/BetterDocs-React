@@ -2,14 +2,16 @@
 title: Upload a Theme
 sub: Uploading a theme is as easy as 1, 2, 3...uhh and maybe more.
 ---
-# Steps
-There are only three major steps :)
+# Submit your work
+Want to submit your theme to our [Showcase](https://betterdocs.us/themes/)? Follow these instructions slow & carefully.
+
+## Steps
+I promise it doesn't take long :)
 
 1. [Create a new file](https://github.com/MrRobotjs/BetterDocs/new/gh-pages/_themes)
 2. Name has to **match** your theme name. 
     > Make sure it's a markdown file ".md"
 3. Follow the following format for the file
-    > Anything that has a ```#*``` is a ***requirement!***
 ```md
 ---
   # [REQUIRED]
@@ -56,3 +58,6 @@ There are only three major steps :)
   # A full description of your theme. All Markdown is allowed.
 ```
   4. Submit. You're done!
+
+## Changed your mind / need to edit your submission?
+If you want to edit anything in your submission later, simply edit the .md file by submitting another PR.
