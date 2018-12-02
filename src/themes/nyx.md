@@ -3,15 +3,15 @@ title: Nyx
 author: satoru8
 description:
   A simple yet complex theme.
-github: https://github.com/satoru8/
 download: https://github.com/satoru8/Nyx/blob/master/Nyx.theme.css
-demo: https://cdn.rawgit.com/satoru8/Nyx/master/Nyx.theme.css
+github: https://github.com/satoru8/
 support: http://discord.gg/fjvwb95
-style: dark
+demo: https://cdn.rawgit.com/satoru8/Nyx/master/Nyx.theme.css
 images:
   - name: Nyx Preview
     image: /images/themes/Nyx_Preview.png
-layout: product
+style: dark
 ghcommentid: 19
+layout: product
 ---
 A simple yet complex theme.
