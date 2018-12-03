@@ -492,17 +492,15 @@
             }
         }
         .footer {
-            display: flex;
+            display: block;
             border-top: 1px solid #f5f3f7;
-            .first {
-                flex: 1;
-                margin-top: 25px;
-            }
             .edit {
                 margin-top: 25px;
                 opacity: 0.7;
                 border-color: transparent !important;
                 box-shadow: 0px 0px transparent !important;
+                margin-bottom: 25px;
+                display: block;
                 svg {
                     height: 15px;
                     width: 15px;
@@ -730,11 +728,14 @@
 }
 
 [alt="Upload a Theme"] {
-    display: none !important;
+    /*display: none !important;*/
     ~.content {
-        max-height: calc(((((100vh - -1.8rem) - 2.5rem) - 2.45rem) - 1.05rem) - 2.8rem);
+        max-height: calc(((((100vh - 3.8rem) - 2.5rem) - 2.45rem) - 1.05rem) - 2.8rem);
         @media (min-width: 850px) {
-            max-height: 39.5em;
+            max-height: 34.3em;
+        }
+        .edit {
+            margin-bottom: -25px;
         }
     }
 }

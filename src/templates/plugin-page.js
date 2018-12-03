@@ -25,17 +25,19 @@ const Plugins = (props) => {
           key={node.id}
           >
             {node.frontmatter.title && <h2 className={hero.h2}>{node.frontmatter.title}</h2>}
-            <div className={hero.paragraph}
-            >
-              {node.frontmatter.github ? 
-              <p className={hero.p}>
-              made by <a href={node.frontmatter.github} target="blank">
-              {node.frontmatter.author}</a>
-              </p> :
-              <p className={hero.p}>
-              made by <b>{node.frontmatter.author}</b>
-              </p>}
-            </div>
+            {node.frontmatter.author &&
+              <div className={hero.paragraph}
+              >
+                {node.frontmatter.github ? 
+                <p className={hero.p}>
+                made by <a href={node.frontmatter.github} target="blank">
+                {node.frontmatter.author}</a>
+                </p> :
+                <p className={hero.p}>
+                made by <b>{node.frontmatter.author}</b>
+                </p>}
+              </div>
+            }
             <div className={hero.detailsContainer}>
             {node.frontmatter.github &&
               <a className={hero.linkContainer} href={node.frontmatter.github} target="blank">
@@ -74,10 +76,6 @@ const Plugins = (props) => {
               <div
               className={plugin.footer}
               >
-                <div
-                className={plugin.first}
-                ></div>
-
                 <a
                 className={plugin.edit}
                 href={ 'https://github.com/MrRobotjs/BetterDocs-React/edit/master/src/plugins' + node.fields.slug + '.md'}

@@ -19,7 +19,7 @@ const Tagss = ({ pageContext, data }) => {
     <div className={style.themesContainer}
     >
 
-    <section className={style.openContentWrapper}
+    <section className={style.openContentSection}
     >
 
       <div className={hero.heroThemes}
