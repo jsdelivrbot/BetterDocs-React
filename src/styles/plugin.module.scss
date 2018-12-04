@@ -265,7 +265,7 @@
                     opacity: 0.7;
                     border-color: transparent;
                     box-shadow: 0px 0px transparent;
-                    display: block;
+                    display: -webkit-inline-box;
                     margin-bottom: 25px;
                     svg {
                         height: 15px;
@@ -305,8 +305,11 @@
         @media (min-width: 850px) {
             max-height: 33.2em;
         }
-        .edit {
-            margin-bottom: -25px;
-        }
+        /*.edit {
+            margin-bottom: unset;
+            @media (min-width: 850px) {
+                margin-bottom: -25px;
+            }
+        }*/
     }
 }

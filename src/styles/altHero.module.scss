@@ -169,22 +169,32 @@
         display: flex;
     }
     .options {
-        flex: 1;
-        display: block;
+        flex: 1 1;
+        display: flex;
+        text-align: left;
+        max-width: calc(100% - 75px);
+        margin: 0 auto;
+        margin-top: 10px;
+        flex-direction: row;
         @media (min-width: 850px) {
-            display: flex;
             flex-direction: column;
+            margin-top: unset;
+            text-align: unset;
+            max-width: unset;
+            margin: unset;
         }
         .downloadBtn {
             background-color: #339b78;
-            display: block;
-            padding: 10px 0px;
-            width: calc(100% - 180px);
+            padding: 10px 30px;
             border-radius: 25px;
             color: #fff;
-            margin: 0 auto;
             margin-bottom: 5px;
             transition: 300ms ease-in-out;
+            display: -webkit-inline-box;
+            @media (min-width: 850px) {
+                margin: 0 auto;
+                margin-top: unset;
+            }
             &:hover {
                 background-color: rgba(#339b78,0.85);
             }
@@ -194,14 +204,17 @@
         }
         .supportBtn {
             background-color: #fff;
-            display: block;
             margin-bottom: 5px;
-            padding: 10px 0px;
-            width: calc(100% - 180px);
+            margin-left: 10px;
+            padding: 10px 30px;
             border-radius: 25px;
             color: #339b78;
-            margin: 0 auto;
             transition: 300ms ease-in-out;
+            display: -webkit-inline-box;
+            @media (min-width: 850px) {
+                margin: 0 auto;
+                margin-top: 10px;
+            }
             &:hover {
                 background-color: #ebebeb;
             }
@@ -214,6 +227,8 @@
     .container {
         text-align: left;
         flex: 2;
+        display: flex;
+        flex-direction: column;
         .h2 {
             color: #282828;
             font-size: 1.3em;
@@ -274,9 +289,6 @@
                     -o-transition-duration: 800ms;
                     transition-duration: 800ms;
                     border: 1px solid #eff2f6;
-                    &[href="/themes/tags/undefined/"], &[href="/themes/tags/"], &[href="/plugins/tags/undefined/"], &[href="/plugins/tags/"] {
-                        display: none;
-                    }
                     &:first-child {
                         margin-left: unset;
                     }

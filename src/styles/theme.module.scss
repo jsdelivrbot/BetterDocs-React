@@ -500,7 +500,7 @@
                 border-color: transparent !important;
                 box-shadow: 0px 0px transparent !important;
                 margin-bottom: 25px;
-                display: block;
+                display: -webkit-inline-box;
                 svg {
                     height: 15px;
                     width: 15px;
@@ -734,8 +734,11 @@
         @media (min-width: 850px) {
             max-height: 34.3em;
         }
-        .edit {
-            margin-bottom: -25px;
-        }
+        /*.edit {
+            margin-bottom: unset;
+            @media (min-width: 850px) {
+                margin-bottom: -25px;
+            }
+        }*/
     }
 }
