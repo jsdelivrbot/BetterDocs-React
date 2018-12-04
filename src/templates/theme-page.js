@@ -59,13 +59,12 @@ const Themes = (props) => {
             </div>
           </div>
         ))}
-        {themeList.edges.map(({ node }, i) => (
-          <div className={hero.options} 
-          key={node.id}>
+        {node.frontmatter.download &&
+          <div className={hero.options} key={node.id}>
             {node.frontmatter.download && <a href={node.frontmatter.download} className={hero.downloadBtn} target="blank">Download</a>}
             {node.frontmatter.support && <a href={node.frontmatter.support} className={hero.supportBtn} target="blank">Support</a>}
           </div>
-          ))}
+        }
         </div>
         ))}
         <div className={style.content}

@@ -58,14 +58,14 @@ const Plugins = (props) => {
             </div>
           </div>
         ))}
-        {pluginList.edges.map(({ node }, i) => (
-        <div className={hero.options} key={node.id}>
-          {node.frontmatter.download && <a href={node.frontmatter.download} className={hero.downloadBtn} target="blank">Download</a>}
-          {node.frontmatter.support && <a href={node.frontmatter.support} className={hero.supportBtn} target="blank">Support</a>}
+        {node.frontmatter.download &&
+          <div className={hero.options} key={node.id}>
+            {node.frontmatter.download && <a href={node.frontmatter.download} className={hero.downloadBtn} target="blank">Download</a>}
+            {node.frontmatter.support && <a href={node.frontmatter.support} className={hero.supportBtn} target="blank">Support</a>}
+          </div>
+        }
         </div>
         ))}
-        </div>
-      ))}
         <div className={plugin.content}
           >
           {pluginList.edges.map(({ node }, i) => (
