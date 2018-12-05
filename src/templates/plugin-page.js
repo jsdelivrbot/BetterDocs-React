@@ -91,6 +91,11 @@ const Plugins = (props) => {
               <div
               className={plugin.footer}
               >
+                <div
+                className={plugin.date}
+                >
+                Last edit: {node.frontmatter.date}
+                </div>
                 <a
                 className={plugin.edit}
                 href={ 'https://github.com/MrRobotjs/BetterDocs-React/edit/master/src/plugins' + node.fields.slug + '.md'}
@@ -155,7 +160,7 @@ export const pluginsQuery = graphql`
                 support
                 auto
                 ghcommentid
-                date
+                date(formatString: "DD/MM/YYYY")
                 }
             fields {
                 slug

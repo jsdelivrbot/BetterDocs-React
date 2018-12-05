@@ -93,6 +93,11 @@ const Themes = (props) => {
               <div
               className={style.footer}
               >
+                <div
+                className={style.date}
+                >
+                Last edit: {node.frontmatter.date}
+                </div>
                 <a
                 className={style.edit}
                 href={ 'https://github.com/MrRobotjs/BetterDocs-React/edit/master/src/themes' + node.fields.slug + '.md'}
@@ -157,6 +162,7 @@ export const themesQuery = graphql`
             download
             support
             auto
+            date(formatString: "DD/MM/YYYY")
           }
           fields {
             slug

@@ -258,8 +258,15 @@
                 }
             }
             .footer {
-                display: block;
+                display: flex;
                 border-top: 1px solid #f5f3f7;
+                flex-direction: row;
+                .date {
+                    flex: 1;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    color: #3a3a3a;
+                }
                 .edit {
                     margin-top: 25px;
                     opacity: 0.7;
