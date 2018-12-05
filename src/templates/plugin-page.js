@@ -60,7 +60,19 @@ const Plugins = (props) => {
         ))}
         {node.frontmatter.download &&
           <div className={hero.options} key={node.id}>
-            {node.frontmatter.download && <a href={node.frontmatter.download} className={hero.downloadBtn} target="blank">Download</a>}
+            {node.frontmatter.auto ?
+              <a href={'https://minhaskamal.github.io/DownGit/#/home?url=' + node.frontmatter.download} className={hero.downloadBtn} target="blank">
+                {node.frontmatter.download && 
+                  <span>Download</span>
+                }
+              </a>
+              :
+              <a href={node.frontmatter.download} className={hero.downloadBtn} target="blank">
+                {node.frontmatter.download && 
+                  <span>Download</span>
+                }
+              </a>
+            }
             {node.frontmatter.support && <a href={node.frontmatter.support} className={hero.supportBtn} target="blank">Support</a>}
           </div>
         }
@@ -141,7 +153,7 @@ export const pluginsQuery = graphql`
                 github
                 download
                 support
-                layout
+                auto
                 ghcommentid
                 date
                 }

@@ -10,6 +10,7 @@ github: https://github.com/Mega-Mewthree
 support: https://discordapp.com/invite/ZYND2Xd
 tags: [Tag1, Tag2]
 software: [BandagedBD, BetterDiscord]
+auto: true
 ghcommentid: 34
 layout: product
 ---
