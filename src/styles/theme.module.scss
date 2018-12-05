@@ -616,14 +616,13 @@
                 margin-bottom: 30px;
                 border-radius: 2px;
                 transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s; //flex: 1 0 32%;
-                background-color: rgba(0, 0, 0, 0.03);
                 border-radius: 4px;
-                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.28), 0px 0px 1px 0px #d6d6d6;
                 &:last-child {
                     margin-bottom: unset;
                 }
                 &:hover, &:focus, &:active {
                     background-color: rgba(51, 155, 120, 0.3);
+                    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.28), 0px 0px 1px 0px #d6d6d6;
                 }
                 &:focus, &:active {
                     outline: unset;
