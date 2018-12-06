@@ -535,8 +535,10 @@
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         max-height: calc(((((100vh - 2.1rem) - 2.5rem) - 2.45rem) - 1.05rem) - 2.8rem); //28.2em
+        background: rgb(251, 250, 252);
         @media (min-width: 850px) {
             max-height: 32.3em;
+            background: transparent;
         }
         &::-webkit-scrollbar-button {
             display: none;
@@ -578,10 +580,8 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-            background: rgb(251, 250, 252);
             @media (min-width: 850px) {
                 display: flex;
-                background: transparent;
             }
             .wrapperIcon {
                 display: flex;
