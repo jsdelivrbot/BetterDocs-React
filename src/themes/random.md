@@ -7,6 +7,7 @@ download: https://github.com/Modder4869/BdBrokenStuff/tree/master/Themes/v1
 github: https://github.com/Modder4869
 support: https://github.com/Modder4869/BdBrokenStuff/issues
 demo: https://cdn.rawgit.com/Modder4869/BdBrokenStuff/9fc16142/Themes/v1/random.theme.css
+thumbnail: https://i.imgur.com/Qyf3Q6N.png
 images:
   - name: Random Preview
     image: /images/themes/Random_Preview.png

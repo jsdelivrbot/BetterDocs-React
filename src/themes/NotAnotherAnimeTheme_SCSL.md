@@ -6,6 +6,7 @@ github: 'https://github.com/puckzxz'
 download: https://github.com/puckzxz/NotAnotherAnimeTheme/blob/master/NotAnotherAnimeThemeSCSL.theme.css
 support: 'https://discord.gg/FdZhbjY'
 demo: https://8xs4qxklp8.execute-api.us-east-2.amazonaws.com/release/gorawgit?giturl=/puckzxz/NotAnotherAnimeTheme/master/NotAnotherAnimeThemeSCSL.theme.css
+thumbnail: https://i.imgur.com/HStMvDg.jpg
 images:
   - image: 'https://i.imgur.com/HStMvDg.jpg'
     name: NotAnotherAnimeTheme - SCSL Preview

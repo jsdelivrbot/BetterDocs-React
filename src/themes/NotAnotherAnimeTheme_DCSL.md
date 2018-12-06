@@ -6,6 +6,7 @@ download: https://github.com/puckzxz/NotAnotherAnimeTheme/blob/master/NotAnother
 github: 'https://github.com/puckzxz'
 support: 'https://discord.gg/FdZhbjY'
 demo: https://8xs4qxklp8.execute-api.us-east-2.amazonaws.com/release/gorawgit?giturl=/puckzxz/NotAnotherAnimeTheme/master/NotAnotherAnimeThemeDCSL.theme.css
+thumbnail: https://i.imgur.com/B5N8Owl.jpg
 images:
   - image: 'https://i.imgur.com/B5N8Owl.jpg'
     name: NotAnotherAnimeTheme - DCSL Preview

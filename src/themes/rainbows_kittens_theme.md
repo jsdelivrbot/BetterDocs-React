@@ -7,6 +7,7 @@ download: https://github.com/Azagwen/Rainbow_kittens_theme
 github: https://github.com/Azagwen/
 support: https://github.com/Azagwen/Rainbow_kittens_theme/issues
 demo: https://cdn.rawgit.com/Azagwen/Rainbow_kittens_theme/master/Rainbow_kittens_V0.1.2.theme.css
+thumbnail: https://i.imgur.com/Cm3fIYB.png
 images:
   - name: Rainbows Kittens Theme Preview
     image: /images/themes/Rainbows_Kittens_Theme_Preview.png
