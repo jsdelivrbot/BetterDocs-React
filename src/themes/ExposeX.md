@@ -6,6 +6,7 @@ download: 'https://betterdiscord.net/ghdl?id=1958'
 github: 'https://github.com/CorbsEditor'
 support: 'https://discord.gg/Pdz7jAH'
 demo: https://rawgit.com/CorbsEditor/Themes-for-BetterDiscord/master/Expose%20X/ExposeXRaw.theme.css
+thumbnail: https://i.imgur.com/wxA2YcQ.jpg
 images:
   - image: /images/themes/Expose_X_Preview.png
     name: ExposeX Preview
