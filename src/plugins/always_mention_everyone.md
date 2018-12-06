@@ -11,6 +11,7 @@ support: https://discordapp.com/invite/ZYND2Xd
 tags: [Tag1, Tag2]
 software: [BandagedBD, BetterDiscord]
 auto: true
+status: Updated
 ghcommentid: 34
 layout: product
 ---

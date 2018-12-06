@@ -33,6 +33,7 @@ return graphql(`{
               author
               github
               download
+              status
               support
               layout
               ghcommentid
@@ -64,6 +65,7 @@ return graphql(`{
               author
               thumbnail
               github
+              status
               download
               support
               layout

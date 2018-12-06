@@ -336,6 +336,46 @@
                 }
             }
         }
+        .statusContainer {
+            margin-top: 14px;
+            .status {
+                color: #4e4e4e;
+                display: -webkit-box;
+                div[class="Updated"] {
+                    background: #00804b;
+                    margin-left: 5px;
+                    border-radius: 2px;
+                    color: #fff;
+                    padding: 5px 10px;
+                    position: relative;
+                    top: 0px;
+                    font-size: 0.8em;
+                    display: -webkit-inline-box;
+                }
+                div[class="Outdated"] {
+                    background: #a70a0a;
+                    margin-left: 5px;
+                    border-radius: 2px;
+                    color: #fff;
+                    padding: 5px 10px;
+                    position: relative;
+                    top: 0px;
+                    font-size: 0.8em;
+                    display: -webkit-inline-box;
+                }
+                .unknown {
+                    background: #005180;
+                    margin-left: 5px;
+                    border-radius: 2px;
+                    color: #fff;
+                    padding: 5px 10px;
+                    position: relative;
+                    top: 0px;
+                    font-size: 0.8em;
+                    display: -webkit-inline-box;
+                }
+            }
+        }
         .input {
             @media (min-width: 850px) {
                 width: calc(100% - 500px);

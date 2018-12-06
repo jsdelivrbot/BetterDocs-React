@@ -14,6 +14,7 @@ images:
   - image: static/media/Avis_Preview_-_Keybind_Settings_Page.png
     name: Avis Preview - Keybind Settings Page
 auto: true
+status: Updated
 style: dark
 ghcommentid: 5
 layout: product

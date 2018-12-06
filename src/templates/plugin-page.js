@@ -56,6 +56,19 @@ const Plugins = (props) => {
               </div>
               }
             </div>
+            {node.frontmatter.author &&
+            <div className={hero.statusContainer}>
+              {node.frontmatter.status ?
+                  <div className={hero.status}>
+                    <span>Status:</span> <div className={node.frontmatter.status}>{node.frontmatter.status}</div>
+                  </div>
+                :
+                  <div className={hero.status}>
+                    <span>Status:</span> <div className={hero.unknown}>Unknown</div>
+                  </div>
+              }
+              </div>
+            }
           </div>
         ))}
         {node.frontmatter.download &&
@@ -160,6 +173,7 @@ export const pluginsQuery = graphql`
                 github
                 download
                 support
+                status
                 auto
                 ghcommentid
                 date(formatString: "DD/MM/YYYY")

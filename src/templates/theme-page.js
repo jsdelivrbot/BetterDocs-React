@@ -57,6 +57,19 @@ const Themes = (props) => {
               </div>
               }
             </div>
+            {node.frontmatter.author &&
+            <div className={hero.statusContainer}>
+              {node.frontmatter.status ?
+                  <div className={hero.status}>
+                    <span>Status:</span> <div className={node.frontmatter.status}>{node.frontmatter.status}</div>
+                  </div>
+                :
+                  <div className={hero.status}>
+                    <span>Status:</span> <div className={hero.unknown}>Unknown</div>
+                  </div>
+              }
+              </div>
+            }
           </div>
         ))}
         {node.frontmatter.download &&
@@ -170,6 +183,7 @@ export const themesQuery = graphql`
             auto
             demo
             style
+            status
             date(formatString: "DD/MM/YYYY")
           }
           fields {
