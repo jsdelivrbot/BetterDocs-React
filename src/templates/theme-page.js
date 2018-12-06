@@ -74,8 +74,12 @@ const Themes = (props) => {
                 }
               </a>
             }
+            {node.frontmatter.demo &&
+            <a href={'/demo/' + node.frontmatter.style + '.html?theme=' + node.frontmatter.demo} className={hero.demoBtn} target="blank">Demo</a>
+            }
             {node.frontmatter.support && 
-            <a href={node.frontmatter.support} className={hero.supportBtn} target="blank">Support</a>}
+            <a href={node.frontmatter.support} className={hero.supportBtn} target="blank">Support</a>
+            }
           </div>
         }
         </div>
@@ -164,6 +168,8 @@ export const themesQuery = graphql`
             download
             support
             auto
+            demo
+            style
             date(formatString: "DD/MM/YYYY")
           }
           fields {
