@@ -8,6 +8,7 @@ download: 'https://github.com/Vaxuuu/Indigo-Theme/blob/master/Indigo.theme.css'
 github: 'https://github.com/Vaxuuu/'
 support: 'https://github.com/Vaxuuu/Indigo-Theme/issues'
 demo: 'https://cdn.rawgit.com/Vaxuuu/Indigo-Theme/master/Indigo.theme.css'
+thumbnail: https://i.imgur.com/tWhLb11.png
 images:
   - image: /images/themes/Indigo_Preview.png
     name: Indigo Preview

@@ -7,6 +7,7 @@ download: https://github.com/archnemeziz/Discord
 github: https://github.com/archnemeziz
 support: https://github.com/archnemeziz/Discord/issues
 demo: https://cdn.rawgit.com/archnemeziz/Discord/master/ElegantBlue.theme.css
+thumbnail: https://i.imgur.com/IAdfuzb.png
 images:
   - name: Elegant Blue Preview
     image: /images/themes/Elegant_Blue_Preview.png

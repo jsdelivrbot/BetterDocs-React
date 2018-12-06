@@ -6,6 +6,7 @@ download: https://github.com/xNightWulf/ThemesForBetterDiscord/blob/master/NeonW
 github: 'https://github.com/xNightWulf/'
 support: 'https://discord.gg/5BtB3Tc'
 demo: https://rawcdn.githack.com/xNightWulf/ThemesForBetterDiscord/master/NeonWaves.theme.css
+thumbnail: https://i.imgur.com/ZsAx70J.png
 images:
   - image: /images/user_uploads/neon_waves_preview.png
     name: Neon Waves Preview

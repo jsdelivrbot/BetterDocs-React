@@ -6,6 +6,7 @@ download: https://github.com/DevilsLynAvenged/DevilsLynAvenged/blob/master/Theme
 github: 'https://github.com/DevilsLynAvenged/'
 support: 'https://discord.gg/CZCbtRq'
 demo: https://rawcdn.githack.com/DevilsLynAvenged/DevilsLynAvenged/6040d3e4b48bdc886155cc960124e225d3f681ea/Theme_Group_2/Danganronpa.theme.css
+thumbnail: https://i.imgur.com/wxA2YcQ.jpg
 images:
   - image: /images/user_uploads/danganronpa_preview.png
     name: Danganronpa Preview

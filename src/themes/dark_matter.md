@@ -6,6 +6,7 @@ download: https://github.com/cosmicsalad/Discord-Themes-and-Plugins/blob/master/
 github: 'https://github.com/cosmicsalad'
 support: 'https://github.com/cosmicsalad/Discord-Themes-and-Plugins/issues'
 demo: https://cdn.rawgit.com/cosmicsalad/Discord-Themes-and-Plugins/master/themes/DarkMatter/DarkMatter.theme.css
+thumbnail: https://i.imgur.com/nknPlVt.jpg
 images:
   - image: /images/themes/Dark_Matter_Preview.jpg
     name: Dark Matter Preview

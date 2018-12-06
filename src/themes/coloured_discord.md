@@ -6,6 +6,7 @@ download: https://github.com/Waterin/Coloured-Discord-Themes/blob/1.0/Simple-Ver
 github: 'https://github.com/Waterin'
 support: 'https://discord.gg/ADn3Mqd'
 demo: https://cdn.rawgit.com/Waterin/Coloured-Discord-Themes/1.0/Simple-Version/Coloured-Discord-Themes-RGB.theme.css
+thumbnail: https://i.imgur.com/5RnBGIG.png
 images:
   - image: /images/themes/Coloured_Discord_Preview.png
     name: Coloured Discord Preview

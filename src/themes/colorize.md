@@ -8,7 +8,7 @@ download: 'https://github.com/mrmaple240/colorize/blob/master/Colorize.theme.css
 github: 'https://github.com/mrmaple240'
 support: 'https://github.com/mrmaple240/colorize/issues'
 demo: 'https://cdn.rawgit.com/mrmaple240/colorize/master/Colorize.theme.css'
-thumbnails: https://i.imgur.com/CNfb9AH.gif
+thumbnail: https://i.imgur.com/CNfb9AH.gif
 images:
   - image: /images/themes/Colorize_Preview.gif
     name: Colorize Preview
