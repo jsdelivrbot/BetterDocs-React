@@ -108,14 +108,6 @@ const Header = () => (
           >
             <span className={mystyles.link}>Server</span>
           </a> 
-          
-          <Link 
-          to="/getting-started/"
-          className={mystyles.linkWrapper}
-          activeClassName={mystyles.active}
-          >
-            <span className={mystyles.link}>Getting Started</span>
-          </Link>
       </nav>
 
       <nav className={mystyles.mobileNav}>

@@ -23,6 +23,7 @@ I promise it doesn't take long :)
   demo: https://rawgit.com/
   style: dark
   tags: []
+  thumbnail:
   images:
     - name: {Theme Name} Preview
       image: https://imgur.com/upload # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen
@@ -46,6 +47,7 @@ Here's is some helpful information to inform you what each field does.
   - **demo** - This is a direct url to the file so the [demo](https://betterdocs.us) can work. For Github it need's to be the **raw** url but to fix the MIME type issue you will need to use [githack](https://raw.githack.com) for the url instead. `[OPTIONAL]
   - **style** - Values: `dark/light`. This specifies the setting for the [demo](https://betterdocs.us). `[REQUIRED (if using demo)]`
   - **tags** - Tags are in an array and can be seperated with commas "," like so `[tag1,tag2]`. `[OPTIONAL]`
+  - **thumbnail** - A direct link to an image that will be the thumbnail and shown on the [themes page](https://betterdocs.us/themes/). (20:11 or 1632x896) `[REQUIRED]`
   - **images** - A list of images that show a preview of your theme. [Imgur](https://imgur.com) is highly recommended for compressed images and reliability. `[OPTIONAL]`
   - **auto** - If your theme is hosted on [Github](https://github.com) then add `true` to allow users to automatically down the file (or even the entire repo) instead of just' visiting the site, if hosted elsewhere leave blank or remove it entirely. `[REQUIRED]`
   - **ghcommentid** - ~~The ID of the issue related to your theme so it can be used in our comments system~~. `[REQUIRED]` 

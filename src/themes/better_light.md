@@ -6,6 +6,7 @@ download: https://github.com/satoru8/BetterLightTheme
 github: 'https://github.com/satoru8/'
 support: 'http://discord.gg/fjvwb95'
 demo: https://raw.githubusercontent.com/satoru8/BetterLightTheme/master/BetterLightTheme.theme.css
+thumbnail: https://i.imgur.com/zg9X7dY.png
 images:
   - image: /images/themes/Better_Light_Preview.png
     name: Better Light

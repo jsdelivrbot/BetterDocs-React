@@ -6,6 +6,7 @@ download: 'https://github.com/satoru8/CleanDark/blob/master/CleanDark.theme.css'
 github: 'https://github.com/satoru8/'
 support: 'http://discord.gg/fjvwb95'
 demo: 'https://cdn.rawgit.com/satoru8/CleanDark/master/CleanDark.theme.css'
+thumbnail: https://i.imgur.com/nzwGICE.png
 images:
   - image: /images/themes/Clean_Dark_Preview.png
     name: Clean Dark Preview

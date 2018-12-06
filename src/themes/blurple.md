@@ -6,6 +6,7 @@ download: 'https://github.com/JimmyHere/Blurple/blob/master/Blurple.theme.css'
 github: 'https://github.com/AltenGD/'
 support: 'https://github.com/JimmyHere/Blurple/issues'
 demo: 'https://cdn.rawgit.com/JimmyHere/Blurple/master/Blurple.theme.css'
+thumbnail: https://i.imgur.com/j7mr9lr.png
 images:
   - image: /images/themes/Blurple_Preview.png
     name: Blurple Preview

@@ -8,6 +8,7 @@ download: 'https://github.com/Mixter213/Discord-Themes/blob/master/ChilledCyan.t
 github: 'https://github.com/Mixter213/'
 support: 'https://github.com/Mixter213/Discord-Themes/issues'
 demo: 'https://cdn.rawgit.com/Mixter213/Discord-Themes/master/ChilledCyan.theme.css'
+thumbnail: https://i.imgur.com/ufitvYu.png
 images:
   - image: /images/themes/Chilled_Cyan_Preview.png
     name: Chilled Cyan Preview
