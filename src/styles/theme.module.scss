@@ -645,6 +645,15 @@
                     background-color: unset;
                     box-shadow: unset;
                     border: unset;
+                    &:hover, &:focus, &:active {
+                        background-color: transparent;
+                        box-shadow: unset;
+                        border: unset;
+                    }
+                    &:focus, &:active {
+                        outline: unset;
+                        border: unset;
+                    }
                 }
                 .imgContainer {
                     height: 11em;
@@ -663,6 +672,7 @@
                         height: 100%;
                         margin: unset;
                         display: -webkit-box;
+                        background-size: cover;
                     }
                 }
                 .title {

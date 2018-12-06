@@ -38,7 +38,7 @@ const Themes = (props) => {
             >
               <div className={theme.imgContainer}
               >
-                <img className={theme.img} alt="src={node.frontmatter.images}"/>
+                <img className={theme.img} alt={node.frontmatter.title} src={node.frontmatter.thumbnail} style={{backgroundImage :  `url(${node.frontmatter.thumbnail})` }}/>
               </div>
                 <div>
                   <a 

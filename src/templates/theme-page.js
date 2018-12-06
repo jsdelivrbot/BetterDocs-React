@@ -93,11 +93,13 @@ const Themes = (props) => {
               <div
               className={style.footer}
               >
+                {node.frontmatter.date && 
                 <div
                 className={style.date}
                 >
                 Last edit: {node.frontmatter.date}
                 </div>
+                }
                 <a
                 className={style.edit}
                 href={ 'https://github.com/MrRobotjs/BetterDocs-React/edit/master/src/themes' + node.fields.slug + '.md'}

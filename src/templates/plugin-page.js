@@ -91,11 +91,13 @@ const Plugins = (props) => {
               <div
               className={plugin.footer}
               >
+                {node.frontmatter.date && 
                 <div
                 className={plugin.date}
                 >
                 Last edit: {node.frontmatter.date}
                 </div>
+                }
                 <a
                 className={plugin.edit}
                 href={ 'https://github.com/MrRobotjs/BetterDocs-React/edit/master/src/plugins' + node.fields.slug + '.md'}
