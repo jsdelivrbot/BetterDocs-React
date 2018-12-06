@@ -4,6 +4,7 @@ import theme from '../styles/theme.module.scss'
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Missing from "../images/missing_image_2.png"
 
 const Themes = (props) => {
   const themeList = props.data.allMarkdownRemark;
@@ -36,10 +37,17 @@ const Themes = (props) => {
             className={theme.cardWrapper}
             key={node.id}
             >
+              { node.frontmatter.thumbnail ?
               <div className={theme.imgContainer}
               >
                 <img className={theme.img} alt={node.frontmatter.title} src={node.frontmatter.thumbnail} style={{backgroundImage :  `url(${node.frontmatter.thumbnail})` }}/>
               </div>
+              :
+              <div className={theme.imgContainer}
+              >
+                <img className={theme.img} alt={node.frontmatter.title} src={Missing} style={{backgroundImage :  `url(${node.frontmatter.thumbnail})` }}/>
+              </div>
+              }
                 <div>
                   <a 
                   className={theme.author}
