@@ -18,6 +18,7 @@ download: https://github.com/twitchcord/twitchcord/blob/master/theme/Twitchcord.
 github: 'https://github.com/twitchcord/'
 support: 'https://discordapp.com/invite/XtA2pv'
 demo: https://rawcdn.githack.com/twitchcord/twitchcord/71e23438e9c89b6d1818e047ee2c2dcb7f768922/theme/Twitchcord.theme.css
+thumbnail: https://i.imgur.com/ZcrO1IJ.jpg
 images:
   - image: /images/user_uploads/twitchcord_preview.jpg
     name: TwitchCord Preview

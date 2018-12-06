@@ -6,6 +6,7 @@ download: https://rawcdn.githack.com/Ruben7173/Ruben7173.github.io/master/Better
 github: 'https://github.com/Ruben7173/'
 support: 'https://github.com/Ruben7173/Ruben7173.github.io/issues'
 demo: https://rawcdn.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Slate-Theme/code.css
+thumbnail: https://i.imgur.com/EFaEne8.png
 images:
   - image: /images/user_uploads/slate_preview.png
     name: Slate Preview

@@ -7,6 +7,7 @@ download: https://github.com/gco360/space-theme
 github: https://github.com/gco360/
 support: https://discord.gg/6fXRKyx
 demo: https://cdn.rawgit.com/gco360/space-theme/master/space.theme.css
+thumbnail: https://i.imgur.com/pL9hw0S.jpg
 images:
   - name: Space Preview
     image: /images/themes/Space_Preview.jpg

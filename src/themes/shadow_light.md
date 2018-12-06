@@ -7,6 +7,7 @@ download: https://github.com/AltenGD/Altens-betterdiscord-Themes-Plugins/blob/ma
 github: https://github.com/AltenGD/
 support: https://cdn.rawgit.com/AltenGD/Altens-betterdiscord-Themes-Plugins/issues
 demo: https://cdn.rawgit.com/AltenGD/Altens-betterdiscord-Themes-Plugins/master/Themes/FrostedGlassRewrite.theme.css
+thumbnail: https://i.imgur.com/3nf8QEZ.jpg
 images:
   - name: Shadow Light Preview
     image: /images/themes/Shadow_Light_Preview.jpg
