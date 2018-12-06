@@ -1,21 +1,47 @@
 import React from 'react'
-//import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 
 import style from '../styles/index.module.scss'
 import Layout from '../components/layout'
-import Hero from '../components/hero'
 
 const DownloadPage = () => (
   <Layout>
-    <Hero />
     <div className={style.contentWrapper}
     >
-    <section className={style.sectionQuote}
+    <section className={style.sectionQuote} alt="BandagedBD"
     >
-    <div className={style.quote}
+    <Link className={style.quote} to="https://github.com/rauenzi/BetterDiscordApp/releases"
     >
-    A few reasons why almost 2 million people have chosen BetterDocs. (Wip)
-    </div>
+    BandagedBD
+    </Link>
+    </section>
+    <section className={style.sectionQuote} alt="EnhancedDiscord"
+    >
+    <Link className={style.quote} to="https://enhanceddiscord.com/"
+    >
+    EnhancedDiscord
+    </Link>
+    </section>
+    <section className={style.sectionQuote} alt="DiscordInjections"
+    >
+    <Link className={style.quote} to="https://github.com/DiscordInjections/DiscordInjections"
+    >
+    DiscordInjections
+    </Link>
+    </section>
+    <section className={style.sectionQuote} alt="BeautifulDiscord"
+    >
+    <Link className={style.quote} to="https://github.com/leovoel/BeautifulDiscord"
+    >
+    BeautifulDiscord
+    </Link>
+    </section>
+    <section className={style.sectionQuote} alt="BetterDiscord"
+    >
+    <Link className={style.quote} to="https://github.com/Jiiks/BetterDiscordApp/releases"
+    >
+    BetterDiscord
+    </Link>
     </section>
     </div>
   </Layout>

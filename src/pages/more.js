@@ -46,13 +46,6 @@ const IndexPage = () => (
                 <div className={more.linkName}
                 >Server</div>
             </a>
-            <Link 
-            className={more.link}
-            to="/getting-started"
-            >
-                <div className={more.linkName}
-                >Getting Started</div>
-            </Link>
         </div>
     </div>
   </Layout>
