@@ -5,13 +5,13 @@ import Layout from '../components/layout'
 
 const DownloadPage = () => (
   <Layout>
-    <div className={style.contentWrapper}
+    <div className={style.downloadWrapper}
     >
     <a className={style.sectionQuote} target="blank" alt="BandagedBD" href="https://github.com/rauenzi/BetterDiscordApp/releases"
     >
     <div className={style.quote}
     >
-    BandagedBD
+    BandagedBD (recommended, page is a wip)
     </div>
     </a>
     <a className={style.sectionQuote} target="blank" alt="EnhancedDiscord" href="https://enhanceddiscord.com/"
