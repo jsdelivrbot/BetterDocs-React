@@ -6,7 +6,6 @@ import { graphql, Link } from "gatsby"
 import Sidebar from '../components/theme-sidebar'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import kebabCase from "lodash/kebabCase"
-import AdSense from 'react-adsense';
 
 const Themes = (props) => {
   const themeList = props.data.listThemes;
@@ -98,13 +97,6 @@ const Themes = (props) => {
         }
         </div>
         ))}
-        <AdSense.Google
-          client='ca-pub-1998206533560539'
-          slot='6545618600'
-          style={{ display: 'block' }}
-          format='auto'
-          responsive='true'
-        />
         <div className={style.content}
           >
             {themeList.edges.map(({ node }, i) => (
