@@ -68,6 +68,9 @@ module.exports = {
               backgroundColor: 'transparent',
             },
           },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+          }
         ],
       },
     },
