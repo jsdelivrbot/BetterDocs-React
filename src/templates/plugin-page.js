@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout-mobile-footer'
 import hero from '../styles/altHero.module.scss'
-import plugin from '../styles/plugin.module.scss'
+import style from '../styles/plugin.module.scss'
 import { graphql, Link } from 'gatsby'
 import Sidebar from '../components/plugin-sidebar'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -11,9 +11,9 @@ const Plugins = (props) => {
   const pluginList = props.data.listPlugins;
   return (
   <Layout>
-    <div className={plugin.pluginsContainer}
+    <div className={style.pluginsContainer}
     >
-      <section className={plugin.openContentWrapper}
+      <section className={style.openContentWrapper}
       >
       {pluginList.edges.map(({ node }, i) => (
         <div className={hero.heroPlugins}
@@ -91,28 +91,33 @@ const Plugins = (props) => {
         }
         </div>
         ))}
-        <div className={plugin.content}
+        <div className={style.content}
           >
           {pluginList.edges.map(({ node }, i) => (
-            <div className={plugin.wrapper}
+            <div className={style.wrapper}
             key={node.id}
             >
+            {node.frontmatter.thumbnail &&
+            <a href={node.frontmatter.thumbnail} target="blank" className={style.imgContainer}>
+              <img className={style.img} src={node.frontmatter.thumbnail} alt={node.frontmatter.title} />
+            </a>
+            }
               <div
-              className={plugin.childWrapper}
+              className={style.childWrapper}
               dangerouslySetInnerHTML={{ __html: node.html }}>
               </div>
               <div
-              className={plugin.footer}
+              className={style.footer}
               >
                 {node.frontmatter.date && 
                 <div
-                className={plugin.date}
+                className={style.date}
                 >
                 Last edit: {node.frontmatter.date}
                 </div>
                 }
                 <a
-                className={plugin.edit}
+                className={style.edit}
                 href={ 'https://github.com/MrRobotjs/BetterDocs-React/edit/master/src/plugins' + node.fields.slug + '.md'}
                 >
                 <svg id='Capa_1' xmlns='http://www.w3.org/2000/svg' width='459' height='459' viewBox='0 0 459 459'>
@@ -128,7 +133,7 @@ const Plugins = (props) => {
 
     </div>
     <AniLink 
-    className={plugin.backButton}
+    className={style.backButton}
     to="/plugins/"
     cover
     bg="#262626"
@@ -172,6 +177,7 @@ export const pluginsQuery = graphql`
                 author
                 github
                 download
+                thumbnail
                 support
                 status
                 auto

@@ -103,6 +103,11 @@ const Themes = (props) => {
             <div className={style.mdWrapper}
             key={node.id}
             >
+            {node.frontmatter.thumbnail &&
+            <a href={node.frontmatter.thumbnail} target="blank" className={style.imgContainer}>
+              <img className={style.img} src={node.frontmatter.thumbnail} alt={node.frontmatter.title} />
+            </a>
+            }
               <div
               className={style.childWrapper}
               dangerouslySetInnerHTML={{ __html: node.html }}>
@@ -180,6 +185,7 @@ export const themesQuery = graphql`
             github
             download
             support
+            thumbnail
             auto
             demo
             style
