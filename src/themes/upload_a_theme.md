@@ -20,7 +20,7 @@ I promise it doesn't take long :)
   download: https://github.com/
   github: https://github.com/{Author Name}/
   support:
-  demo: https://rawgit.com/
+  demo: https://raw.githack.com
   style: dark
   tags: []
   thumbnail:
