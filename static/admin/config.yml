@@ -72,9 +72,9 @@ collections:
             widget: "image"
         
       - label: "Status of your theme"
-      - name: "status"
-      - widget: "select"
-      - options: ["Updated","Outdated"]
+        name: "status"
+        widget: "select"
+        options: ["Updated","Outdated"]
 
       - label: "Auto Download?"
         name: "auto"
@@ -158,9 +158,9 @@ collections:
             widget: "image"
 
       - label: "Status of your plugin"
-      - name: "status"
-      - widget: "select"
-      - options: ["Updated","Outdated"]
+        name: "status"
+        widget: "select"
+        options: ["Updated","Outdated"]
 
       - label: "Auto Download?"
         name: "auto"
