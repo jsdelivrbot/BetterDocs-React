@@ -4,7 +4,7 @@ sub: Uploading a plugin is as easy as 1, 2, 3...uhh and maybe more.
 software: [BandagedBD,EnhancedDiscord,DiscordInjections,BeautifulDiscord,BetterDiscord]
 ---
 # Submit your work
-Want to submit your theme to our [Showcase](https://betterdocs.us/plugins/)? Follow these instructions slow & carefully.
+Want to submit your plugin to our [Showcase](https://betterdocs.us/plugins/)? Follow these instructions slow & carefully.
 
 ## Steps
 I promise it doesn't take long :)
@@ -48,7 +48,7 @@ Here's is some helpful information to inform you what each field does.
   - **tags** - Tags are in an array and can be seperated with commas "," like so `[tag1,tag2]`. `[OPTIONAL]`
   - **software** - The list of softwares your plugin supports. They are sorted in an array and seperated by commas "," like so `[BandagedBD,BeautifulDiscord,DiscordInjections,EnhancedDiscord,BetterDiscord]`. `[REQUIRED]`
   - **images** - A list of images that show a preview of your plugin. [Imgur](https://imgur.com) is highly recommended for compressed images and reliability. `[OPTIONAL]`
-  - **status** - Values: `Updated/Oudated`. The current status of your theme.
+  - **status** - Values: `Updated/Oudated`. The current status of your plugin.
   - **auto** - If your plugin is hosted on [Github](https://github.com) then add `true` to allow users to automatically down the file (or even the entire repo) instead of just' visiting the site, if hosted elsewhere leave blank or remove it entirely. `[REQUIRED]`
   - **ghcommentid** - ~~The ID of the issue related to your plugin so it can be used in our comments system~~. `[REQUIRED]` 
   - **layout** - Used by the [Jekyll](https://api.github.com/repos/MrRobotjs/BetterDocs/) version of this website. `[REQUIRED]` 
