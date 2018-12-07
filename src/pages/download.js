@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import style from '../styles/index.module.scss'
 import Layout from '../components/layout'
@@ -8,41 +7,41 @@ const DownloadPage = () => (
   <Layout>
     <div className={style.contentWrapper}
     >
-    <section className={style.sectionQuote} alt="BandagedBD"
+    <a className={style.sectionQuote} target="blank" alt="BandagedBD" href="https://github.com/rauenzi/BetterDiscordApp/releases"
     >
-    <Link className={style.quote} to="https://github.com/rauenzi/BetterDiscordApp/releases"
+    <div className={style.quote}
     >
     BandagedBD
-    </Link>
-    </section>
-    <section className={style.sectionQuote} alt="EnhancedDiscord"
+    </div>
+    </a>
+    <a className={style.sectionQuote} target="blank" alt="EnhancedDiscord" href="https://enhanceddiscord.com/"
     >
-    <Link className={style.quote} to="https://enhanceddiscord.com/"
+    <div className={style.quote}
     >
     EnhancedDiscord
-    </Link>
-    </section>
-    <section className={style.sectionQuote} alt="DiscordInjections"
+    </div>
+    </a>
+    <a className={style.sectionQuote} target="blank" alt="DiscordInjections" href="https://github.com/DiscordInjections/DiscordInjections"
     >
-    <Link className={style.quote} to="https://github.com/DiscordInjections/DiscordInjections"
+    <div className={style.quote}
     >
     DiscordInjections
-    </Link>
-    </section>
-    <section className={style.sectionQuote} alt="BeautifulDiscord"
+    </div>
+    </a>
+    <a className={style.sectionQuote} target="blank" alt="BeautifulDiscord" href="https://github.com/leovoel/BeautifulDiscord"
     >
-    <Link className={style.quote} to="https://github.com/leovoel/BeautifulDiscord"
+    <div className={style.quote}
     >
     BeautifulDiscord
-    </Link>
-    </section>
-    <section className={style.sectionQuote} alt="BetterDiscord"
+    </div>
+    </a>
+    <a className={style.sectionQuote} target="blank" alt="BetterDiscord" href="https://github.com/Jiiks/BetterDiscordApp/releases"
     >
-    <Link className={style.quote} to="https://github.com/Jiiks/BetterDiscordApp/releases"
+    <div className={style.quote}
     >
     BetterDiscord
-    </Link>
-    </section>
+    </div>
+    </a>
     </div>
   </Layout>
 )
