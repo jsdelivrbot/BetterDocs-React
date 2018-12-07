@@ -1,6 +1,6 @@
 import React from 'react'
 import style from '../styles/tags.module.scss'
-import { Link, StaticQuery } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import kebabCase from "lodash/kebabCase"
 
 const pluginTags = ({ siteTitle }) => (
