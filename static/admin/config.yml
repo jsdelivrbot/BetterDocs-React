@@ -53,11 +53,6 @@ collections:
         widget: "list"
         required: false
 
-      - label: "Supported Software (Seperated by comma ',')" 
-        name: "software"
-        widget: "list"
-        required: false
-
       - label: "Images"
         name: "images"
         widget: "list"
