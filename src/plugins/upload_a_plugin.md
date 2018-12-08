@@ -51,10 +51,10 @@ Here's is some helpful information to inform you what each field does.
   - **status** - Values: `Updated/Oudated`. The current status of your plugin.
   - **auto** - If your plugin is hosted on [Github](https://github.com) then add `true` to allow users to automatically down the file (or even the entire repo) instead of just' visiting the site, if hosted elsewhere leave blank or remove it entirely. `[REQUIRED]`
   - **ghcommentid** - ~~The ID of the issue related to your plugin so it can be used in our comments system~~. `[REQUIRED]` 
-  - **layout** - Used by the [Jekyll](https://api.github.com/repos/MrRobotjs/BetterDocs/) version of this website. `[REQUIRED]` 
+  - **layout** - Used by the [Jekyll](https://github.com//MrRobotjs/BetterDocs/) version of this website. `[REQUIRED]` 
 
 ## Changed your mind / need to edit your submission?
 If you want to edit anything in your submission later, simply edit the `.md` file by submitting another PR.
 
 ## Old website
-The old website will always be up on [Github Pages](https://mrrobotjs.github.io/BetterDocs/)
+The old website will always be up on [Github Pages](https://betterdocs.netlify.com/)
