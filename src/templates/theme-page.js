@@ -16,7 +16,11 @@ const Themes = (props) => {
     {themeList.edges.map(({ node }, i) => ( 
     <Helmet
       key={node.id}
-      title={'BetterDocs | ' + node.frontmatter.title}>
+      title={'BetterDocs | ' + node.frontmatter.title}
+      meta={[
+        { name: 'description', content: node.frontmatter.description },
+        { name: 'keywords', content: 'Discord, BetterDiscord, EnhancedDiscord, TwitchCord, Discord Hacks, Hacks, Mods, Discord Themes, Themes, Discord Plugins, Plugins, Discord Bots, Bots, Discord Servers, Discord Style, Styles' },
+      ]}>
       <meta property="og:site_name" content="BetterDocs"/>
       <meta property="og:title" content={'BetterDocs | ' + node.frontmatter.title}/>
       <meta property="og:description" content={node.frontmatter.description}/>
