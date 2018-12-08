@@ -12,7 +12,8 @@ images:
   - name: Discord Reborn Preview
     image: /images/themes/Discord_Reborn_Preview.jpg
 style: dark
-layout: product
+status: Outdated
 ghcommentid: 4
+layout: product
 ---
 A nice sleek transparent theme.

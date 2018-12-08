@@ -30,6 +30,7 @@ I promise it doesn't take long :)
     - name: {Theme Name} Preview - {Image Name}
       image: https://imgur.com/upload # Direct image link should only be used here. Imgur isn't required but if it isn't used then further inspection will happen
   status:
+  auto:
   ghcommentid: # DON'T CHANGE
   layout: product # DON'T CHANGE
 ---
