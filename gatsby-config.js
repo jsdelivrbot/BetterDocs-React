@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
   siteMetadata: {
     title: `BetterDocs | #1 Discord Themes & Plugins`,
@@ -15,13 +13,6 @@ module.exports = {
       options: {
         color: `#339b78`, // Setting a color is optional.
         showSpinner: false, // Disable the loading spinner.
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-root-import',
-      options: {
-        src: path.join(__dirname, 'src'),
-        static: path.join(__dirname, 'static'),
       },
     },
     {
