@@ -53,6 +53,10 @@ collections:
         widget: "list"
         required: false
 
+      - label: "Thumbnail"
+        name: "Thumbnail"
+        widget: "string"
+
       - label: "Images"
         name: "images"
         widget: "list"
@@ -60,20 +64,21 @@ collections:
         fields:
           - label: "Image Name"
             name: "name"
-            default: " {NAME} Preview "
+            default: "{NAME} Preview"
             widget: "string"
           - label: "Image"
             name: "image"
             widget: "image"
-        
-      - label: "Status of your theme"
-        name: "status"
-        widget: "select"
-        options: ["Updated","Outdated"]
 
       - label: "Auto Download?"
         name: "auto"
         widget: "boolean"
+
+      - label: "Status of your theme"
+        name: "status"
+        widget: "select"
+        options: ["Updated","Outdated"]
+        default: "Updated"
 
       - label: "Style" 
         name: "style"
@@ -140,6 +145,11 @@ collections:
         name: "software"
         widget: "list"
 
+      - label: "Thumbnail"
+        name: "Thumbnail"
+        widget: "string"
+        required: false
+
       - label: "Images"
         name: "images"
         required: false
@@ -156,6 +166,7 @@ collections:
         name: "status"
         widget: "select"
         options: ["Updated","Outdated"]
+        default: "Updated"
 
       - label: "Auto Download?"
         name: "auto"
