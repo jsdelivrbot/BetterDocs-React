@@ -6,11 +6,27 @@ import { graphql, Link } from 'gatsby'
 import Sidebar from '../components/plugin-sidebar'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import kebabCase from "lodash/kebabCase"
+import Helmet from 'react-helmet'
 
 const Plugins = (props) => {
   const pluginList = props.data.listPlugins;
   return (
   <Layout>
+    {pluginList.edges.map(({ node }, i) => ( 
+    <Helmet
+      key={node.id}
+      title={'BetterDocs | ' + node.frontmatter.title}
+      meta={[
+        { name: 'description', content: node.frontmatter.description },
+        { name: 'keywords', content: 'Discord, BetterDiscord, EnhancedDiscord, TwitchCord, Discord Hacks, Hacks, Mods, Discord Themes, Themes, Discord Plugins, Plugins, Discord Bots, Bots, Discord Servers, Discord Style, Styles' },
+      ]}>
+      <meta property="og:site_name" content="BetterDocs"/>
+      <meta property="og:title" content={'BetterDocs | ' + node.frontmatter.title}/>
+      <meta property="og:description" content={node.frontmatter.description}/>
+      <meta property="og:image" content={node.frontmatter.thumbnail}/>
+      <html lang="en" />
+    </Helmet>
+    ))}
     <div className={style.pluginsContainer}
     >
       <section className={style.openContentWrapper}
