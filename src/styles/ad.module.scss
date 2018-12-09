@@ -1,0 +1,12 @@
+.adContainerTop {
+    display: none !important;
+    @media (min-width: 550px) {
+        display: block;
+    }
+}
+.adContainerBottom {
+    display: block;
+    @media (min-width: 550px) {
+        display: block;
+    }
+}
