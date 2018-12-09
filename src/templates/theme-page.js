@@ -198,6 +198,7 @@ export const themesQuery = graphql`
             title
             sub
             author
+            description
             github
             download
             support
