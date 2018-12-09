@@ -1,8 +1,9 @@
 import React from 'react'
-import plugin from '../styles/plugin.module.scss'
+import style from '../styles/plugin-sidebar.module.scss'
 import { StaticQuery, graphql } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Tags from '../components/pluginTags'
+
 const Sidebar = () => (
   <StaticQuery
     query={ graphql`
@@ -37,46 +38,46 @@ const Sidebar = () => (
   `}
     render={data => (
       <>
-        <section className={plugin.sidebarSearch}
+        <section className={style.sidebarSearch}
       >
-        <div className={plugin.searchContainer}
+        <div className={style.searchContainer}
         >
           <input 
-          className={plugin.input}
+          className={style.input}
           placeholder='Search Plugins library'
           >
           </input>
-          <div className={plugin.searchOutput}>
+          <div className={style.searchOutput}>
             {data.listPlugins.totalCount + ' Plugins'}
           </div>
           <Tags />
         </div>
-        <div className={plugin.Results}
+        <div className={style.Results}
         >
         {data.listPlugins.edges.map(({ node }, i) => (
           <AniLink 
-          className={plugin.resultCard}
-          activeClassName={plugin.active}
+          className={style.resultCard}
+          activeClassName={style.active}
           to={'plugins' + node.fields.slug}
           key={node.id}
           cover
           bg="#262626"
           duration={0.65}
           >
-            <div className={plugin.header}
+            <div className={style.header}
             >
-              <span className={plugin.title}
+              <span className={style.title}
               >
               {node.frontmatter.title}
               </span>
-              <span className={plugin.author}
+              <span className={style.author}
               >
               {node.frontmatter.author}
               </span>
             </div>
-            <div className={plugin.description}
+            <div className={style.description}
             >
-              <p className={plugin.p}
+              <p className={style.p}
               >
                 {node.excerpt}
               </p>

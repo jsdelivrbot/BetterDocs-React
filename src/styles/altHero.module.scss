@@ -170,7 +170,7 @@
     }
     .options {
         flex: 1 1;
-        display: flex;
+        display: block;
         text-align: left;
         max-width: calc(100% - 25px);
         margin: 0 auto;
@@ -182,6 +182,7 @@
             text-align: unset;
             max-width: unset;
             margin: unset;
+            display: flex;
         }
         .downloadBtn {
             background-color: #339b78;

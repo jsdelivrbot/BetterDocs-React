@@ -1,5 +1,5 @@
 import React from 'react'
-import theme from '../styles/theme.module.scss'
+import style from '../styles/theme-sidebar.module.scss'
 import { StaticQuery, graphql } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
@@ -36,21 +36,21 @@ const Sidebar = () => (
   `}
     render={data => (
       <>
-        <section className={theme.sidebarSearch}
+        <section className={style.sidebarSearch}
       >
-        <div className={theme.searchContainer}
+        <div className={style.searchContainer}
         >
           <input 
-          className={theme.input}
+          className={style.input}
           placeholder={'Search ' + data.listThemes.totalCount + ' Themes'}
           >
           </input>
-          <div className={theme.submitDescription}>
+          <div className={style.submitDescription}>
             Want your theme featured?
           </div>
           <AniLink 
           to="/themes/upload_a_theme/"
-          className={theme.submitBtn}
+          className={style.submitBtn}
           cover
           bg="#262626"
           duration={0.65}
@@ -58,32 +58,32 @@ const Sidebar = () => (
           Submit a Theme
           </AniLink>
         </div>
-        <div className={theme.Results}
+        <div className={style.Results}
         >
         {data.listThemes.edges.map(({ node }, i) => (
           <AniLink 
-          className={theme.resultCard}
-          activeClassName={theme.active}
+          className={style.resultCard}
+          activeClassName={style.active}
           to={'themes' + node.fields.slug}
           key={node.id}
           cover
           bg="#262626"
           duration={0.65}
           >
-            <div className={theme.header}
+            <div className={style.header}
             >
-              <span className={theme.title}
+              <span className={style.title}
               >
               {node.frontmatter.title}
               </span>
-              <span className={theme.author}
+              <span className={style.author}
               >
               {node.frontmatter.author}
               </span>
             </div>
-            <div className={theme.description}
+            <div className={style.description}
             >
-              <p className={theme.p}
+              <p className={style.p}
               >
                 {node.excerpt}
               </p>
