@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '../styles/plugin-sidebar.module.scss'
+import style from '../styles/plugin.module.scss'
 import { StaticQuery, graphql } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Tags from '../components/pluginTags'

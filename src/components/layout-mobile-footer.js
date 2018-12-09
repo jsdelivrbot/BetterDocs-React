@@ -2,12 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import AdSense from 'react-adsense';
 
 import Header from './header'
 import Footer from './footer'
 import './layout.css'
-import ad from '../styles/ad.module.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -32,15 +30,6 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className={ad.ad}>
-          <AdSense.Google
-            client='ca-pub-1998206533560539'
-            slot='6545618600'
-            style={{ display: 'block' }}
-            format='auto'
-            responsive='true'
-          />
-        </div>
         <div
           style={{
             margin: '0 auto',
