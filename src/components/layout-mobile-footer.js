@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className={ad.adContainerTop}>
+        <div className={ad.ad}>
           <AdSense.Google
             client='ca-pub-1998206533560539'
             slot='6545618600'
@@ -48,15 +48,6 @@ const Layout = ({ children }) => (
           }}
         >
           {children}
-        </div>
-        <div className={ad.adContainerBottom}>
-          <AdSense.Google
-            client='ca-pub-1998206533560539'
-            slot='6545618600'
-            style={{ display: 'block' }}
-            format='auto'
-            responsive='true'
-          />
         </div>
         <Footer />
       </div>
