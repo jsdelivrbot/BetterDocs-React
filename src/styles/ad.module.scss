@@ -1,9 +1,13 @@
 .adContainerTop {
     visibility: hidden !important;
     pointer-events: none;
+    position: fixed;
+    top: -100px;
     @media (min-width: 550px) {
         visibility: visible;
         pointer-events: all;
+        position: unset;
+        top: unset;
     }
 }
 .adContainerBottom {
