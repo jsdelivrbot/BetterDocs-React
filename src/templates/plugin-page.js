@@ -15,7 +15,7 @@ const Plugins = (props) => {
     {pluginList.edges.map(({ node }, i) => ( 
     <Helmet
       key={node.id}
-      title={'BetterDocs | ' + node.frontmatter.title}
+      title={ node.frontmatter.title + ' by ' + node.frontmatter.author + ' | BetterDocs '}
       meta={[
         { name: 'description', content: node.frontmatter.description },
         { name: 'keywords', content: 'Discord, BetterDiscord, EnhancedDiscord, TwitchCord, Discord Hacks, Hacks, Mods, Discord Themes, Themes, Discord Plugins, Plugins, Discord Bots, Bots, Discord Servers, Discord Style, Styles' },
