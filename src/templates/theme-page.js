@@ -22,7 +22,7 @@ const Themes = (props) => {
         { name: 'keywords', content: 'Discord, BetterDiscord, EnhancedDiscord, TwitchCord, Discord Hacks, Hacks, Mods, Discord Themes, Themes, Discord Plugins, Plugins, Discord Bots, Bots, Discord Servers, Discord Style, Styles' },
       ]}>
       <meta property="og:site_name" content="BetterDocs"/>
-      <meta property="og:title" content={node.frontmatter.title + ' by ' + node.frontmatter.author + ' | BetterDocs'}/>
+      <meta property="og:title" content={node.frontmatter.title + ' by ' + node.frontmatter.author}/>
       <meta property="og:description" content={node.frontmatter.description}/>
       <meta property="og:image" content={node.frontmatter.thumbnail}/>
       <html lang="en" />
