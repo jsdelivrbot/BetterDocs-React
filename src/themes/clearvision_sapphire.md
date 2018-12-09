@@ -5,7 +5,7 @@ description: 'A chilly, blue theme with customizable colors & background!'
 download: https://github.com/Zerthox/ClearVision/blob/master/themes/ClearVision_Sapphire.theme.css
 github: 'https://github.com/Zerthox/'
 support: 'https://discordapp.com/invite/bfH2kC'
-demo: https://cdn.rawgit.com/Zerthox/ClearVision/master/themes/ClearVision_Sapphire.theme.css
+demo: https://cdn.jsdelivr.net/gh/Zerthox/ClearVision@master/themes/ClearVision_Sapphire.theme.css
 thumbnail: https://i.imgur.com/dwEfRts.jpg
 images:
   - image: /images/themes/ClearVision_-_Sapphire_Preview.jpg

@@ -6,7 +6,7 @@ description:
 download: https://github.com/gco360/thanos-theme
 github: https://github.com/gco360/
 support: https://discord.gg/6fXRKyx
-demo: https://cdn.rawgit.com/gco360/thanos-theme/master/thanos.theme.css
+demo: https://cdn.jsdelivr.net/gh/gco360/thanos-theme@master/thanos.theme.css
 thumbnail: https://i.imgur.com/VZL0VON.jpg
 images:
   - name: Thanos Preview

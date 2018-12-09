@@ -17,7 +17,7 @@ description:
 download: https://github.com/ObserverOfTime/DiscordThemes/tree/master/NewNihilism
 github: https://github.com/NewNihilism/
 support: https://github.com/ObserverOfTime/DiscordThemes/issues
-demo: https://cdn.rawgit.com/ObserverOfTime/DiscordThemes/master/NewNihilism/dist/NewNihilism.theme.css
+demo: https://cdn.jsdelivr.net/gh/ObserverOfTime/DiscordThemes@master/NewNihilism/dist/NewNihilism.theme.css
 thumbnail: https://i.imgur.com/fWoXCXm.png
 images:
   - name: New Nihilism Preview

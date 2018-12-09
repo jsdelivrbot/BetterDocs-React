@@ -5,7 +5,7 @@ description: A theme based on Google's Material Design
 download: https://github.com/CapnKitten/Material-Discord/blob/master/Material-Discord.theme.css
 github: 'https://github.com/CapnKitten/'
 support: 'https://github.com/CapnKitten/Material-Discord/issues'
-demo: https://cdn.rawgit.com/CapnKitten/Material-Discord/master/Material-Discord.theme.css
+demo: https://cdn.jsdelivr.net/gh/CapnKitten/Material-Discord@master/Material-Discord.theme.css
 thumbnail: https://i.imgur.com/T976uiR.png
 images:
   - image: /images/themes/Material_Discord_Preview.png

@@ -6,7 +6,7 @@ description:
 download: https://github.com/MrRobotjs/Discord-Reborn
 github: https://github.com/0mniscient/
 support: https://discord.gg/D4cAkXX
-demo: https://rawgit.com/0mniscient/Discord-Themes/master/Themes/Discord%20Reborn.theme.css
+demo: https://cdn.jsdelivr.net/gh/0mniscient/Discord-Themes@master/Themes/Discord%20Reborn.theme.css
 thumbnail: https://i.imgur.com/gnINgso.jpg
 images:
   - name: Discord Reborn Preview
